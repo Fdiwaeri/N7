@@ -94,6 +94,8 @@ public class PointTest {
         assertTrue(p1.getCouleur() == java.awt.Color.red);
         p2.setCouleur(java.awt.Color.green);
         assertTrue(p2.getCouleur() == java.awt.Color.green);
+        p2.setCouleur(java.awt.Color.blue);
+        assertTrue(p2.getCouleur() == java.awt.Color.blue);
     }
 
 }
