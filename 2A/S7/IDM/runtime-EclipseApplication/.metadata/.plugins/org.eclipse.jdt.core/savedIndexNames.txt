@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+/home/fek2775/Annee_2/runtime-EclipseApplication/.metadata/.plugins/org.eclipse.jdt.core
-2949097923.index
-1865797976.index
-665994362.index

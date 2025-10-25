@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;fr.n7.SimplePDLToTaskMaster/generated/developpement.taskmaster&apos; to &apos;developpement.xmi&apos;" description="Rename resource &apos;developpement.taskmaster&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="generated/developpement.taskmaster" name="developpement.xmi" stamp="1760709943720" updateReferences="true"/>
-</session>

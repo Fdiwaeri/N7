@@ -1,6 +1,0 @@
--- @path SimplePDL=file:/home/fek2775/Annee_2/IDM2023/fr.n7.simplePDL2/SimplePDL.ecore
--- @path PN=file:/home/fek2775/Annee_2/IDM2023/fr.n7.petriNet/PetriNet.ecore
-
-module SimplePDLToPetriNet;
-create OUT : PN from IN : SimplePDL;
-

@@ -1,9 +1,0 @@
-process exemple {
-	wd a uses uses ordis 5 10, uses etudiants 5 5
-	wd b
-	wd c
-	ws s2s from a to b
-	ws f2f from b to c
-	r ordis 20 "Machines de l'N7"
-	r etudiants 10 "développeurs"
-}

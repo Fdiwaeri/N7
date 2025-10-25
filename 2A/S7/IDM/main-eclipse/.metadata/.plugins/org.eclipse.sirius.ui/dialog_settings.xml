@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<section name="Workbench">
-	<section name="ExportRepresentationsAsImagesDialog">
-		<item key="ExportRepresentationsAsImagesDialog.imageFormat" value="PNG"/>
-		<list key="ExportRepresentationsAsImagesDialog.folder">
-			<item value="/home/fek2775/Images/Captures d’écran"/>
-		</list>
-	</section>
-</section>
