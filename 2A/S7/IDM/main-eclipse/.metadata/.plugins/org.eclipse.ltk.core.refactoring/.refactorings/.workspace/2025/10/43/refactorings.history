@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;fr.n7.SimplePDLToPetriNetATL/Out_ATL.xmi&apos;" deleteContents="false" description="Delete resource &apos;fr.n7.SimplePDLToPetriNetATL/Out_ATL.xmi&apos;" element1="/fr.n7.SimplePDLToPetriNetATL/Out_ATL.xmi" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1761059298923"/>&#x0A;<refactoring comment="Delete resource &apos;SimplePDL2TinaLTL&apos;" deleteContents="true" description="Delete resource &apos;SimplePDL2TinaLTL&apos;" element1="/SimplePDL2TinaLTL" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1761114685580"/>
+</session>

@@ -1,0 +1,30 @@
+digraph developpementPetriNet {
+	
+	rankdir=LR;
+
+
+	"Conception_Pre" [shape=circle, label="Conception_Pre", xlabel="1", peripheries=2];
+	"Conception_Post" [shape=circle, label="Conception_Post", xlabel="0", peripheries=1];
+	"RedactionDoc_Pre" [shape=circle, label="RedactionDoc_Pre", xlabel="0", peripheries=1];
+	"RedactionDoc_Post" [shape=circle, label="RedactionDoc_Post", xlabel="0", peripheries=1];
+	"Programmation_Pre" [shape=circle, label="Programmation_Pre", xlabel="0", peripheries=1];
+	"Programmation_Post" [shape=circle, label="Programmation_Post", xlabel="0", peripheries=1];
+	"RedactionTests_Pre" [shape=circle, label="RedactionTests_Pre", xlabel="0", peripheries=1];
+	"RedactionTests_Post" [shape=circle, label="RedactionTests_Post", xlabel="0", peripheries=1];
+	"Conception_is_Running" [shape=circle, label="Conception_is_Running", xlabel="0", peripheries=1];
+	"Conception_is_Running" [shape=circle, label="Conception_is_Running", xlabel="0", peripheries=1];
+
+	"Conception" [shape=box, label="Conception"];
+	"RedactionDoc" [shape=box, label="RedactionDoc"];
+	"Programmation" [shape=box, label="Programmation"];
+	"RedactionTests" [shape=box, label="RedactionTests"];
+
+
+	"Conception_is_Running" -> "RedactionDoc" [label="1", arrowhead=normal, color=black];
+	"Conception_is_Running" -> "RedactionTests" [label="1", arrowhead=normal, color=black];
+
+	"Conception" -> "Conception_is_Running" [label="1", arrowhead=normal, color=black];
+	"Conception" -> "Programmation_Pre" [label="1", arrowhead=normal, color=black];
+	"Conception" -> "Conception_is_Running" [label="1", arrowhead=normal, color=black];
+
+}

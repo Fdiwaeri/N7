@@ -1,0 +1,50 @@
+[comment encoding = UTF-8 /]
+[module toDot('platform:/resource/fr.n7.petriNet/PetriNet.ecore')]
+
+[comment Requête pour déterminer la bordure de la Place en fonction du marquage initial /]
+[query public getPeripheries(p : Place) : String = 
+    if p.initialMarketing > 0 then
+        '2'
+    else
+        '1'
+    endif
+/]
+
+[template public netToDot(aNet : PetriNet)]
+[comment @main/]
+[file (aNet.name + '.dot', false, 'UTF-8')]
+digraph [aNet.name/] {
+	
+	rankdir=LR;
+
+[comment Définition des nœuds (Places et Transitions) /]
+
+[comment Places (cercle) : nom et marquage initial /]
+[for (p : Place | aNet.places)]
+	"[p.name/]" ['['/]shape=circle, label="[p.name/]", xlabel="[p.initialMarketing/]", peripheries=[p.getPeripheries()/][']'/];
+[/for]
+
+[comment Transitions (carré) /]
+[for (t : Transition | aNet.transitions)]
+	"[t.name/]" ['['/]shape=box, label="[t.name/]"[']'/];
+[/for]
+
+[comment Définition des Arcs (Flèches) /]
+
+[comment Arcs Place -> Transition (ArcPlaceTransition) /]
+[for (p : Place | aNet.places)]
+	[for (a : ArcPlaceTransition | p.arcsSortants)] 
+	"[a.source.name/]" -> "[a.target.name/]" ['['/]label="[a.weight/]", arrowhead=normal, color=black[']'/];
+	[/for]
+[/for]
+
+[comment Arcs Transition -> Place (ArcTransitionPlace) /]
+[for (t : Transition | aNet.transitions)]
+	[for (a : ArcTransitionPlace | t.arcsSortants)] 
+	"[a.source.name/]" -> "[a.target.name/]" ['['/]label="[a.weight/]", arrowhead=normal, color=black[']'/];
+	[/for]
+[/for]
+
+}
+[/file]
+[/template]

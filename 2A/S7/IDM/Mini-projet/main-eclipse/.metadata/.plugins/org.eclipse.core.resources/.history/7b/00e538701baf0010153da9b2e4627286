@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ASCII"?>
+<petriNet:PetriNet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:petriNet="platform:/resource/fr.n7.petriNet/PetriNet.ecore" name="developpement_PetriNet_Java_oral">
+  <places name="Conception_ready" initialMarketing="1" arcsSortants="//@arcs.0"/>
+  <places name="Conception_started" arcsSortants="//@arcs.20 //@arcs.23" arcsEntrants="//@arcs.1"/>
+  <places name="Conception_running" arcsSortants="//@arcs.3" arcsEntrants="//@arcs.2"/>
+  <places name="Conception_finished" arcsSortants="//@arcs.21 //@arcs.22" arcsEntrants="//@arcs.4"/>
+  <places name="RedactionDoc_ready" initialMarketing="1" arcsSortants="//@arcs.5"/>
+  <places name="RedactionDoc_started" arcsEntrants="//@arcs.6"/>
+  <places name="RedactionDoc_running" arcsSortants="//@arcs.8" arcsEntrants="//@arcs.7"/>
+  <places name="RedactionDoc_finished" arcsEntrants="//@arcs.9"/>
+  <places name="Programmation_ready" initialMarketing="1" arcsSortants="//@arcs.10"/>
+  <places name="Programmation_started" arcsEntrants="//@arcs.11"/>
+  <places name="Programmation_running" arcsSortants="//@arcs.13" arcsEntrants="//@arcs.12"/>
+  <places name="Programmation_finished" arcsSortants="//@arcs.24" arcsEntrants="//@arcs.14"/>
+  <places name="RedactionTests_ready" initialMarketing="1" arcsSortants="//@arcs.15"/>
+  <places name="RedactionTests_started" arcsEntrants="//@arcs.16"/>
+  <places name="RedactionTests_running" arcsSortants="//@arcs.18" arcsEntrants="//@arcs.17"/>
+  <places name="RedactionTests_finished" arcsEntrants="//@arcs.19"/>
+  <transitions name="Conception_start" arcsEntrants="//@arcs.0" arcsSortants="//@arcs.1 //@arcs.2"/>
+  <transitions name="Conception_finish" arcsEntrants="//@arcs.3" arcsSortants="//@arcs.4"/>
+  <transitions name="RedactionDoc_start" arcsEntrants="//@arcs.5 //@arcs.20" arcsSortants="//@arcs.6 //@arcs.7"/>
+  <transitions name="RedactionDoc_finish" arcsEntrants="//@arcs.8 //@arcs.21" arcsSortants="//@arcs.9"/>
+  <transitions name="Programmation_start" arcsEntrants="//@arcs.10 //@arcs.22" arcsSortants="//@arcs.11 //@arcs.12"/>
+  <transitions name="Programmation_finish" arcsEntrants="//@arcs.13" arcsSortants="//@arcs.14"/>
+  <transitions name="RedactionTests_start" arcsEntrants="//@arcs.15 //@arcs.23" arcsSortants="//@arcs.16 //@arcs.17"/>
+  <transitions name="RedactionTests_finish" arcsEntrants="//@arcs.18 //@arcs.24" arcsSortants="//@arcs.19"/>
+  <arcs xsi:type="petriNet:ArcPlaceTransition" source="//@places.0" target="//@transitions.0"/>
+  <arcs xsi:type="petriNet:ArcTransitionPlace" source="//@transitions.0" target="//@places.1"/>
+  <arcs xsi:type="petriNet:ArcTransitionPlace" source="//@transitions.0" target="//@places.2"/>
+  <arcs xsi:type="petriNet:ArcPlaceTransition" source="//@places.2" target="//@transitions.1"/>
+  <arcs xsi:type="petriNet:ArcTransitionPlace" source="//@transitions.1" target="//@places.3"/>
+  <arcs xsi:type="petriNet:ArcPlaceTransition" source="//@places.4" target="//@transitions.2"/>
+  <arcs xsi:type="petriNet:ArcTransitionPlace" source="//@transitions.2" target="//@places.5"/>
+  <arcs xsi:type="petriNet:ArcTransitionPlace" source="//@transitions.2" target="//@places.6"/>
+  <arcs xsi:type="petriNet:ArcPlaceTransition" source="//@places.6" target="//@transitions.3"/>
+  <arcs xsi:type="petriNet:ArcTransitionPlace" source="//@transitions.3" target="//@places.7"/>
+  <arcs xsi:type="petriNet:ArcPlaceTransition" source="//@places.8" target="//@transitions.4"/>
+  <arcs xsi:type="petriNet:ArcTransitionPlace" source="//@transitions.4" target="//@places.9"/>
+  <arcs xsi:type="petriNet:ArcTransitionPlace" source="//@transitions.4" target="//@places.10"/>
+  <arcs xsi:type="petriNet:ArcPlaceTransition" source="//@places.10" target="//@transitions.5"/>
+  <arcs xsi:type="petriNet:ArcTransitionPlace" source="//@transitions.5" target="//@places.11"/>
+  <arcs xsi:type="petriNet:ArcPlaceTransition" source="//@places.12" target="//@transitions.6"/>
+  <arcs xsi:type="petriNet:ArcTransitionPlace" source="//@transitions.6" target="//@places.13"/>
+  <arcs xsi:type="petriNet:ArcTransitionPlace" source="//@transitions.6" target="//@places.14"/>
+  <arcs xsi:type="petriNet:ArcPlaceTransition" source="//@places.14" target="//@transitions.7"/>
+  <arcs xsi:type="petriNet:ArcTransitionPlace" source="//@transitions.7" target="//@places.15"/>
+  <arcs xsi:type="petriNet:ArcPlaceTransition" source="//@places.1" target="//@transitions.2"/>
+  <arcs xsi:type="petriNet:ArcPlaceTransition" source="//@places.3" target="//@transitions.3"/>
+  <arcs xsi:type="petriNet:ArcPlaceTransition" source="//@places.3" target="//@transitions.4"/>
+  <arcs xsi:type="petriNet:ArcPlaceTransition" source="//@places.1" target="//@transitions.6"/>
+  <arcs xsi:type="petriNet:ArcPlaceTransition" source="//@places.11" target="//@transitions.7"/>
+</petriNet:PetriNet>

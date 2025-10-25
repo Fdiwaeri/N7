@@ -1,0 +1,70 @@
+/**
+ */
+package petriNet.tests;
+
+import junit.textui.TestRunner;
+
+import petriNet.ArcPlaceTransition;
+import petriNet.PetriNetFactory;
+
+/**
+ * <!-- begin-user-doc -->
+ * A test case for the model object '<em><b>Arc Place Transition</b></em>'.
+ * <!-- end-user-doc -->
+ * @generated
+ */
+public class ArcPlaceTransitionTest extends ArcTest {
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static void main(String[] args) {
+		TestRunner.run(ArcPlaceTransitionTest.class);
+	}
+
+	/**
+	 * Constructs a new Arc Place Transition test case with the given name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ArcPlaceTransitionTest(String name) {
+		super(name);
+	}
+
+	/**
+	 * Returns the fixture for this Arc Place Transition test case.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected ArcPlaceTransition getFixture() {
+		return (ArcPlaceTransition)fixture;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see junit.framework.TestCase#setUp()
+	 * @generated
+	 */
+	@Override
+	protected void setUp() throws Exception {
+		setFixture(PetriNetFactory.eINSTANCE.createArcPlaceTransition());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see junit.framework.TestCase#tearDown()
+	 * @generated
+	 */
+	@Override
+	protected void tearDown() throws Exception {
+		setFixture(null);
+	}
+
+} //ArcPlaceTransitionTest

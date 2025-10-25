@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<petriNet:PetriNet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:petriNet="platform:/resource/fr.n7.petriNet/PetriNet.ecore" name="Process - PetriNet">
+  <places name="Projet_Pre" initialMarketing="1"/>
+  <places name="Projet_Post"/>
+  <transitions name="Projet"/>
+</petriNet:PetriNet>

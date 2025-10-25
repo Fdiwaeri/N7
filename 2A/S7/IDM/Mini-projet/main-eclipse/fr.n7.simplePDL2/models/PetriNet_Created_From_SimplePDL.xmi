@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ASCII"?>
+<petriNet:PetriNet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:petriNet="platform:/resource/fr.n7.petriNet/PetriNet.ecore" name="developpement - PetriNet">
+  <places name="Conception_Pre" initialMarketing="1"/>
+  <places name="Conception_Post"/>
+  <places name="RedactionDoc_Pre"/>
+  <places name="RedactionDoc_Post"/>
+  <places name="Programmation_Pre" arcsEntrants="//@arcs.2"/>
+  <places name="Programmation_Post"/>
+  <places name="RedactionTests_Pre"/>
+  <places name="RedactionTests_Post"/>
+  <places name="Conception_is_Running" arcsSortants="//@arcs.1" arcsEntrants="//@arcs.0"/>
+  <places name="Conception_is_Running" arcsSortants="//@arcs.4" arcsEntrants="//@arcs.3"/>
+  <transitions name="Conception" arcsSortants="//@arcs.0 //@arcs.2 //@arcs.3"/>
+  <transitions name="RedactionDoc" arcsEntrants="//@arcs.1"/>
+  <transitions name="Programmation"/>
+  <transitions name="RedactionTests" arcsEntrants="//@arcs.4"/>
+  <arcs xsi:type="petriNet:ArcTransitionPlace" source="//@transitions.0" target="//@places.8"/>
+  <arcs xsi:type="petriNet:ArcPlaceTransition" source="//@places.8" target="//@transitions.1"/>
+  <arcs xsi:type="petriNet:ArcTransitionPlace" source="//@transitions.0" target="//@places.4"/>
+  <arcs xsi:type="petriNet:ArcTransitionPlace" source="//@transitions.0" target="//@places.9"/>
+  <arcs xsi:type="petriNet:ArcPlaceTransition" source="//@places.9" target="//@transitions.3"/>
+</petriNet:PetriNet>

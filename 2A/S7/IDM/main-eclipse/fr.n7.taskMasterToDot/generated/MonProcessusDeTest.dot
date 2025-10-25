@@ -1,0 +1,9 @@
+digraph {
+
+  "Event1" [shape=ellipse];
+  "" -> "Event1" [arrowhead=dot label="0"];
+  "Event2" -> "Event1" [arrowhead=vee];
+
+  "Event2" [shape=ellipse];
+
+}

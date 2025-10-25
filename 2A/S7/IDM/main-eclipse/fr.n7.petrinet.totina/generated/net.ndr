@@ -1,0 +1,12 @@
+t 75.0 120.0 Raffinage 0 w n
+t 75.0 265.0 Codage 0 w n
+p 75.0 50.0 Etat_initial 1 n
+p 75.0 190.0 Etat_intermediaire 0 n
+p 75.0 335.0 Etat_final 0 n
+e Codage Etat_final 1 n
+e Etat_intermediaire Codage 1 n
+e Raffinage Etat_intermediaire 1 n
+e Etat_initial Raffinage 1 n
+h net
+
+

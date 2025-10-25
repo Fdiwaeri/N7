@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<petriNet:PetriNet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:petriNet="platform:/resource/fr.n7.petriNet/PetriNet.ecore" name="Process - PetriNet">
+  <places name="D&#xe9;veloppeur [Resource]" initialMarketing="2" arcsSortants="//@arcs.5" arcsEntrants="//@arcs.6"/>
+  <places name="Projet_ready" initialMarketing="1" arcsSortants="//@arcs.0"/>
+  <places name="Projet_started" arcsEntrants="//@arcs.1"/>
+  <places name="Projet_running" arcsSortants="//@arcs.3" arcsEntrants="//@arcs.2"/>
+  <places name="Projet_finished" arcsEntrants="//@arcs.4"/>
+  <transitions name="Projet_start" arcsEntrants="//@arcs.0 //@arcs.5" arcsSortants="//@arcs.1 //@arcs.2"/>
+  <transitions name="Projet_finish" arcsEntrants="//@arcs.3" arcsSortants="//@arcs.4 //@arcs.6"/>
+  <arcs xsi:type="petriNet:ArcPlaceTransition" source="//@places.1" target="//@transitions.0"/>
+  <arcs xsi:type="petriNet:ArcTransitionPlace" source="//@transitions.0" target="//@places.2"/>
+  <arcs xsi:type="petriNet:ArcTransitionPlace" source="//@transitions.0" target="//@places.3"/>
+  <arcs xsi:type="petriNet:ArcPlaceTransition" source="//@places.3" target="//@transitions.1"/>
+  <arcs xsi:type="petriNet:ArcTransitionPlace" source="//@transitions.1" target="//@places.4"/>
+  <arcs xsi:type="petriNet:ArcPlaceTransition" source="//@places.0" target="//@transitions.0"/>
+  <arcs xsi:type="petriNet:ArcTransitionPlace" source="//@transitions.1" target="//@places.0"/>
+</petriNet:PetriNet>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<petriNet:PetriNet
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:petriNet="platform:/resource/fr.n7.petriNet/PetriNet.ecore"
+    name="net">
+  <places name="Etat initial"
+      arcsSortants="//@arcs.0"
+      arcsEntrants="//@arcs.1"/>
+  <places name="Etat  intermediaire"/>
+  <places name="Etat final"/>
+  <transitions
+      name="Raffinage"
+      arcsEntrants="//@arcs.0"
+      arcsSortants="//@arcs.1"/>
+  <transitions
+      name="Codage"/>
+  <arcs xsi:type="petriNet:ArcPlaceTransition"
+      source="//@places.0"
+      target="//@transitions.0"/>
+  <arcs xsi:type="petriNet:ArcTransitionPlace"
+      source="//@transitions.0"
+      target="//@places.0"/>
+</petriNet:PetriNet>

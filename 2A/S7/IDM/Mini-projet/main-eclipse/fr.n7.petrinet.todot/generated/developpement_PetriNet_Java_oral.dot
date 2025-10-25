@@ -1,0 +1,60 @@
+digraph developpement_PetriNet_Java_oral {
+	
+	rankdir=LR;
+
+
+	"Conception_ready" [shape=circle, label="Conception_ready", xlabel="1", peripheries=2];
+	"Conception_started" [shape=circle, label="Conception_started", xlabel="0", peripheries=1];
+	"Conception_running" [shape=circle, label="Conception_running", xlabel="0", peripheries=1];
+	"Conception_finished" [shape=circle, label="Conception_finished", xlabel="0", peripheries=1];
+	"RedactionDoc_ready" [shape=circle, label="RedactionDoc_ready", xlabel="1", peripheries=2];
+	"RedactionDoc_started" [shape=circle, label="RedactionDoc_started", xlabel="0", peripheries=1];
+	"RedactionDoc_running" [shape=circle, label="RedactionDoc_running", xlabel="0", peripheries=1];
+	"RedactionDoc_finished" [shape=circle, label="RedactionDoc_finished", xlabel="0", peripheries=1];
+	"Programmation_ready" [shape=circle, label="Programmation_ready", xlabel="1", peripheries=2];
+	"Programmation_started" [shape=circle, label="Programmation_started", xlabel="0", peripheries=1];
+	"Programmation_running" [shape=circle, label="Programmation_running", xlabel="0", peripheries=1];
+	"Programmation_finished" [shape=circle, label="Programmation_finished", xlabel="0", peripheries=1];
+	"RedactionTests_ready" [shape=circle, label="RedactionTests_ready", xlabel="1", peripheries=2];
+	"RedactionTests_started" [shape=circle, label="RedactionTests_started", xlabel="0", peripheries=1];
+	"RedactionTests_running" [shape=circle, label="RedactionTests_running", xlabel="0", peripheries=1];
+	"RedactionTests_finished" [shape=circle, label="RedactionTests_finished", xlabel="0", peripheries=1];
+
+	"Conception_start" [shape=box, label="Conception_start"];
+	"Conception_finish" [shape=box, label="Conception_finish"];
+	"RedactionDoc_start" [shape=box, label="RedactionDoc_start"];
+	"RedactionDoc_finish" [shape=box, label="RedactionDoc_finish"];
+	"Programmation_start" [shape=box, label="Programmation_start"];
+	"Programmation_finish" [shape=box, label="Programmation_finish"];
+	"RedactionTests_start" [shape=box, label="RedactionTests_start"];
+	"RedactionTests_finish" [shape=box, label="RedactionTests_finish"];
+
+
+	"Conception_ready" -> "Conception_start" [label="1", arrowhead=normal, color=black];
+	"Conception_started" -> "RedactionDoc_start" [label="1", arrowhead=normal, color=black];
+	"Conception_started" -> "RedactionTests_start" [label="1", arrowhead=normal, color=black];
+	"Conception_running" -> "Conception_finish" [label="1", arrowhead=normal, color=black];
+	"Conception_finished" -> "RedactionDoc_finish" [label="1", arrowhead=normal, color=black];
+	"Conception_finished" -> "Programmation_start" [label="1", arrowhead=normal, color=black];
+	"RedactionDoc_ready" -> "RedactionDoc_start" [label="1", arrowhead=normal, color=black];
+	"RedactionDoc_running" -> "RedactionDoc_finish" [label="1", arrowhead=normal, color=black];
+	"Programmation_ready" -> "Programmation_start" [label="1", arrowhead=normal, color=black];
+	"Programmation_running" -> "Programmation_finish" [label="1", arrowhead=normal, color=black];
+	"Programmation_finished" -> "RedactionTests_finish" [label="1", arrowhead=normal, color=black];
+	"RedactionTests_ready" -> "RedactionTests_start" [label="1", arrowhead=normal, color=black];
+	"RedactionTests_running" -> "RedactionTests_finish" [label="1", arrowhead=normal, color=black];
+
+	"Conception_start" -> "Conception_started" [label="1", arrowhead=normal, color=black];
+	"Conception_start" -> "Conception_running" [label="1", arrowhead=normal, color=black];
+	"Conception_finish" -> "Conception_finished" [label="1", arrowhead=normal, color=black];
+	"RedactionDoc_start" -> "RedactionDoc_started" [label="1", arrowhead=normal, color=black];
+	"RedactionDoc_start" -> "RedactionDoc_running" [label="1", arrowhead=normal, color=black];
+	"RedactionDoc_finish" -> "RedactionDoc_finished" [label="1", arrowhead=normal, color=black];
+	"Programmation_start" -> "Programmation_started" [label="1", arrowhead=normal, color=black];
+	"Programmation_start" -> "Programmation_running" [label="1", arrowhead=normal, color=black];
+	"Programmation_finish" -> "Programmation_finished" [label="1", arrowhead=normal, color=black];
+	"RedactionTests_start" -> "RedactionTests_started" [label="1", arrowhead=normal, color=black];
+	"RedactionTests_start" -> "RedactionTests_running" [label="1", arrowhead=normal, color=black];
+	"RedactionTests_finish" -> "RedactionTests_finished" [label="1", arrowhead=normal, color=black];
+
+}

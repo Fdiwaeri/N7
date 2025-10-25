@@ -1,0 +1,177 @@
+-- @path SimplePDL=file:/home/fek2775/Annee_2/IDM2023/fr.n7.simplePDL2/SimplePDL.ecore
+-- @path PN=file:/home/fek2775/Annee_2/IDM2023/fr.n7.petriNet/PetriNet.ecore
+module SimplePDLToPetriNet;
+create OUT : PN from IN : SimplePDL;
+helper context SimplePDL!WorkDefinition
+def: getReadyPlace() : PN!Place =
+thisModule.resolveTemp(self, 'readyPlace');
+helper context SimplePDL!WorkDefinition
+def: getStartedPlace() : PN!Place =
+thisModule.resolveTemp(self, 'startedPlace');
+helper context SimplePDL!WorkDefinition
+def: getRunningPlace() : PN!Place =
+thisModule.resolveTemp(self, 'runningPlace');
+helper context SimplePDL!WorkDefinition
+def: getFinishedPlace() : PN!Place =
+thisModule.resolveTemp(self, 'finishedPlace');
+helper context SimplePDL!WorkDefinition
+def: getStartTransition() : PN!Transition =
+thisModule.resolveTemp(self, 'startTransition');
+helper context SimplePDL!WorkDefinition
+def: getFinishTransition() : PN!Transition =
+thisModule.resolveTemp(self, 'finishTransition');
+rule Process2PetriNet {
+from
+process : SimplePDL!Process
+to
+petriNet : PN!PetriNet (
+name <- process.name + ' - PetriNet'
+)
+}
+rule WD2Nodes {
+from
+wd : SimplePDL!WorkDefinition
+to
+-- Places pour l'activité
+readyPlace : PN!Place (
+name <- wd.name + '_ready',
+initialMarketing <- 1
+),
+startedPlace : PN!Place (
+name <- wd.name + '_started',
+initialMarketing <- 0
+),
+runningPlace : PN!Place (
+name <- wd.name + '_running',
+initialMarketing <- 0
+),
+finishedPlace : PN!Place (
+name <- wd.name + '_finished',
+initialMarketing <- 0
+),
+-- Transitions pour l'activité
+startTransition : PN!Transition (
+name <- wd.name + '_start'
+),
+finishTransition : PN!Transition (
+name <- wd.name + '_finish'
+),
+-- Arcs pour la structure de base de l'activité
+-- Arc 1: ready -> start
+readyToStart : PN!ArcPlaceTransition (
+source <- readyPlace,
+target <- startTransition,
+weight <- 1
+),
+-- Arc 2: start -> running
+startToRunning : PN!ArcTransitionPlace (
+source <- startTransition,
+target <- runningPlace,
+weight <- 1
+),
+-- Arc 3: start -> started
+startToStarted : PN!ArcTransitionPlace (
+source <- startTransition,
+target <- startedPlace,
+weight <- 1
+),
+-- Arc 4: running -> finish
+runningToFinish : PN!ArcPlaceTransition (
+source <- runningPlace,
+target <- finishTransition,
+weight <- 1
+),
+-- Arc 5: finish -> finished
+finishToFinished : PN!ArcTransitionPlace (
+source <- finishTransition,
+target <- finishedPlace,
+weight <- 1
+)
+}
+rule WS_finishToStart {
+from
+ws : SimplePDL!WorkSequence (ws.linkType = #finishToStart)
+to
+readArcForward : PN!ArcPlaceTransition (
+source <- ws.predecessor.getFinishedPlace(),
+target <- ws.successor.getStartTransition(),
+weight <- 1
+),
+readArcBackward : PN!ArcTransitionPlace (
+source <- ws.successor.getStartTransition(),
+target <- ws.predecessor.getFinishedPlace(),
+weight <- 1
+)
+}
+rule WS_startToStart {
+from
+ws : SimplePDL!WorkSequence (ws.linkType = #startToStart)
+to
+readArcForward : PN!ArcPlaceTransition (
+source <- ws.predecessor.getStartedPlace(),
+target <- ws.successor.getStartTransition(),
+weight <- 1
+),
+readArcBackward : PN!ArcTransitionPlace (
+source <- ws.successor.getStartTransition(),
+target <- ws.predecessor.getStartedPlace(),
+weight <- 1
+)
+}
+rule WS_finishToFinish {
+from
+ws : SimplePDL!WorkSequence (ws.linkType = #finishToFinish)
+to
+readArcForward : PN!ArcPlaceTransition (
+source <- ws.predecessor.getFinishedPlace(),
+target <- ws.successor.getFinishTransition(),
+weight <- 1
+),
+readArcBackward : PN!ArcTransitionPlace (
+source <- ws.successor.getFinishTransition(),
+target <- ws.predecessor.getFinishedPlace(),
+weight <- 1
+)
+}
+rule WS_startToFinish {
+from
+ws : SimplePDL!WorkSequence (ws.linkType = #startToFinish)
+to
+readArcForward : PN!ArcPlaceTransition (
+source <- ws.predecessor.getStartedPlace(),
+target <- ws.successor.getFinishTransition(),
+weight <- 1
+),
+readArcBackward : PN!ArcTransitionPlace (
+source <- ws.successor.getFinishTransition(),
+target <- ws.predecessor.getStartedPlace(),
+weight <- 1
+)
+}
+rule Resource2Place {
+from
+res : SimplePDL!Resource
+to
+place : PN!Place (
+name <- res.name,
+-- Le marquage initial est la quantité de ressource disponible
+initialMarketing <- res.quantity
+)
+}
+rule UsageResource2Arcs {
+from
+ur : SimplePDL!UsageResource
+to
+-- Arc 1: Consommation (Place -> Start Transition)
+consumeArc : PN!ArcPlaceTransition (
+source <- ur.resource, -- La place de la ressource
+target <- ur.workdefinition.getStartTransition(), -- La transition de démarrage
+weight <- ur.UsageQuantity -- Le poids est la quantité utilisée
+),
+-- Arc 2: Libération (Finish Transition -> Place)
+releaseArc : PN!ArcTransitionPlace (
+source <- ur.workdefinition.getFinishTransition(),
+target <- ur.resource,
+weight <- ur.UsageQuantity -- Le poids est la quantité libérée
+)
+}

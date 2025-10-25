@@ -1,0 +1,3 @@
+process : ex1
+workdefinitions : a; b; c;
+worksequences : a s2s b; b f2f c;

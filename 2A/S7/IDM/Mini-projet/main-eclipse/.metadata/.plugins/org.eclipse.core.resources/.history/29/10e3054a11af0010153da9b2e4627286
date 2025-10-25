@@ -1,0 +1,207 @@
+-- @path SimplePDL=file:/home/fek2775/Annee_2/IDM2023/fr.n7.simplePDL2/SimplePDL.ecore
+-- @path PN=file:/home/fek2775/Annee_2/IDM2023/fr.n7.petriNet/PetriNet.ecore
+
+module SimplePDLToPetriNet;
+create OUT : PN from IN : SimplePDL;
+
+-- Helpers mis à jour pour les 2 transitions (start et finish)
+helper context SimplePDL!WorkDefinition
+def: getStartTransition() : PN!Transition =
+    thisModule.resolveTemp(self, 'startTransition');
+
+helper context SimplePDL!WorkDefinition
+def: getFinishTransition() : PN!Transition =
+    thisModule.resolveTemp(self, 'finishTransition');
+
+-- Helpers pour les 4 places
+helper context SimplePDL!WorkDefinition
+def: getReadyPlace() : PN!Place =
+    thisModule.resolveTemp(self, 'readyPlace');
+    
+helper context SimplePDL!WorkDefinition
+def: getStartedPlace() : PN!Place =
+    thisModule.resolveTemp(self, 'startedPlace');
+
+helper context SimplePDL!WorkDefinition
+def: getRunningPlace() : PN!Place =
+    thisModule.resolveTemp(self, 'runningPlace');
+    
+helper context SimplePDL!WorkDefinition
+def: getFinishedPlace() : PN!Place =
+    thisModule.resolveTemp(self, 'finishedPlace');
+
+-- Règle Process2PetriNet inchangée (Process devient PetriNet)
+rule Process2PetriNet {
+    from
+        process : SimplePDL!Process
+    to
+        petriNet : PN!PetriNet (
+            name <- process.name + ' - PetriNet',
+            
+            -- ⭐ Affectation explicite via allInstances() ⭐
+            -- Récupère toutes les places créées par WD2Nodes et Resource2Place
+            places <- PN!Place.allInstances(), 
+                      
+            -- Récupère toutes les transitions créées par WD2Nodes
+            transitions <- PN!Transition.allInstances(),
+                         
+            -- Récupère tous les arcs créés par WD2Nodes, WS2Arc_* et UsageResource2Arcs
+            arcs <- PN!ArcPlaceTransition.allInstances()
+                    -> union(PN!ArcTransitionPlace.allInstances())
+        )
+}
+
+rule WD2Nodes {
+    from
+        wd : SimplePDL!WorkDefinition
+    to
+        -- Les deux transitions
+        startTransition : PN!Transition (
+            name <- wd.name + '_start'
+        ),
+        finishTransition : PN!Transition (
+            name <- wd.name + '_finish'
+        ),
+        
+        -- Les quatre places
+        readyPlace : PN!Place (
+            name <- wd.name + '_ready',
+            initialMarketing <- 1 -- La tâche est initialement prête
+        ),
+        startedPlace : PN!Place (
+            name <- wd.name + '_started',
+            initialMarketing <- 0
+        ),
+        runningPlace : PN!Place (
+            name <- wd.name + '_running',
+            initialMarketing <- 0
+        ),
+        finishedPlace : PN!Place (
+            name <- wd.name + '_finished',
+            initialMarketing <- 0
+        ),
+        
+        -- Arcs internes de la WorkDefinition (selon la syntaxe Tina fournie)
+        
+        -- Arc 1: ready -> startTransition
+        readyToStartArc : PN!ArcPlaceTransition (
+            source <- readyPlace,
+            target <- startTransition,
+            weight <- 1
+        ),
+        -- Arc 2: startTransition -> running
+        startToRunningArc : PN!ArcTransitionPlace (
+            source <- startTransition,
+            target <- runningPlace,
+            weight <- 1
+        ),
+        -- Arc 3: startTransition -> started
+        startToStartedArc : PN!ArcTransitionPlace (
+            source <- startTransition,
+            target <- startedPlace,
+            weight <- 1
+        ),
+        -- Arc 4: running -> finishTransition
+        runningToFinishArc : PN!ArcPlaceTransition (
+            source <- runningPlace,
+            target <- finishTransition,
+            weight <- 1
+        ),
+        -- Arc 5: finishTransition -> finished
+        finishToFinishedArc : PN!ArcTransitionPlace (
+            source <- finishTransition,
+            target <- finishedPlace,
+            weight <- 1
+        )
+}
+
+rule WS2Arc_FinishToStart {
+    from
+        ws : SimplePDL!WorkSequence (ws.linkType = #finishToStart)
+    to
+        -- Arc de la fin du prédécesseur (finished) vers le début du successeur (start)
+        arc : PN!ArcPlaceTransition
+        (
+            -- Le prédécesseur doit être terminé. La place source est 'finished'
+            source <- ws.predecessor.getFinishedPlace(), 
+            -- Le successeur peut commencer. La transition cible est 'start'
+            target <- ws.successor.getStartTransition(),
+            weight <- 1
+        )
+}
+
+rule WS2Arc_StartToStart {
+    from
+        ws : SimplePDL!WorkSequence (ws.linkType = #startToStart)
+    to
+        -- Arc du début du prédécesseur (started) vers le début du successeur (start)
+        arc : PN!ArcPlaceTransition
+        (
+            -- Le prédécesseur doit être démarré. La place source est 'started'
+            source <- ws.predecessor.getStartedPlace(), 
+            -- Le successeur peut commencer. La transition cible est 'start'
+            target <- ws.successor.getStartTransition(),
+            weight <- 1
+        )
+}
+
+rule WS2Arc_FinishToFinish {
+    from
+        ws : SimplePDL!WorkSequence (ws.linkType = #finishToFinish)
+    to
+        -- Arc de la fin du prédécesseur (finished) vers la fin du successeur (finish)
+        arc : PN!ArcPlaceTransition
+        (
+            -- Le prédécesseur doit être terminé. La place source est 'finished'
+            source <- ws.predecessor.getFinishedPlace(), 
+            -- Le successeur peut se terminer. La transition cible est 'finish'
+            target <- ws.successor.getFinishTransition(),
+            weight <- 1
+        )
+}
+
+rule WS2Arc_StartToFinish {
+    from
+        ws : SimplePDL!WorkSequence (ws.linkType = #startToFinish)
+    to
+        -- Arc du début du prédécesseur (started) vers la fin du successeur (finish)
+        arc : PN!ArcPlaceTransition
+        (
+            -- Le prédécesseur doit être démarré. La place source est 'started'
+            source <- ws.predecessor.getStartedPlace(), 
+            -- Le successeur peut se terminer. La transition cible est 'finish'
+            target <- ws.successor.getFinishTransition(),
+            weight <- 1
+        )
+}
+
+-- Règle Resource2Place inchangée
+rule Resource2Place {
+    from
+        res : SimplePDL!Resource
+    to
+        place : PN!Place (
+            name <- res.name,
+            initialMarketing <- res.quantity
+        )
+}
+
+-- Règle UsageResource2Arcs mise à jour pour utiliser les transitions 'start' et 'finish'
+rule UsageResource2Arcs {
+    from
+        ur : SimplePDL!UsageResource
+    to
+        -- Arc 1: Consommation (Place -> Transition 'start') : consomme au début de l'activité
+        consumeArc : PN!ArcPlaceTransition (
+            source <- ur.resource, 
+            target <- ur.workdefinition.getStartTransition(), -- Consomme à la transition 'start'
+            weight <- ur.UsageQuantity
+        ),
+        
+        -- Arc 2: Libération (Transition 'finish' -> Place) : libère à la fin de l'activité
+        releaseArc : PN!ArcTransitionPlace (
+            source <- ur.workdefinition.getFinishTransition(), -- Libère à la transition 'finish'
+            target <- ur.resource,
+            weight <- ur.UsageQuantity
+        )
+}

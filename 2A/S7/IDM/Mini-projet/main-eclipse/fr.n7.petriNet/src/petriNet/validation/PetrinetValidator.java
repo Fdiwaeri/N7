@@ -1,0 +1,172 @@
+package petriNet.validation;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.resource.Resource;
+
+import petriNet.Arc;
+import petriNet.ArcPlaceTransition;
+import petriNet.ArcTransitionPlace;
+import petriNet.PetriNet;
+import petriNet.Place;
+import petriNet.Transition;
+import petriNet.PetriNetPackage;
+import petriNet.util.PetriNetSwitch;
+
+/**
+ * Réalise la validation d'un EObject issu de Petrinet.
+ * Cette classe hérite de PetriNetSwitch pour parcourir le modèle.
+ */
+public class PetrinetValidator extends PetriNetSwitch<Boolean> {
+	
+	private ValidationResult result = null;
+	
+	public PetrinetValidator() {}
+	
+	/**
+	 * Lance la validation pour les objets dans la ressource.
+	 */
+	public ValidationResult validate(Resource resource) {
+		this.result = new ValidationResult();
+		
+		for (EObject object : resource.getContents()) {
+			this.doSwitch(object);
+		}
+		
+		return this.result;
+	}
+
+    /**
+	 * Méthode pour valider le noeud racine (PetriNet).
+	 * Vérifie l'unicité des noms et lance la visite des éléments contenus.
+	 */
+	@Override
+	public Boolean casePetriNet(PetriNet net) {
+	    
+	    // 1. Unicité des noms (Places et Transitions) au niveau du réseau
+	    
+	    // Collecter les noms de Places et de Transitions
+	    List<String> placeNames = net.getPlaces().stream()
+	        .map(Place::getName)
+	        .collect(Collectors.toList());
+	        
+	    List<String> transitionNames = net.getTransitions().stream()
+	        .map(Transition::getName)
+	        .collect(Collectors.toList());
+	        
+	    // Vérifier les doublons internes aux Places et Transitions
+	    if (placeNames.size() != new HashSet<>(placeNames).size()) {
+	        result.recordError(net, "Des noms de Places ne sont pas uniques dans le réseau.");
+	    }
+	    if (transitionNames.size() != new HashSet<>(transitionNames).size()) {
+	        result.recordError(net, "Des noms de Transitions ne sont pas uniques dans le réseau.");
+	    }
+	    
+	    // Vérifier les collisions entre Places et Transitions
+	    Set<String> placeNameSet = new HashSet<>(placeNames);
+	    for (String tName : transitionNames) {
+	        if (placeNameSet.contains(tName)) {
+	            result.recordError(net, 
+	                "Le nom '" + tName + "' est utilisé à la fois par une Place et une Transition.");
+	        } 
+	    }
+
+	    // 2. Lancer la visite des éléments contenus (Places, Transitions, Arcs)
+	    net.getPlaces().forEach(this::doSwitch);
+	    net.getTransitions().forEach(this::doSwitch);
+	    net.getArcs().forEach(this::doSwitch);
+
+		return null;
+	}
+	
+    /**
+	 * Valide les contraintes spécifiques à une Place.
+	 */
+	@Override
+	public Boolean casePlace(Place place) {
+	    // Contrainte : Marquage initial non négatif (Place.initialMarketing >= 0)
+	    // Supposons que la méthode est getInitialMarketing()
+        boolean marketingNonNegative = place.getInitialMarketing() >= 0;
+	    this.result.recordIfFailed(
+            marketingNonNegative, 
+            place, 
+            "Le marquage initial de la Place '" + place.getName() + "' doit être non négatif (actuel: " + place.getInitialMarketing() + ")."
+        );
+        return null;
+	}
+
+    /**
+	 * Valide les contraintes spécifiques à une Transition (aucune contrainte statique typique).
+	 */
+	@Override
+	public Boolean caseTransition(Transition transition) {
+	    // Aucune contrainte statique particulière n'est généralement requise sur les Transitions
+	    // hormis l'unicité du nom, déjà vérifiée dans casePetriNet.
+	    return null;
+	}
+
+    /**
+	 * Valide les contraintes générales des Arcs.
+	 * Remplace ArcPlaceTransition et ArcTransitionPlace si elles héritent d'Arc.
+	 */
+	@Override
+	public Boolean caseArc(Arc arc) {
+	    // Contrainte : Poids de l'Arc Positif (Arc.weight >= 1)
+        boolean weightPositive = arc.getWeight() >= 1;
+	    this.result.recordIfFailed(
+            weightPositive, 
+            arc, 
+            "Le poids de l'Arc doit être supérieur ou égal à 1 (actuel: " + arc.getWeight() + ")."
+        );
+        
+        // Contrainte structurelle : L'Arc ne doit pas être un Arc Place->Place ou Transition->Transition.
+        // Cette contrainte doit être affinée dans les sous-classes ArcPlaceTransition et ArcTransitionPlace.
+	    
+	    return null;
+	}
+	
+	// Contraintes spécifiques pour les sous-classes d'Arc (ajustement de type)
+	
+	@Override
+	public Boolean caseArcPlaceTransition(ArcPlaceTransition apt) {
+	    // Validation du poids général (via caseArc)
+		caseArc(apt);
+	    
+	    // Contrainte : Source Place & Cible Transition
+	    // Bien que généralement assurée par le méta-modèle EMF, on peut vérifier le type logique.
+	    boolean validEnds = apt.getSource() instanceof Place && apt.getTarget() instanceof Transition;
+	    this.result.recordIfFailed(
+	        validEnds,
+	        apt,
+	        "L'Arc Place->Transition doit relier une Place à une Transition."
+	    );
+	    
+	    return null;
+	}
+
+	@Override
+	public Boolean caseArcTransitionPlace(ArcTransitionPlace atp) {
+	    // Validation du poids général (via caseArc)
+		caseArc(atp);
+
+	    // Contrainte : Source Transition & Cible Place
+	    boolean validEnds = atp.getSource() instanceof Transition && atp.getTarget() instanceof Place;
+	    this.result.recordIfFailed(
+	        validEnds,
+	        atp,
+	        "L'Arc Transition->Place doit relier une Transition à une Place."
+	    );
+	    
+	    return null;
+	}
+
+
+	@Override
+	public Boolean defaultCase(EObject object) {
+		return null;
+	}
+}

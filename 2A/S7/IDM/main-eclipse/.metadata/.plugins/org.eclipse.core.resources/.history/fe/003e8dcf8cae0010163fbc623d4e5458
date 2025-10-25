@@ -1,0 +1,199 @@
+package simplepdl.manip;
+
+import java.io.IOException;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
+import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
+
+import simplepdl.Process;
+import simplepdl.WorkDefinition;
+import simplepdl.WorkSequence;
+import simplepdl.ProcessElement;
+import simplepdl.SimplepdlPackage;
+import simplepdl.WorkSequenceType;
+import simplepdl.UsageResource; 
+import simplepdl.Resource as SimplePDLResource;
+
+import petriNet.PetriNet;
+import petriNet.Transition;
+import petriNet.Place;
+import petriNet.ArcPlaceTransition;
+import petriNet.ArcTransitionPlace;
+import petriNet.PetriNetFactory;
+import petriNet.PetriNetPackage;
+
+public class SimplePDLToPetrinet {
+
+    public static void main(String[] args) {
+        // --- 1. Initialisation des registres EMF ---
+        // Assure que les packages des deux métamodèles sont chargés
+        SimplepdlPackage.eINSTANCE.eClass();
+        PetriNetPackage.eINSTANCE.eClass();
+
+        // Enregistre l'extension .xmi pour la lecture et l'écriture
+        Resource.Factory.Registry reg = Resource.Factory.Registry.INSTANCE;
+        Map<String, Object> m = reg.getExtensionToFactoryMap();
+        m.put("xmi", new XMIResourceFactoryImpl());
+        m.put("simplepdl", new XMIResourceFactoryImpl());
+
+
+        // Crée l'ensemble de ressources
+        ResourceSet resSet = new ResourceSetImpl();
+
+        // --- 2. Chargement du modèle SimplePDL ---
+        URI simplepdlModelURI = URI.createURI("models/Valide.simplepdl");
+        Resource simplepdlResource = resSet.getResource(simplepdlModelURI, true);
+        Process simplePdlProcess = (Process) simplepdlResource.getContents().get(0);
+        System.out.println("Modèle SimplePDL chargé : " + simplePdlProcess.getName());
+
+        // --- 3. Préparation pour le modèle Petrinet ---
+        PetriNetFactory petrinetFactory = PetriNetFactory.eINSTANCE;
+        PetriNet petriNet = petrinetFactory.createPetriNet();
+        petriNet.setName(simplePdlProcess.getName() + " - PetriNet");
+
+        // Map pour garder une trace des éléments déjà convertis
+        Map<WorkDefinition, Transition> wdToTransition = new HashMap<>();
+        Map<WorkDefinition, Place> wdToStartPlace = new HashMap<>();
+        Map<WorkDefinition, Place> wdToEndPlace = new HashMap<>();
+
+        // --- 4.1 Création des Places pour les Ressources
+        for (SimplePDLResource res : simplePdlProcess.getResources()) {
+            Place resourcePlace = petrinetFactory.createPlace();
+            resourcePlace.setName(res.getName() + " [Resource]");
+            // Assure que le marquage initial (la quantité de ressource) est respecté
+            resourcePlace.setInitialMarketing(res.getQuantity()); 
+            petriNet.getPlaces().add(resourcePlace);
+            resourceToPlace.put(res, resourcePlace);
+        }
+        
+        // --- 4.2 Création des transitions et des places pour chaque WorkDefinition ---
+        for (ProcessElement pe : simplePdlProcess.getProcessElements()) {
+            if (pe instanceof WorkDefinition) {
+                WorkDefinition wd = (WorkDefinition) pe;
+
+                Transition transition = petrinetFactory.createTransition();
+                transition.setName(wd.getName());
+                
+                Place startPlace = petrinetFactory.createPlace();
+                startPlace.setName(wd.getName() + "_Pre");
+
+                Place endPlace = petrinetFactory.createPlace();
+                endPlace.setName(wd.getName() + "_Post");
+
+                // Ajout des éléments au réseau de Pétri
+                petriNet.getTransitions().add(transition);
+                petriNet.getPlaces().add(startPlace);
+                petriNet.getPlaces().add(endPlace);
+                
+                // Mémorisation des mappings
+                wdToTransition.put(wd, transition);
+                wdToStartPlace.put(wd, startPlace);
+                wdToEndPlace.put(wd, endPlace);
+                
+             // GESTION DES RESSOURCES : Création des arcs de consommation et de libération
+                for (UsageResource usage : wd.getUses()) {
+                    Place resourcePlace = resourceToPlace.get(usage.getResource());
+
+                    if (resourcePlace != null) {
+                        int quantity = usage.getUsageQuantity();
+                        
+                        // 1. Consommation de la ressource au DÉMARRAGE (Arc Place -> Transition)
+                        ArcPlaceTransition consumeArc = petrinetFactory.createArcPlaceTransition();
+                        consumeArc.setSource(resourcePlace);
+                        consumeArc.setTarget(transition);
+                        consumeArc.setWeight(quantity); // Poids = quantité consommée
+                        petriNet.getArcs().add(consumeArc);
+
+                        // 2. Libération de la ressource à la FIN (Arc Transition -> Place)
+                        ArcTransitionPlace releaseArc = petrinetFactory.createArcTransitionPlace();
+                        releaseArc.setSource(transition);
+                        releaseArc.setTarget(resourcePlace);
+                        releaseArc.setWeight(quantity); // Poids = quantité relâchée
+                        petriNet.getArcs().add(releaseArc);
+                    }
+                }
+            }
+        }
+        
+        // --- 5. Création des arcs basés sur les WorkSequences ---
+        for (ProcessElement pe : simplePdlProcess.getProcessElements()) {
+            if (pe instanceof WorkSequence) {
+                WorkSequence ws = (WorkSequence) pe;
+                
+                WorkDefinition predecessor = ws.getPredecessor();
+                WorkDefinition successor = ws.getSuccessor();
+                WorkSequenceType type = ws.getLinkType();
+
+                // Récupération des transitions et places correspondantes
+                Transition predTransition = wdToTransition.get(predecessor);
+                Transition succTransition = wdToTransition.get(successor);
+                Place predEndPlace = wdToEndPlace.get(predecessor);
+                Place succStartPlace = wdToStartPlace.get(successor);
+
+                if (predTransition != null && succTransition != null) {
+                    ArcPlaceTransition arcPt;
+                    ArcTransitionPlace arcTp;
+                    
+                    switch (type) {
+                        case FINISH_TO_START:
+                            // Arc de la fin du prédécesseur vers le début du successeur
+                            arcTp = petrinetFactory.createArcTransitionPlace();
+                            arcTp.setSource(predTransition);
+                            arcTp.setTarget(succStartPlace);
+                            arcTp.setWeight(1);
+                            petriNet.getArcs().add(arcTp);
+                            break;
+                        case START_TO_START:
+                            // La logique pour START_TO_START est plus complexe et nécessite une place intermédiaire.
+                            // Pour simplifier, nous créons une place qui marque que la tâche est "en cours".
+                            Place runningPlace = petrinetFactory.createPlace();
+                            runningPlace.setName(predecessor.getName() + "_is_Running");
+                            petriNet.getPlaces().add(runningPlace);
+                            
+                            arcTp = petrinetFactory.createArcTransitionPlace();
+                            arcTp.setSource(predTransition);
+                            arcTp.setTarget(runningPlace);
+                            arcTp.setWeight(1);
+                            petriNet.getArcs().add(arcTp);
+                            
+                            arcPt = petrinetFactory.createArcPlaceTransition();
+                            arcPt.setSource(runningPlace);
+                            arcPt.setTarget(succTransition);
+                            arcPt.setWeight(1);
+                            petriNet.getArcs().add(arcPt);
+                            break;
+                        default:
+                            // Gérer les autres types de WorkSequence
+                            break;
+                    }
+                }
+            }
+        }
+
+        // Ajout d'un jeton à la place de début du premier WorkDefinition (si applicable)
+        // Note: La logique pour déterminer la première tâche est plus complexe, cet exemple est simplifié.
+        Place firstWdStartPlace = wdToStartPlace.get(simplePdlProcess.getProcessElements().stream()
+            .filter(e -> e instanceof WorkDefinition).findFirst().orElse(null));
+        if (firstWdStartPlace != null) {
+            firstWdStartPlace.setInitialMarketing(1);
+        }
+
+        // --- 6. Sauvegarde du modèle Petrinet ---
+        URI petriNetModelURI = URI.createURI("models/PetriNet_From_SimplePDL_Valide.xmi");
+        Resource petriNetResource = resSet.createResource(petriNetModelURI);
+        petriNetResource.getContents().add(petriNet);
+
+        try {
+            petriNetResource.save(Collections.EMPTY_MAP);
+            System.out.println("Transformation réussie ! Le modèle de réseau de Pétri est sauvegardé à : " + petriNetModelURI);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
