@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * @author F.E
  */
 
-public class Groupe implements X {
+public class Groupe extends X {
     /** Un groupe contient une liste d'éléments X. */
     private ArrayList<X> objets;
 

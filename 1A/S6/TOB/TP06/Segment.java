@@ -7,20 +7,19 @@ import java.awt.Color;
  * @author	Xavier Crégut
  * @version	1.9
  */
-public class Segment implements X {
+public class Segment extends X {
 
 	private Point extremite1;
 	private Point extremite2;
-	private Color couleur;
 
 	/**  Construire un Segment à partir de ses deux points extrémités.
 	 *  @param ext1	le premier point extrémité
 	 *  @param ext2	le deuxième point extrémité
 	 */
 	public Segment(Point ext1, Point ext2) {
+		super(Color.green);
 		this.extremite1 = ext1;
 		this.extremite2 = ext2;
-		this.couleur = Color.green;
 	}
 
    /** Translater le segment.
@@ -63,20 +62,6 @@ public class Segment implements X {
 		System.out.print("-");
 		this.extremite2.afficher();
 		System.out.print("]");
-	}
-
-	/** Obtenir la couleur du segment.
-	 * @return la couleur du segment
-	 */
-	public Color getCouleur() {
-		return this.couleur;
-	}
-
-	/** Changer la couleur du segment.
-	 * @param nouvelleCouleur nouvelle couleur
-	 */
-	public void setCouleur(Color nouvelleCouleur) {
-		this.couleur = nouvelleCouleur;
 	}
 
 }

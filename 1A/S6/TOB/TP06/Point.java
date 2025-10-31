@@ -7,22 +7,19 @@ import java.awt.Color;
  *
  * @author  Xavier Crégut <Prénom.Nom@enseeiht.fr>
  */
-public class Point implements X {
+public class Point extends X {
 	private double x;		// abscisse
 	private double y;		// ordonnée
 
-	//@ private invariant getCouleur() != null;
-	//@ private invariant getCouleur() == couleur;	// invariant de liaison
-	private Color couleur;	// couleur du point
 
 	/** Construire un point à partir de son abscisse et de son ordonnée.
 	 * @param vx abscisse
 	 * @param vy ordonnée
 	 */
 	public Point(double vx, double vy) {
+		super(Color.green);
 		this.x = vx;
 		this.y = vy;
-		this.couleur = Color.green;
 	}
 
 	/** Obtenir l'abscisse du point.
@@ -84,23 +81,6 @@ public class Point implements X {
 	 */
 	public void dessiner(afficheur.Afficheur afficheur) {
 		afficheur.dessinerPoint(this.getX(), this.getY(), this.getCouleur());
-	}
-
-//  Gestion de la couleur
-
-	/** Obtenir la couleur du point.
-	 * @return la couleur du point
-	 */
-	//@ pure
-	public Color getCouleur() {
-		return this.couleur;
-	}
-
-	/** Changer la couleur du point.
-	  * @param nouvelleCouleur nouvelle couleur
-	  */
-	public void setCouleur(Color nouvelleCouleur) {
-		this.couleur = nouvelleCouleur;
 	}
 
 }
