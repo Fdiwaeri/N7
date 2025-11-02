@@ -1,3 +1,11 @@
+/** Un programme de test simple pour vérifier que la classe
+ * EnsembleOrdonneChaine marche bien, avec vérification
+ * à l'affichage.
+ * Non demandé dans le sujet!
+ * 
+ * @author F.E
+ */
+
 public class EnsembleOrdonneChaineTest {
     public static void main(String[] args) {
         EnsembleOrdonneChaine ens = new EnsembleOrdonneChaine();
