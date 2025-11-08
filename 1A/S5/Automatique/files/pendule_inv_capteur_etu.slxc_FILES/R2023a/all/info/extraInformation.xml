@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/SlCache/19700101">
+  <slcache.Information type="slcache.Information" uuid="35c7df54-9f1f-4996-97de-56544f81c5f9">
+    <entries type="slcache.TargetChecksum" uuid="965e5258-724b-4077-bc1f-175c2801ccc8">
+      <checksum>nZ550/XPZPB9nj1e6ai9f1w8+XK/C9DIPgxKhznE5xTOeH5t0+rbM1fn4tAtB8TfU9jxyoaI8UqSPvgynLFNig==</checksum>
+      <mode>VARCACHE</mode>
+    </entries>
+    <modelName>pendule_inv_capteur_etu</modelName>
+    <platform>all</platform>
+    <release>R2023a</release>
+    <slprjVersion>10.7_091</slprjVersion>
+  </slcache.Information>
+</MF0>
