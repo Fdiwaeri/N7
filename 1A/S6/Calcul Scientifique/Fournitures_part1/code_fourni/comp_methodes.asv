@@ -1,0 +1,213 @@
+% test_eig_execution_time.m
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Mesure le temps d'exécution de la fonction eig pour différents types de matrices et tailles
+
+clear;
+close all;
+
+n_values = 100:100:500;       % tailles de matrices
+nb_types = 4;               % types de matrices définis dans matgen_csad
+colors = lines(nb_types);   % couleurs pour les courbes
+
+figure;
+hold on;
+
+for imat = 1:nb_types
+    exec_times = zeros(size(n_values));
+
+    for i = 1:length(n_values)
+        n = n_values(i);
+
+        % Génère la matrice avec matgen_csad
+        [A, ~, ~] = matgen_csad(imat, n);
+
+        % Mesure du temps d'exécution de eig
+        tic;
+        eig(A);
+        exec_times(i) = toc;
+    end
+
+    % Tracé de la courbe pour ce type
+    plot(n_values, exec_times, '-o', 'LineWidth', 1.5, ...
+        'DisplayName', ['Type ', num2str(imat)], ...
+        'Color', colors(imat,:));
+end
+
+title('Temps d''exécution de eig en fonction de la taille pour la méthode eig');
+xlabel('Taille de la matrice n');
+ylabel('Temps (secondes)');
+legend show;
+grid on;
+hold off;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Mesure le temps d'exécution de la fonction powerv11 pour différents types de matrices et tailles
+
+m = 15;             % nombre de couples propres à calculer
+eps = 1e-8;
+maxit = 10000;
+percentage = 0.5; % seuil de trace cumulée pour arrêter
+
+figure;
+hold on;
+
+for imat = 1:nb_types
+    exec_times = zeros(size(n_values));
+
+    for i = 1:length(n_values)
+        n = n_values(i);
+        [A, ~, ~] = matgen_csad(imat, n);
+
+        tic;
+        [V, D, n_ev, itv, flag] = power_v11(A, m, percentage, eps, maxit);
+        exec_times(i) = toc;
+    end
+
+    % Tracé de la courbe pour un type de matrice
+    plot(n_values, exec_times, '-o', 'LineWidth', 1.5, ...
+        'DisplayName', ['Type ', num2str(imat)], ...
+        'Color', colors(imat,:));
+end
+
+title('Temps d''exécution de la méthode powerv11');
+xlabel('Taille de la matrice n');
+ylabel('Temps (secondes)');
+legend show;
+grid on;
+hold off;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Mesure le temps d'exécution de la fonction powerv12 pour différents types de matrices et tailles
+m = 15;             % nombre de couples propres à calculer
+eps = 1e-8;
+maxit = 10000;
+percentage = 0.5; % seuil de trace cumulée pour arrêter
+
+figure;
+hold on;
+
+for imat = 1:nb_types
+    exec_times = zeros(size(n_values));
+
+    for i = 1:length(n_values)
+        n = n_values(i);
+        [A, ~, ~] = matgen_csad(imat, n);
+
+        tic;
+        [V, D, n_ev, itv, flag] = power_v12(A, m, percentage, eps, maxit);
+        exec_times(i) = toc;
+    end
+
+    % Tracé de la courbe pour un type de matrice
+    plot(n_values, exec_times, '-o', 'LineWidth', 1.5, ...
+        'DisplayName', ['Type ', num2str(imat)], ...
+        'Color', colors(imat,:));
+end
+
+title('Temps d''exécution de la méthode powerv12');
+xlabel('Taille de la matrice n');
+ylabel('Temps (secondes)');
+legend show;
+grid on;
+hold off;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Mesure le temps d'exécution de la fonction subspace_iter_v0 pour différents types de matrices et tailles
+m = 15;             % nombre de couples propres à calculer
+eps = 1e-8;
+maxit = 10000;
+percentage = 0.5; % seuil de trace cumulée pour arrêter
+
+figure;
+hold on;
+
+for imat = 1:nb_types
+    exec_times = zeros(size(n_values));
+
+    for i = 1:length(n_values)
+        n = n_values(i);
+        [A, ~, ~] = matgen_csad(imat, n);
+
+        tic;
+        [ V, D, it, flag ] = subspace_iter_v0( A, m, eps, maxit );
+        exec_times(i) = toc;
+    end
+
+    % Tracé de la courbe pour un type de matrice
+    plot(n_values, exec_times, '-o', 'LineWidth', 1.5, ...
+        'DisplayName', ['Type ', num2str(imat)], ...
+        'Color', colors(imat,:));
+end
+
+title('Temps d''exécution de la méthode iterv0');
+xlabel('Taille de la matrice n');
+ylabel('Temps (secondes)');
+legend show;
+grid on;
+hold off;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Mesure le temps d'exécution de la fonction subspace_iter_v1 pour différents types de matrices et tailles
+m = 15;             % nombre de couples propres à calculer
+eps = 1e-8;
+maxit = 10000;
+percentage = 0.5; % seuil de trace cumulée pour arrêter
+
+figure;
+hold on;
+
+for imat = 1:nb_types
+    exec_times = zeros(size(n_values));
+
+    for i = 1:length(n_values)
+        n = n_values(i);
+        [A, ~, ~] = matgen_csad(imat, n);
+
+        tic;
+        [ V, D, n_ev, it, itv, flag ] = subspace_iter_v1( A, m, percentage, eps, maxit );
+        exec_times(i) = toc;
+    end
+
+    % Tracé de la courbe pour un type de matrice
+    plot(n_values, exec_times, '-o', 'LineWidth', 1.5, ...
+        'DisplayName', ['Type ', num2str(imat)], ...
+        'Color', colors(imat,:));
+end
+
+title('Temps d''exécution de la méthode iterv1');
+xlabel('Taille de la matrice n');
+ylabel('Temps (secondes)');
+legend show;
+grid on;
+hold off;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Mesure le temps d'exécution de la fonction subspace_iter_v2 pour différents types de matrices et tailles
+m = 15;             % nombre de couples propres à calculer
+eps = 1e-8;
+maxit = 10000;
+percentage = 0.5; % seuil de trace cumulée pour arrêter
+p=5;
+
+figure;
+hold on;
+
+for imat = 1:nb_types
+    exec_times = zeros(size(n_values));
+
+    for i = 1:length(n_values)
+        n = n_values(i);
+        [A, ~, ~] = matgen_csad(imat, n);
+
+        tic;
+        [ V, D, n_ev, it, itv, flag ] = subspace_iter_v2( A, m, percentage, p, eps, maxit );
+        exec_times(i) = toc;
+    end
+
+    % Tracé de la courbe pour un type de matrice
+    plot(n_values, exec_times, '-o', 'LineWidth', 1.5, ...
+        'DisplayName', ['Type ', num2str(imat)], ...
+        'Color', colors(imat,:));
+end
+
+title('Temps d''exécution de la méthode iterv1');
+xlabel('Taille de la matrice n');
+ylabel('Temps (secondes)');
+legend show;
+grid on;
+hold off;

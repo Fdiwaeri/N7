@@ -1,0 +1,261 @@
+>> ReconstructionImage
+
+q =
+
+        3656
+
+
+p =
+
+        2560
+
+Décomposition en valeurs singulières
+Elapsed time is 7.787523 seconds.
+Taille de la matrice M : 2560 x 2560
+
+Méthode 1: eig 
+Elapsed time is 8.432667 seconds.
+Reconstruction avec eig
+
+Méthode 2: Power Method avec deflation
+Valeur propre 1: 379462849239.582092 (convergence en 5 itérations)
+Valeur propre 2: 2144560665.491815 (convergence en 40 itérations)
+Valeur propre 3: 1348080993.069249 (convergence en 70 itérations)
+Valeur propre 4: 1074876921.422063 (convergence en 129 itérations)
+Valeur propre 5: 937570602.953798 (convergence en 78 itérations)
+Valeur propre 6: 764617195.186066 (convergence en 730 itérations)
+Valeur propre 7: 749595474.134521 (convergence en 1766 itérations)
+Valeur propre 8: 742512866.028284 (convergence en 67 itérations)
+Valeur propre 9: 579379257.572916 (convergence en 150 itérations)
+Valeur propre 10: 522721879.627703 (convergence en 392 itérations)
+Valeur propre 11: 501539746.982277 (convergence en 262 itérations)
+Valeur propre 12: 475232562.623692 (convergence en 146 itérations)
+Valeur propre 13: 422096487.678437 (convergence en 995 itérations)
+Valeur propre 14: 415786858.372902 (convergence en 153 itérations)
+Valeur propre 15: 372164543.177632 (convergence en 245 itérations)
+Valeur propre 16: 350414944.968422 (convergence en 136 itérations)
+Valeur propre 17: 313221007.756456 (convergence en 1413 itérations)
+Valeur propre 18: 309909001.864851 (convergence en 275 itérations)
+Valeur propre 19: 292110068.243629 (convergence en 355 itérations)
+Valeur propre 20: 278987707.914610 (convergence en 774 itérations)
+Valeur propre 21: 273962840.385275 (convergence en 292 itérations)
+Valeur propre 22: 259959211.285678 (convergence en 496 itérations)
+Valeur propre 23: 251217366.302473 (convergence en 485 itérations)
+Valeur propre 24: 243602974.066413 (convergence en 672 itérations)
+Valeur propre 25: 238435756.956795 (convergence en 241 itérations)
+Valeur propre 26: 224409931.828465 (convergence en 791 itérations)
+Valeur propre 27: 220017829.745153 (convergence en 311 itérations)
+Valeur propre 28: 209470814.201046 (convergence en 397 itérations)
+Valeur propre 29: 201491126.368922 (convergence en 837 itérations)
+Valeur propre 30: 198307150.925834 (convergence en 507 itérations)
+Valeur propre 31: 192606873.809172 (convergence en 481 itérations)
+Valeur propre 32: 187656817.365151 (convergence en 448 itérations)
+Valeur propre 33: 181791101.346132 (convergence en 385 itérations)
+Valeur propre 34: 176601681.632810 (convergence en 917 itérations)
+Valeur propre 35: 174246260.140510 (convergence en 594 itérations)
+Valeur propre 36: 169796820.200615 (convergence en 1326 itérations)
+Valeur propre 37: 167886995.651959 (convergence en 533 itérations)
+Valeur propre 38: 163662765.460417 (convergence en 438 itérations)
+Valeur propre 39: 158428212.387664 (convergence en 383 itérations)
+Valeur propre 40: 151045201.813661 (convergence en 1316 itérations)
+Valeur propre 41: 149510776.329654 (convergence en 1221 itérations)
+Valeur propre 42: 147815899.620670 (convergence en 1804 itérations)
+Valeur propre 43: 146831135.951991 (convergence en 415 itérations)
+Valeur propre 44: 141828177.035524 (convergence en 779 itérations)
+Valeur propre 45: 139030470.433280 (convergence en 1308 itérations)
+Valeur propre 46: 137582644.087587 (convergence en 2478 itérations)
+Valeur propre 47: 136898291.796730 (convergence en 642 itérations)
+Valeur propre 48: 133592009.396972 (convergence en 719 itérations)
+Valeur propre 49: 130794512.665883 (convergence en 2193 itérations)
+Valeur propre 50: 129818883.878300 (convergence en 842 itérations)
+Valeur propre 51: 127741064.096420 (convergence en 448 itérations)
+Valeur propre 52: 123496522.843860 (convergence en 1115 itérations)
+Valeur propre 53: 122225426.656616 (convergence en 1504 itérations)
+Valeur propre 54: 121045108.093828 (convergence en 658 itérations)
+Valeur propre 55: 117552398.551910 (convergence en 2004 itérations)
+Valeur propre 56: 116715466.249571 (convergence en 636 itérations)
+Valeur propre 57: 113857323.961468 (convergence en 10000 itérations)
+Valeur propre 58: 113806171.947141 (convergence en 734 itérations)
+Valeur propre 59: 111493715.248408 (convergence en 770 itérations)
+Valeur propre 60: 109818046.565584 (convergence en 1669 itérations)
+Valeur propre 61: 108906386.352100 (convergence en 622 itérations)
+Valeur propre 62: 106594309.856718 (convergence en 713 itérations)
+Valeur propre 63: 104532971.999146 (convergence en 4106 itérations)
+Valeur propre 64: 104235926.212529 (convergence en 2335 itérations)
+Valeur propre 65: 103710361.024956 (convergence en 719 itérations)
+Valeur propre 66: 101409142.954646 (convergence en 591 itérations)
+Valeur propre 67: 98749450.644260 (convergence en 2061 itérations)
+Valeur propre 68: 98057898.194296 (convergence en 1398 itérations)
+Valeur propre 69: 97002336.087816 (convergence en 935 itérations)
+Valeur propre 70: 95803921.348156 (convergence en 844 itérations)
+Valeur propre 71: 94220051.790641 (convergence en 1585 itérations)
+Valeur propre 72: 93328426.527175 (convergence en 1290 itérations)
+Valeur propre 73: 92295824.018445 (convergence en 1287 itérations)
+Valeur propre 74: 91097356.741062 (convergence en 1621 itérations)
+Valeur propre 75: 90445349.070690 (convergence en 1896 itérations)
+Valeur propre 76: 89894170.898465 (convergence en 468 itérations)
+Valeur propre 77: 87508185.386349 (convergence en 1050 itérations)
+Valeur propre 78: 86188552.189110 (convergence en 2165 itérations)
+Valeur propre 79: 85700097.893404 (convergence en 686 itérations)
+Valeur propre 80: 83985845.733020 (convergence en 8751 itérations)
+Valeur propre 81: 83850161.013306 (convergence en 894 itérations)
+Valeur propre 82: 82630690.103401 (convergence en 951 itérations)
+Valeur propre 83: 80871589.534964 (convergence en 2114 itérations)
+Valeur propre 84: 80224915.390971 (convergence en 1923 itérations)
+Valeur propre 85: 79654507.864096 (convergence en 778 itérations)
+Valeur propre 86: 78085448.456968 (convergence en 1042 itérations)
+Valeur propre 87: 76958251.957642 (convergence en 1285 itérations)
+Valeur propre 88: 76207488.891259 (convergence en 10000 itérations)
+Valeur propre 89: 76159138.606026 (convergence en 765 itérations)
+Valeur propre 90: 74820914.840546 (convergence en 3308 itérations)
+Valeur propre 91: 74530185.975084 (convergence en 1123 itérations)
+Valeur propre 92: 73807327.254551 (convergence en 918 itérations)
+Valeur propre 93: 72702764.672290 (convergence en 2885 itérations)
+Valeur propre 94: 72329658.639750 (convergence en 2932 itérations)
+Valeur propre 95: 71947971.215962 (convergence en 693 itérations)
+Valeur propre 96: 70315372.759960 (convergence en 1012 itérations)
+Valeur propre 97: 69410328.770858 (convergence en 4031 itérations)
+Valeur propre 98: 69202535.198053 (convergence en 1342 itérations)
+Valeur propre 99: 68456830.002084 (convergence en 1616 itérations)
+Valeur propre 100: 67857670.826162 (convergence en 1703 itérations)
+Valeur propre 101: 67328588.143353 (convergence en 943 itérations)
+Valeur propre 102: 66237339.385551 (convergence en 1905 itérations)
+Valeur propre 103: 65592116.270935 (convergence en 1881 itérations)
+Valeur propre 104: 65146522.281967 (convergence en 1282 itérations)
+Valeur propre 105: 64404306.110554 (convergence en 2160 itérations)
+Valeur propre 106: 64008078.703950 (convergence en 2032 itérations)
+Valeur propre 107: 63600992.869524 (convergence en 2179 itérations)
+Valeur propre 108: 63193335.704614 (convergence en 1104 itérations)
+Valeur propre 109: 62393851.472360 (convergence en 1691 itérations)
+Valeur propre 110: 61911631.990907 (convergence en 805 itérations)
+Valeur propre 111: 60794035.220636 (convergence en 4563 itérations)
+Valeur propre 112: 60643125.924590 (convergence en 4857 itérations)
+Valeur propre 113: 60464841.141331 (convergence en 899 itérations)
+Valeur propre 114: 59488655.492284 (convergence en 1083 itérations)
+Valeur propre 115: 58738108.012353 (convergence en 1063 itérations)
+Valeur propre 116: 57992214.392731 (convergence en 3931 itérations)
+Valeur propre 117: 57774234.301338 (convergence en 1443 itérations)
+Valeur propre 118: 57406873.103287 (convergence en 941 itérations)
+Valeur propre 119: 56588141.959837 (convergence en 778 itérations)
+Valeur propre 120: 55819341.846546 (convergence en 1623 itérations)
+Valeur propre 121: 55368687.992463 (convergence en 1433 itérations)
+Valeur propre 122: 54827262.759340 (convergence en 1130 itérations)
+Valeur propre 123: 54198202.874186 (convergence en 1917 itérations)
+Valeur propre 124: 53750211.478003 (convergence en 2391 itérations)
+Valeur propre 125: 53451343.611692 (convergence en 3363 itérations)
+Valeur propre 126: 53242996.771020 (convergence en 1094 itérations)
+Valeur propre 127: 52628717.768083 (convergence en 1837 itérations)
+Valeur propre 128: 52296068.531268 (convergence en 3775 itérations)
+Valeur propre 129: 52127463.689209 (convergence en 1231 itérations)
+Valeur propre 130: 51486187.691068 (convergence en 2402 itérations)
+Valeur propre 131: 51177763.198655 (convergence en 3665 itérations)
+Valeur propre 132: 50920068.947375 (convergence en 725 itérations)
+Valeur propre 133: 49968086.195561 (convergence en 2315 itérations)
+Valeur propre 134: 49685884.456631 (convergence en 3244 itérations)
+Valeur propre 135: 49482023.096017 (convergence en 2073 itérations)
+Valeur propre 136: 49213846.391587 (convergence en 1286 itérations)
+Valeur propre 137: 48656028.838866 (convergence en 2099 itérations)
+Valeur propre 138: 48363539.286587 (convergence en 1406 itérations)
+Valeur propre 139: 47940858.867716 (convergence en 738 itérations)
+Valeur propre 140: 47066543.140472 (convergence en 4155 itérations)
+Valeur propre 141: 46928601.418647 (convergence en 1012 itérations)
+Valeur propre 142: 46346493.560975 (convergence en 2515 itérations)
+Valeur propre 143: 46115977.771628 (convergence en 1091 itérations)
+Valeur propre 144: 45510973.573190 (convergence en 1795 itérations)
+Valeur propre 145: 45207625.553223 (convergence en 2597 itérations)
+Valeur propre 146: 45016116.617774 (convergence en 2593 itérations)
+Valeur propre 147: 44800887.013873 (convergence en 5186 itérations)
+Valeur propre 148: 44662230.363270 (convergence en 550 itérations)
+Valeur propre 149: 43683343.547881 (convergence en 3824 itérations)
+Valeur propre 150: 43525458.574695 (convergence en 3773 itérations)
+Valeur propre 151: 43379429.457988 (convergence en 2670 itérations)
+Valeur propre 152: 43192621.187488 (convergence en 1312 itérations)
+Valeur propre 153: 42688289.538055 (convergence en 10000 itérations)
+Valeur propre 154: 42632748.343471 (convergence en 1495 itérations)
+Valeur propre 155: 42193185.263076 (convergence en 10000 itérations)
+Valeur propre 156: 42161791.637037 (convergence en 2482 itérations)
+Valeur propre 157: 41911239.350141 (convergence en 903 itérations)
+Valeur propre 158: 41186525.515264 (convergence en 1917 itérations)
+Valeur propre 159: 40878949.057215 (convergence en 3742 itérations)
+Valeur propre 160: 40707717.406104 (convergence en 2685 itérations)
+Valeur propre 161: 40508104.360441 (convergence en 1839 itérations)
+Valeur propre 162: 40170011.309655 (convergence en 2221 itérations)
+Valeur propre 163: 39930932.977599 (convergence en 1088 itérations)
+Valeur propre 164: 39326592.894520 (convergence en 1928 itérations)
+Valeur propre 165: 39117298.295290 (convergence en 10000 itérations)
+Valeur propre 166: 39075797.693447 (convergence en 2138 itérations)
+Valeur propre 167: 38831578.537266 (convergence en 900 itérations)
+Valeur propre 168: 38223626.152123 (convergence en 3201 itérations)
+Valeur propre 169: 38070988.252785 (convergence en 3944 itérations)
+Valeur propre 170: 37931991.767402 (convergence en 1013 itérations)
+Valeur propre 171: 37356618.761582 (convergence en 5478 itérations)
+Valeur propre 172: 37271628.910745 (convergence en 1497 itérations)
+Valeur propre 173: 36957333.467179 (convergence en 2134 itérations)
+Valeur propre 174: 36685148.728993 (convergence en 3042 itérations)
+Valeur propre 175: 36511489.251588 (convergence en 1404 itérations)
+Valeur propre 176: 36091246.339271 (convergence en 2487 itérations)
+Valeur propre 177: 35867391.499081 (convergence en 3622 itérations)
+Valeur propre 178: 35751422.050056 (convergence en 1789 itérations)
+Valeur propre 179: 35481748.978102 (convergence en 1807 itérations)
+Valeur propre 180: 35198068.069023 (convergence en 1283 itérations)
+Valeur propre 181: 34833169.195941 (convergence en 3469 itérations)
+Valeur propre 182: 34715857.044382 (convergence en 1454 itérations)
+Valeur propre 183: 34417223.860180 (convergence en 2708 itérations)
+Valeur propre 184: 34239817.882116 (convergence en 2663 itérations)
+Valeur propre 185: 34076756.767815 (convergence en 1839 itérations)
+Valeur propre 186: 33806700.033755 (convergence en 4292 itérations)
+Valeur propre 187: 33717461.109671 (convergence en 1796 itérations)
+Valeur propre 188: 33482748.038861 (convergence en 1112 itérations)
+Valeur propre 189: 33090716.321747 (convergence en 1903 itérations)
+Valeur propre 190: 32892173.457509 (convergence en 1807 itérations)
+Valeur propre 191: 32628364.351041 (convergence en 3448 itérations)
+Valeur propre 192: 32493582.428623 (convergence en 1575 itérations)
+Valeur propre 193: 32214776.549872 (convergence en 2152 itérations)
+Valeur propre 194: 32044658.120325 (convergence en 1550 itérations)
+Valeur propre 195: 31738201.833575 (convergence en 2442 itérations)
+Valeur propre 196: 31561697.678450 (convergence en 1178 itérations)
+Valeur propre 197: 31201996.008613 (convergence en 2898 itérations)
+Valeur propre 198: 31065128.749578 (convergence en 7239 itérations)
+Valeur propre 199: 31005511.000334 (convergence en 827 itérations)
+Valeur propre 200: 30437929.742681 (convergence en 3558 itérations)
+Elapsed time is 705.286579 seconds.
+Reconstruction avec power method
+
+Méthode 3: subspace_iter_v0
+Elapsed time is 238.053207 seconds.
+Reconstruction avec subspace_iter_v0
+
+Méthode 4: subspace_iter_v1
+Elapsed time is 7.708854 seconds.
+Reconstruction avec subspace_iter_v1
+
+Méthode 5: subspace_iter_v2
+Elapsed time is 7.740429 seconds.
+Reconstruction avec subspace_iter_v2
+
+Méthode 6: subspace_iter_v3
+Elapsed time is 7.690943 seconds.
+Reconstruction avec subspace_iter_v3
+
+
+
+
+
+
+
+
+
+
+
+
+Comparaison des temps d'exécution et des erreurs:
+-------------------------------------------------------
+Méthode       | Temps (s) | RMSE (k=40) | RMSE (k=200)
+-------------------------------------------------------
+SVD standard  |  477.4345 |   181278.44 |    75489.21
+eig           |  477.4358 |   181278.44 |    75489.21
+Power Method  |  477.4372 |   181278.44 |    75489.21
+subspace_v0   |  477.4388 |   181278.44 |    75489.21
+subspace_v1   |  477.4399 |   181278.44 |    75489.21
+subspace_v2   |  477.4408 |   181278.44 |    75489.21
+-------------------------------------------------------

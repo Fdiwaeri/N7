@@ -1,0 +1,442 @@
+type de la matrice (voir matgen_csad)
+% imat == 1 valeurs propres D(i) = i
+% imat == 2 valeurs propres D(i) = random(1/cond, 1) avec leur logarithmes
+%                                  uniformément répartie, cond = 1e10
+% imat == 3 valeurs propres D(i) = cond**(-(i-1)/(n-1)) avec cond = 1e5
+% imat == 4 valeurs propres D(i) = 1 - ((i-1)/(n-1))*(1 - 1/cond) avec cond = 1e2
+
+imat == 1
+Matrice 100 x 100 - type 1
+
+******* création de la matrice ******
+
+Temps de création de la matrice = 3.000e-02
+
+******* calcul avec eig ******
+
+Temps eig = 0.000e+00
+Qualité des couples propres (par rapport au critère d'arrêt) = [6.247e-16 , 3.718e-14]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [0.000e+00 , 7.359e-15] 
+
+Matrice 100 x 100 - type 1
+
+******* calcul avec la méthode de la puissance itérée ******
+
+Temps puissance itérée = 3.000e-02
+Nombre de valeurs propres pour attendre le pourcentage = 6
+Qualité des couples propres (par rapport au critère d'arrêt) = [9.941e-09 , 1.422e-08]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [0.000e+00 , 9.948e-15] 
+
+-- On remarque que la méthode de la puissance itérée est plus lente que la méthode eigen de Matlab  
+
+
+
+
+
+
+
+
+
+
+
+
+
+imat == 2
+Matrice 100 x 100 - type 2
+
+******* création de la matrice ******
+
+Temps de création de la matrice = 2.000e-02
+
+******* calcul avec eig ******
+
+Temps eig = 0.000e+00
+Qualité des couples propres (par rapport au critère d'arrêt) = [2.625e-16 , 5.036e-07]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [0.000e+00 , 1.700e-07] 
+
+Matrice 100 x 100 - type 2
+
+******* calcul avec la méthode de la puissance itérée ******
+
+Temps puissance itérée = 1.000e-02
+Nombre de valeurs propres pour attendre le pourcentage = 1
+Qualité des couples propres (par rapport au critère d'arrêt) = [7.141e-09 , 7.141e-09]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [4.381e-16 , 4.381e-16]  
+
+Dans ce cas (imat == 2), pour plusieurs run, j'ai eu le meme temps pour les deux méthodes, mais après avoir exécuté plusieurs fois, eig est plus rapide
+
+
+
+
+
+
+
+
+
+
+
+
+imat == 3
+Matrice 100 x 100 - type 3
+
+******* création de la matrice ******
+
+Temps de création de la matrice = 2.000e-02
+
+******* calcul avec eig ******
+
+Temps eig = 1.000e-02
+Qualité des couples propres (par rapport au critère d'arrêt) = [4.001e-16 , 2.962e-11]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [0.000e+00 , 5.761e-12] 
+
+Matrice 100 x 100 - type 3
+
+******* calcul avec la méthode de la puissance itérée ******
+
+Temps puissance itérée = 0.000e+00
+Nombre de valeurs propres pour attendre le pourcentage = 1
+Qualité des couples propres (par rapport au critère d'arrêt) = [9.375e-09 , 9.375e-09]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [8.882e-16 , 8.882e-16] 
+
+Pour ce 3eme cas, la methde eig est plus lente (apres des run) que la methode de puissance itérée mais pour d'autres cas elles sont egales ou eig est plus rapide
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+imat == 4
+
+Matrice 100 x 100 - type 4
+
+******* création de la matrice ******
+
+Temps de création de la matrice = 5.000e-02
+
+******* calcul avec eig ******
+
+Temps eig = 1.000e-02
+Qualité des couples propres (par rapport au critère d'arrêt) = [5.727e-16 , 5.434e-14]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [0.000e+00 , 1.266e-14] 
+
+Matrice 100 x 100 - type 4
+
+******* calcul avec la méthode de la puissance itérée ******
+
+Temps puissance itérée = 6.000e-02
+Nombre de valeurs propres pour attendre le pourcentage = 6
+Qualité des couples propres (par rapport au critère d'arrêt) = [9.941e-09 , 1.422e-08]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [1.156e-16 , 9.770e-15] 
+eig plus rapide
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(Rapport : 6 cases : qualité des vecteurs propres pour m1, qualité des valeurs propres 
+imat == 1 
+On change la taille de la matrice pour comparer la performance des deux méthodes. 
+Pour n= 500,600,..,699, on remarque que le temps de la création de la matrice augmente. Pour la méthode de puissance itérée, le nombre de valeurs propres pour attendre le pourcentage augmente. 
+Pour  n >= 700, l'algorithme ne converge plus 
+
+Matrice 700 x 700 - type 1
+
+******* calcul avec la méthode de la puissance itérée ******
+puissance_itérée : convergence non atteinte pour un des couples propres
+Qualité des couples propres (par rapport au critère d'arrêt) = [0.000e+00 , 0.000e+00]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [0.000e+00 , 0.000e+00] 
+
+imat == 2 
+Dans ce cas , l'algorithme converge meme pour de grandes tailles de la matrice mais le temps de convergence augmente 
+
+
+
+
+
+__________________________
+Algo 2
+>> test_v0v1
+
+Matrice 100 x 100 - type 1
+
+******* création de la matrice ******
+
+Temps de création de la matrice = 2.000e-02
+
+******* calcul avec subspace iteration v0 ******
+
+Temps subspace iteration v0 = 4.800e-01
+Nombre d'itérations : 810
+Qualité des couples propres (par rapport au critère d'arrêt) = [1.253e-08 , 1.629e-07]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [1.512e-16 , 4.088e-13] 
+
+Matrice 100 x 100 - type 1
+
+******* calcul avec subspace iteration v1 ******
+
+Temps subspace iteration v1 = 1.600e-01
+Nombre d'itérations : 87
+Nombre de valeurs propres pour attendre le pourcentage = 6
+Qualité des couples propres (par rapport au critère d'arrêt) = [4.224e-09 , 6.019e-08]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [1.945e-15 , 2.398e-14]
+
+
+
+
+
+QUESTION 2
+Matrice 300 x 300 - type 1
+
+******* création de la matrice ******
+
+Temps de création de la matrice = 3.100e-01
+
+******* calcul avec la méthode de la puissance itérée ******
+
+Temps puissance itérée = 2.790e+00
+Nombre de valeurs propres pour attendre le pourcentage = 16
+Qualité des couples propres (par rapport au critère d'arrêt) = [9.969e-09 , 1.418e-08]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [0.000e+00 , 3.013e-14] 
+
+Matrice 300 x 300 - type 1
+
+******* calcul avec la méthode de la puissance itérée améliorée ******
+
+Temps puissance itérée = 1.520e+00
+Nombre de valeurs propres pour attendre le pourcentage = 16
+Qualité des couples propres (par rapport au critère d'arrêt) = [9.986e-09 , 1.418e-08]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [0.000e+00 , 3.013e-14] 
+v12 2 fois plus rapide que v11
+
+
+
+QUESTION 3
+La mise  jour à chaque étape du produit matrice*vecteur rend la méthode pus lente surtout pour de larges matrices
+
+
+QUESTION 4
+sI ON APPLIQUE DIRECTEMENT L'ALGORITHME 1 À M VECTEURS, on converge vers une matrice V dont les coonnes représentent toutes le meme vecteur propre dominant, clui associé à la plus grande valeur propre en module. En fait, puisque à chaque itération le vectur v est multiplié par A , donc la composante associée à la plus grane vp va croitre exponentiellemet plus vite que le autres et tous les vecteurs tendront à s aligner sur le vp v1 associe à lambda 1
+
+
+QUESTION 5
+H est une matrice de taille m*m où m<<n(m représente le nombre de vp dominantes qu'on cherche). Ainsi, le calcul de la décomposition spectrale de H est rapide et non couteux et donc ne pose pas de problème.
+
+QUESTION 6
+Matrice 100 x 100 - type 1
+
+******* création de la matrice ******
+
+Temps de création de la matrice = 1.000e-02
+
+******* calcul avec subspace iteration v0 ******
+
+Temps subspace iteration v0 = 5.400e-01
+Nombre d'itérations : 810
+Qualité des couples propres (par rapport au critère d'arrêt) = [1.253e-08 , 1.629e-07]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [1.512e-16 , 4.088e-13] 
+
+Matrice 100 x 100 - type 1
+
+******* calcul avec subspace iteration v1 ******
+
+Temps subspace iteration v1 = 1.300e-01
+Nombre d'itérations : 87
+Nombre de valeurs propres pour attendre le pourcentage = 6
+Qualité des couples propres (par rapport au critère d'arrêt) = [4.224e-09 , 6.019e-08]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [1.945e-15 , 2.398e-14] 
+
+
+QUESTION 7
+
+
+QUESTION 8
+Le calcul,de A^p est très couteux en termes de flops (p multiplications matricielles donc environ (p-1)*n^3 flops en utilisant le fait que A^k = A* A^(k-1)) et A^p*V ca fait encore 1 multiplication donc 2*n^2*m flops. Au lieu d'écrire Y=A^p*V, on peut boucler  à l aide de 
+for (i=1:p) 
+    Y = A*Y;
+end
+avec un total de 2pn^2m flops , beaucoup plus raisonnable
+
+
+QUESTION 9 
+
+
+QUESTION 10
+_______________________________p = 10
+Matrice 300 x 300 - type 1
+
+******* création de la matrice ******
+
+Temps de création de la matrice = 4.300e-01
+
+******* calcul avec subspace iteration v0 ******
+
+Temps subspace iteration v0 = 2.666e+01
+Nombre d'itérations : 2115
+Qualité des couples propres (par rapport au critère d'arrêt) = [2.948e-10 , 6.612e-06]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [0.000e+00 , 4.477e-12] 
+
+Matrice 300 x 300 - type 1
+
+******* calcul avec subspace iteration v1 ******
+
+Temps subspace iteration v1 = 1.870e+00
+Nombre d'itérations : 100
+Nombre de valeurs propres pour attendre le pourcentage = 68
+Qualité des couples propres (par rapport au critère d'arrêt) = [3.148e-15 , 1.177e-07]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [7.922e-16 , 1.011e-13] 
+
+Matrice 300 x 300 - type 1
+
+******* calcul avec subspace iteration v2 ******
+
+Temps subspace iteration v2 = 3.600e-01
+Nombre d'itérations : 10
+Nombre de valeurs propres pour attendre le pourcentage = 68
+Qualité des couples propres (par rapport au critère d'arrêt) = [2.748e-15 , 1.177e-07]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [0.000e+00 , 9.826e-14]
+________________________________p=50
+Matrice 300 x 300 - type 1
+
+******* création de la matrice ******
+
+Temps de création de la matrice = 3.100e-01
+
+******* calcul avec subspace iteration v0 ******
+
+Temps subspace iteration v0 = 2.685e+01
+Nombre d'itérations : 2115
+Qualité des couples propres (par rapport au critère d'arrêt) = [2.948e-10 , 6.612e-06]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [0.000e+00 , 4.477e-12] 
+
+Matrice 300 x 300 - type 1
+
+******* calcul avec subspace iteration v1 ******
+
+Temps subspace iteration v1 = 1.930e+00
+Nombre d'itérations : 100
+Nombre de valeurs propres pour attendre le pourcentage = 68
+Qualité des couples propres (par rapport au critère d'arrêt) = [3.148e-15 , 1.177e-07]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [7.922e-16 , 1.011e-13] 
+
+Matrice 300 x 300 - type 1
+
+******* calcul avec subspace iteration v2 ******
+
+Temps subspace iteration v2 = 1.100e-01
+Nombre d'itérations : 2
+Nombre de valeurs propres pour attendre le pourcentage = 68
+Qualité des couples propres (par rapport au critère d'arrêt) = [2.347e-15 , 1.177e-07]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [0.000e+00 , 9.826e-14] 
+
+_____________________________________p = 100
+Matrice 300 x 300 - type 1
+
+******* création de la matrice ******
+
+Temps de création de la matrice = 3.500e-01
+
+******* calcul avec subspace iteration v0 ******
+
+Temps subspace iteration v0 = 2.765e+01
+Nombre d'itérations : 2115
+Qualité des couples propres (par rapport au critère d'arrêt) = [2.948e-10 , 6.612e-06]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [0.000e+00 , 4.477e-12] 
+
+Matrice 300 x 300 - type 1
+
+******* calcul avec subspace iteration v1 ******
+
+Temps subspace iteration v1 = 1.960e+00
+Nombre d'itérations : 100
+Nombre de valeurs propres pour attendre le pourcentage = 68
+Qualité des couples propres (par rapport au critère d'arrêt) = [3.148e-15 , 1.177e-07]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [7.922e-16 , 1.011e-13] 
+
+Matrice 300 x 300 - type 1
+
+******* calcul avec subspace iteration v2 ******
+subspace iteration v2 : convergence non atteinte: 10000
+Qualité des couples propres (par rapport au critère d'arrêt) = [0.000e+00 , 0.000e+00]
+Qualité des valeurs propres (par rapport au spectre de la matrice) = [0.000e+00 , 0.000e+00] 
+_________________Augmenter p --> reduire le nb d iterations. Cependant pour p très grand, l algo ne converge pas
+
+
+QUESTION 11
+ On calcule dans l'algorithme plusieurs vecteurs propres en mm tps; Or, à chaque itération les vecteurs de V ne convergent pas à la meme vitesse(les vecteurs associés aux vps maximales convergent plus rapidement).Ainsi, à la fin de l algorithme, certains vecteurs respecteront la condition de convergence ∥A · v − β · v∥/|β| mais d'autes non, ce qui fait la différence de précision.
+ Qualité des couples propres (par rapport au critère d'arrêt) = [4.224e-09 , 6.019e-08]
+ 
+ QUESTION 12
+ Dans subspace_iter_v3, dès qu'un vecteur propre est considéré comme convergé, il est figé, et on continue l'itération uniquement sur les autres vecteurs. Les vecteurs propres vont rester très précis car ils convergent vite et sont figés tot. Les vecteurs suivants vont etre traités avec plus de précision car on se concentre uniquement sur eux une fois les précédents convergés. Cela améliore la précision globale des couples propres comparée aux versions v1 et v2.
+ 
+ QUESTION 13
+ 
+ QUESTION 14
+ Matrice de type 1 : décroissance linéaire
+
+Comme on le voit dans la Figure 1, les valeurs propres des matrices de type 1 sont réparties de manière uniforme. Elles décroissent linéairement avec l’indice, depuis la plus grande jusqu’à la plus petite.
+Cette structure produit un spectre régulier et bien étalé, et est typique de matrices bien conditionnées avec une séparation progressive des directions principales. Ce type est particulièrement adapté à des méthodes comme la déflation ou les méthodes basées sur des sous-espaces.
+
+⸻
+
+Matrice de type 2 : valeurs dominantes isolées
+
+La Figure 2 révèle que les matrices de type 2 possèdent quelques valeurs propres très dominantes, suivies d’une chute brutale. La majorité des autres valeurs propres sont proches de zéro.
+Cette structure spectrale traduit une forte domination d’un petit sous-espace, ce qui est idéal pour les méthodes de la puissance, qui convergent rapidement vers la plus grande valeur propre. Ce type de spectre est typique de matrices avec une direction principale très marquée.
+
+⸻
+
+Matrice de type 3 : décroissance exponentielle
+
+La Figure 3 montre un spectre à décroissance rapide, typique d’une distribution exponentielle. On observe une courbe qui chute fortement sur les premières valeurs, puis se stabilise à des valeurs très faibles.
+Ce type de matrice est mal conditionné, avec un rapport spectral élevé, ce qui peut poser problème à certaines méthodes (comme les itérations standards). Il convient de préférer ici des méthodes robustes ou des techniques de régularisation.
+
+⸻
+
+Matrice de type 4 : blocs ou décroissance par paliers
+
+Enfin, la Figure 4 représente le spectre du type 4. On observe une décroissance par paliers, indiquant des blocs de valeurs propres constantes. Cela correspond à des matrices construites avec des sous-blocs dominants.
+Ces matrices sont intéressantes pour tester l’efficacité des méthodes de projection par blocs ou de déflation ciblée, car la convergence peut être affectée par la redondance spectrale.
+
+
+ QUESTION 15
+ 1.	Méthode eig (Figure 1)
+	•	La plus rapide globalement (temps < 0.015 s), quelle que soit la taille ou le type.
+	•	Le temps croît presque linéairement avec la taille.
+	•	La méthode est très bien optimisée, surtout pour les petites matrices.
+	2.	Méthode power_v11 (Figure 2)
+	•	Temps bien plus élevé que eig, surtout pour les types 1 et 4.
+	•	Le type 2 est bien plus rapide à converger, car il possède une valeur propre dominante isolée.
+	•	Méthode sensible à la structure spectrale.
+	3.	Méthode subspace_iter_v0 (Figure 3)
+	•	Temps d’exécution intermédiaire, plus stable entre les types.
+	•	Le temps croît plus vite avec la taille que eig, mais reste raisonnable.
+	•	Type 3 montre quelques irrégularités (effet du conditionnement ?).
+	4.	Méthode subspace_iter_v1 (Figure 4)
+	•	Similaire à v0 mais avec l’ajout de Rayleigh-Ritz.
+	•	Légèrement plus coûteuse que v0, mais plus stable sur certains types.
+	5.	Méthode subspace_iter_v2 (Figures 5 et 6)
+	•	Plus lente que les autres, surtout pour les matrices type 1 et 4.
+	•	Cela est dû à l’orthonormalisation répétée et aux produits répétés A^p \cdot V.
+	•	Très sensible au type de matrice : performances mauvaises sur les spectres étalés.

@@ -1,0 +1,249 @@
+Pour BD_Asterix_1.png:
+>> ReconstructionImage
+
+q =
+
+        1187
+
+
+p =
+
+        1920
+
+Décomposition en valeurs singulières
+Elapsed time is 0.522742 seconds.
+Taille de la matrice M : 1187 x 1187
+
+Méthode 1: eig 
+Elapsed time is 0.732663 seconds.
+Reconstruction avec eig
+
+Méthode 2: Power Method avec deflation
+Elapsed time is 101.642051 seconds.
+Reconstruction avec power method
+
+Méthode 3: subspace_iter_v0
+Elapsed time is 55.879098 seconds.
+Reconstruction avec subspace_iter_v0
+
+Méthode 4: subspace_iter_v1
+Elapsed time is 1.555076 seconds.
+Reconstruction avec subspace_iter_v1
+
+Méthode 5: subspace_iter_v2
+Elapsed time is 1.360845 seconds.
+Reconstruction avec subspace_iter_v2
+
+Méthode 6: subspace_iter_v3
+Elapsed time is 1.619715 seconds.
+Reconstruction avec subspace_iter_v3
+
+
+
+Pour BD_Asterix_2.png:
+>> ReconstructionImage
+
+q =
+
+        1187
+
+
+p =
+
+   944
+
+Décomposition en valeurs singulières
+Elapsed time is 0.213449 seconds.
+Taille de la matrice M : 944 x 944
+
+Méthode 1: eig 
+Elapsed time is 0.420125 seconds.
+Reconstruction avec eig
+
+Méthode 2: Power Method avec deflation
+Elapsed time is 47.524445 seconds.
+Reconstruction avec power method
+
+Méthode 3: subspace_iter_v0
+Elapsed time is 34.893863 seconds.
+Reconstruction avec subspace_iter_v0
+
+Méthode 4: subspace_iter_v1
+Elapsed time is 0.889281 seconds.
+Reconstruction avec subspace_iter_v1
+
+Méthode 5: subspace_iter_v2
+Elapsed time is 0.832262 seconds.
+Reconstruction avec subspace_iter_v2
+
+Méthode 6: subspace_iter_v3
+Elapsed time is 0.911960 seconds.
+Reconstruction avec subspace_iter_v3
+
+
+
+Pour BD_Asterix_Colored.jpg:
+>> ReconstructionImage
+
+q =
+
+   931
+
+
+p =
+
+   750
+
+Décomposition en valeurs singulières
+Elapsed time is 0.494512 seconds.
+Taille de la matrice M : 750 x 750
+
+Méthode 1: eig 
+Elapsed time is 0.185485 seconds.
+Reconstruction avec eig
+
+Méthode 2: Power Method avec deflation
+Elapsed time is 12.136361 seconds.
+Reconstruction avec power method
+
+Méthode 3: subspace_iter_v0
+Elapsed time is 27.126260 seconds.
+Reconstruction avec subspace_iter_v0
+
+Méthode 4: subspace_iter_v1
+Elapsed time is 0.812628 seconds.
+Reconstruction avec subspace_iter_v1
+
+Méthode 5: subspace_iter_v2
+Elapsed time is 0.902496 seconds.
+Reconstruction avec subspace_iter_v2
+
+Méthode 6: subspace_iter_v3
+Elapsed time is 0.848457 seconds.
+Reconstruction avec subspace_iter_v3
+
+
+
+Pour BD_Spirou_1.jpg:
+>> ReconstructionImage
+
+q =
+
+        3385
+
+
+p =
+
+        3296
+
+Décomposition en valeurs singulières
+Elapsed time is 10.748595 seconds.
+Taille de la matrice M : 3296 x 3296
+
+Méthode 1: eig 
+Elapsed time is 13.907722 seconds.
+Reconstruction avec eig
+
+Méthode 2: Power Method avec deflation
+Elapsed time is 895.761765 seconds.
+Reconstruction avec power method
+
+Méthode 3: subspace_iter_v0
+Elapsed time is 497.096097 seconds.
+Reconstruction avec subspace_iter_v0
+
+Méthode 4: subspace_iter_v1
+Elapsed time is 6.584834 seconds.
+Reconstruction avec subspace_iter_v1
+
+Méthode 5: subspace_iter_v2
+Elapsed time is 6.706168 seconds.
+Reconstruction avec subspace_iter_v2
+
+Méthode 6: subspace_iter_v3
+Elapsed time is 19.596639 seconds.
+Reconstruction avec subspace_iter_v3
+
+
+
+Pour BD_Spirou_2.jpg:
+>> ReconstructionImage
+
+q =
+
+        3656
+
+
+p =
+
+        2560
+
+Décomposition en valeurs singulières
+Elapsed time is 7.787523 seconds.
+Taille de la matrice M : 2560 x 2560
+
+Méthode 1: eig 
+Elapsed time is 8.432667 seconds.
+Reconstruction avec eig
+
+Méthode 2: Power Method avec deflation
+Elapsed time is 705.286579 seconds.
+Reconstruction avec power method
+
+Méthode 3: subspace_iter_v0
+Elapsed time is 238.053207 seconds.
+Reconstruction avec subspace_iter_v0
+
+Méthode 4: subspace_iter_v1
+Elapsed time is 7.708854 seconds.
+Reconstruction avec subspace_iter_v1
+
+Méthode 5: subspace_iter_v2
+Elapsed time is 7.740429 seconds.
+Reconstruction avec subspace_iter_v2
+
+Méthode 6: subspace_iter_v3
+Elapsed time is 7.690943 seconds.
+Reconstruction avec subspace_iter_v3
+
+
+
+Pour BD_Thorgal_1.jpg:
+>> ReconstructionImage
+
+q =
+
+        7229
+
+
+p =
+
+        5634
+
+Décomposition en valeurs singulières
+Elapsed time is 49.144706 seconds.
+Taille de la matrice M : 5634 x 5634
+
+Méthode 1: eig 
+Elapsed time is 75.331629 seconds.
+Reconstruction avec eig
+
+Méthode 2: Power Method avec deflation
+Elapsed time is  seconds.
+Reconstruction avec power method
+
+Méthode 3: subspace_iter_v0
+Elapsed time is  seconds.
+Reconstruction avec subspace_iter_v0
+
+Méthode 4: subspace_iter_v1
+Elapsed time is 33.264162 seconds.
+Reconstruction avec subspace_iter_v1
+
+Méthode 5: subspace_iter_v2
+Elapsed time is  seconds.
+Reconstruction avec subspace_iter_v2
+
+Méthode 6: subspace_iter_v3
+Elapsed time is  seconds.
+Reconstruction avec subspace_iter_v3
