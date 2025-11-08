@@ -1,0 +1,9 @@
+module addsub32(a[31..0], b[31..0], sub : s[31..0], C, V)
+	f[31..0] = /sub*b[31..0] + sub*/b[31..0]
+	adder32(a[31..0], f[31..0], sub : s[31..0], cout)
+   C = /sub*cout+/cout*sub
+   V = 	/a[31]*/b[31]*s[31]*/sub + 
+   		a[31]*b[31]*/s[31]*/sub + 
+         /a[31]*b[31]*s[31]*sub +
+         a[31]*/b[31]*/s[31]*sub
+end module

@@ -1,0 +1,12 @@
+module sequenceur(rst, clk, ir[31..16] : fetch, decode, pcplus1, areg[3..0], breg[3..0], dreg[3..0], ualCmd[3..0], dbusIn[1..0], write, setFlags)
+	fetch := pcplus1 on clk set when rst
+   decode := fetch on clk reset when rst
+   pcplus1 := decode * /ir[31] on clk reset when rst
+   areg[3..0] = fetch * "1110" + decode * /ir[31] * ir[23..20] + pcplus1 * "1110"
+   breg[3..0] = fetch * "0000" + decode * /ir[31] * (ir[31..28] + ir[19..16]) + pcplus1 * "0001"
+   dreg[3..0] = fetch * "1111" + decode * /ir[31] * "0010"
+   ualCmd[3..0] = fetch * "0000" + decode * /ir[31] * (ir[31..28] + ir[19..16]) + pcplus1 * "0000"
+   dbusIn[1..0] = fetch * "10" + decode * /ir[31] * "01" + pcplus1 * "01"
+   write = fetch * 0 + decode * /ir[31] * 0 + pcplus1 * 0
+	setFlags = decode * /ir[31]
+end module

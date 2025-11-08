@@ -1,0 +1,24 @@
+module tp7_sequenceur(rst, clk, ir[31..15] : fetch, decode,operande2, pcplus1,areg[3..0],breg[3..0], dreg[3..0],ualCmd[3..0], dbusIn[1..0], write)
+	// Qst A
+	// Avant d’exécuter l’opération arithmétique, on a besoin de charger la valeur située à l’adresse
+   // contenue dans rad2 dans un registre temporaire. Cela revient à exécuter l’instruction suivante :
+   // ld [%rad2], %tmp
+   // avec %tmp un registre temporaire utilisé pour stocker la valeur lue en mémoire.
+   
+   // Qst B
+   // état de départ            état d’arrivée            condition                   actions
+   //     decode	                 operande2         ir[31]=0 et ir[15]=1         lire la valeur de rad2  en memoire 
+                                                      
+   //    operande2                  pcplus1                   -                   %rs1, [%rad2], %rdest 
+                                                                                 
+   //     pcplus1                   fetch                     -                   pc<- pc +1
+
+   // Les états
+	fetch := pcplus1 on clk set when rst
+	decode := fetch on clk reset when rst
+	operande2 := decodeal on clk reset when rst
+	pcplus1 := operande2 on clk reset when rst
+   // Les transitions
+	decodeal = decode*/ir[31]*ir[15]
+
+end module

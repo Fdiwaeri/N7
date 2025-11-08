@@ -1,0 +1,13 @@
+module ual(a[31..0], b[31..0], cmd[3..0] : s[31..0], N, Z, V, C)
+	//Addition ou soustraction
+   ucmp32(s[31..0], "00000000000000000000000000000000" : ssup0, Z)
+   sub = /cmd[3] * /cmd[2] * /cmd[1] * cmd[0]
+   addsub32(a[31..0], b[31..0], sub : sum[31..0], C, V)
+   N = s[31]
+   //Sigextend24
+   cmdsig = cmd[3] * cmd[2] * /cmd[1] * /cmd[0]
+   sigext24[31..0] = a[23] * "11111111" & a[23..0]
+   //resultat
+   s[31..0] = cmdsig * sigext24[31..0] + /cmdsig * sum[31..0]
+   
+end module

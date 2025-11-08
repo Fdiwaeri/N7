@@ -1,0 +1,9 @@
+module Etats_Tri_Tab(rst, clk, cal, maxOK, finTab: INITAD, CALMAX, ETAT1, ETAT2, ETAT3, FINI)
+	//ETATS
+	INITAD := /cal on clk set when rst
+   CALMAX := INITAD*cal + CALMAX*cal*/maxOK + ETAT3*cal*/finTab on clk reset when rst
+	ETAT1 := CALMAX*cal*maxOK on clk reset when rst
+   ETAT2 := ETAT1*cal on clk reset when rst
+   ETAT3 := ETAT2*cal on clk reset when rst
+   FINI := ETAT3*cal*finTab + FINI*cal on clk reset when rst
+end module

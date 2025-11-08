@@ -1,0 +1,14 @@
+module sequenceur_2(rst, clk, ir[31..16] : fetch, decode, pcplus1, set, areg[3..0], breg[3..0], dreg[3..0], ualCmd[3..0], dbusIn[1..0], write, setFlags)
+	fetch := pcplus1 + set on clk set when rst
+   decode := fetch on clk reset when rst
+   pcplus1 := decode * /ir[31] on clk reset when rst
+   set := decode * ir[31] * ir[30] * /ir[29] * /ir[28] on clk reset when rst
+   areg[3..0] = fetch * "1110" + decode * /ir[31] * ir[23..20] + (pcplus1 + set) * "1110" + decode * ir[31] * ir[30] * /ir[29] * /ir[28] * "1111"
+   breg[3..0] = fetch * "0000" + decode * /ir[31] * ir[19..16] + (pcplus1 + set) * "0001" + decode * ir[31] * ir[30] * /ir[29] * /ir[28] * "0000"
+   dreg[3..0] = fetch * "1111" + decode * /ir[31] * ir[27..24] + (pcplus1 + set) * "1110" + decode * ir[31] * ir[30] * /ir[29] * /ir[28] * ir[27..24]
+   ualCmd[3..0] = fetch * "0000" + decode * /ir[31] * ir[31..28] + (pcplus1 + set) * "0000" + decode * ir[31] * ir[30] * /ir[29] * /ir[28] * ir[31..28]
+   dbusIn[1..0] = fetch * "10" + decode * /ir[31] * "01" + (pcplus1 + set) * "01" + decode * ir[31] * ir[30] * /ir[29] * /ir[28] * "01"
+   write = fetch * 0 + decode * /ir[31] * 0 + (pcplus1 + set) * 0 + decode * ir[31] * ir[30] * /ir[29] * /ir[28] * 0
+	setFlags = decode * /ir[31] + decode * ir[31] * ir[30] * /ir[29] * /ir[28]
+   
+end module

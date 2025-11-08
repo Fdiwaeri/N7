@@ -1,0 +1,23 @@
+module count8_init (rst, clk, init, en, e[7..0] : c[7..0])
+  c[0] := e[0]*init + /c[0]*/init on clk reset when rst enabled when en  
+  c[1] := e[1]*init + /c[1]*c[0]*/init + c[1]*/c[0]*/init on clk reset when rst enabled when en  
+  X1 = c[0]*c[1]
+  
+  c[2] := e[2]*init + /c[2]*X1*/init + c[2]*/X1*/init on clk reset when rst enabled when en  
+  X2 = X1*c[2]
+
+  c[3] := e[3]*init + /c[3]*X2*/init + c[3]*/X2*/init on clk reset when rst enabled when en  
+  X3 = X2*c[3]
+
+  c[4] := e[4]*init + /c[4]*X3*/init + c[4]*/X3*/init on clk reset when rst enabled when en  
+  X4 = X3*c[4]
+
+  c[5] := e[5]*init + /c[5]*X4*/init + c[5]*/X4*/init on clk reset when rst enabled when en  
+  X5 = X4*c[5]
+
+  c[6] := e[6]*init + /c[6]*X5*/init + c[6]*/X5*/init on clk reset when rst enabled when en
+  X6 = X5*c[6]
+
+  c[7] := e[7]*init + /c[7]*X6*/init + c[7]*/X6*/init on clk reset when rst enabled when en
+
+end module

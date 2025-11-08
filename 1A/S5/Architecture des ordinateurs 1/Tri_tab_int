@@ -1,0 +1,14 @@
+module Tri_tab_int(rst, clk, cal, ad1[7..0], ad2[7..0], maxOK : etats[4..0], CALMAX, adCour[7..0])
+	
+   Etats_Tri_Tab(rst, clk, cal, maxOK, finTab: INITAD, CALMAX, ETAT1, ETAT2, ETAT3, FINI)
+   etats[0] = INITAD
+   etats[1] = CALMAX
+   etats[2] = ETAT1
+   etats[3] = ETAT2
+   etats[4] = ETAT3
+   etats[5] = FINI
+   count = ETAT2*cal + INITAD*cal
+   init = INITAD
+   count8_b1_b2(rst, clk, init, count, ad1[7..0], ad2[7..0] : adCour[7..0])
+   ucmp8(adCour[7..0], ad2[7..0] : adCouranteSupAd2, finTab)
+end module

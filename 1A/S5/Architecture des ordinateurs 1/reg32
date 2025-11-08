@@ -1,0 +1,6 @@
+module reg32(rst, clk, en, e[31..0]: sr[31..0])
+	reg8_D(rst, clk, en, e[7..0] : sr[7..0])
+   reg8_D(rst, clk, en, e[15..8] : sr[15..8])
+   reg8_D(rst, clk, en, e[23..16] : sr[23..16])
+   reg8_D(rst, clk, en, e[31..24] : sr[31..24])
+end module

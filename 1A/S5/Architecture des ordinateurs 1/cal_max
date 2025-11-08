@@ -1,0 +1,12 @@
+module cal_max(rst, clk, cal, ad1[7..0], ad2[7..0], elemCour[31..0] : adCour[7..0], max[31..0], adMax[7..0], INITAD, INITMAX, MAJMAX, FINI)
+
+   etats_cal_max(rst, clk, cal, finTab : INITAD, INITMAX, MAJMAX, FINI)
+   count = INITMAX + MAJMAX
+   count8_b1_b2(rst, clk, INITAD, count, ad1[7..0], ad2[7..0] : adCour[7..0])
+   ucmp8(adCour[7..0], ad2[7..0] : supAD2, finTab)
+   reg32(rst,clk,enMAX, elemCour[31..0]: max[31..0])
+   reg8_D(rst,clk, enMAX, adCour[7..0] : adMax[7..0])
+   ucmp32(elemCour[31..0], max[31..0] : supMAX, equMax)
+   enMAX = INITMAX + MAJMAX*supMAX
+	
+end module

@@ -1,0 +1,15 @@
+module count8_b1_b2(rst, clk,init, count, ad1[7..0], ad2[7..0]: adCour[7..0])
+	X = init*/count
+   Y0 = adCour[0]*ad2[0] + /adCour[0]*/ad2[0]
+   Y1 = adCour[1]*ad2[1] + /adCour[1]*/ad2[1]
+   Y2 = adCour[2]*ad2[2] + /adCour[2]*/ad2[2]
+   Y3 = adCour[3]*ad2[3] + /adCour[3]*/ad2[3]
+   Y4 = adCour[4]*ad2[4] + /adCour[4]*/ad2[4]
+   Y5 = adCour[5]*ad2[5] + /adCour[5]*/ad2[5]
+   Y6 = adCour[6]*ad2[6] + /adCour[6]*/ad2[6]
+   Y7 = adCour[7]*ad2[7] + /adCour[7]*/ad2[7]
+   Y = Y0*Y1*Y2*Y3*Y4*Y5*Y6*Y7
+   count8_init(rst, clk, X, en, ad1[7..0] : adCour[7..0])
+   en= /init*count*/Y + X
+   
+end module

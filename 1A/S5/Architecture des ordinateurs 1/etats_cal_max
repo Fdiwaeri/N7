@@ -1,0 +1,7 @@
+module etats_cal_max(rst, clk, cal, finTab : INITAD, INITMAX, MAJMAX, FINI)
+	INITAD := /cal on clk set when rst
+   INITMAX := cal * INITAD on clk reset when rst
+   MAJMAX := cal * (MAJMAX*/finTab + INITMAX) on clk reset when rst
+   FINI := cal *(FINI + MAJMAX*finTab) on clk reset when rst 
+   
+end module

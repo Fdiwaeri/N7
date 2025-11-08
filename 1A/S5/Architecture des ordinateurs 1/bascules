@@ -1,0 +1,4 @@
+module bascules(clk,rst,en,D,T : XD,XT)
+	XD := D on clk reset when rst enabled when en
+   XT := /T*XT + T*/XT on clk reset when rst enabled when en
+end module

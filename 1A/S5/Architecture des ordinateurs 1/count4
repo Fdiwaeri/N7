@@ -1,0 +1,5 @@
+module  count4 (rst, clk, en : c[3..0])
+	count2 (rst, clk, en : c[1..0])
+   e = c[1]*c[0]
+   count2 (rst, clk, e : c[3..2])
+end module
