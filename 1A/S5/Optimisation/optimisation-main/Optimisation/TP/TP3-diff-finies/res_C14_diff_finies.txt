@@ -1,0 +1,994 @@
+Algorithme de Gauss-Newton
+ndigits 9 
+Vraie Jacobienne = 0
+[Warning: string is obsolete and will be discontinued.
+         Use char instead.] 
+[> In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',102,1)">C14_diff_finies at 102</a>] 
+{Error using <a href="matlab:helpUtils.errorDocCallback('plus')" style="font-weight:bold"> + </a>
+Matrix dimensions must agree.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('C14_diff_finies', 'G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m', 102)" style="font-weight:bold">C14_diff_finies</a> (<a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',102,0)">line 102</a>)
+disp( strcat('Methode diff finies = ' +  string(methode_finite_diff)) ) ;
+} 
+helpUtils.errorDocCallback('plus')
+helpUtils.errorDocCallback('plus')
+diff_finies_avant(fun, x, option)
+{Undefined function or variable 'fun'.
+} 
+diff_finies_avant(fun, x, option)
+{Undefined function or variable 'fun'.
+} 
+diff_finies_avant(fun, x, option)
+{Undefined function or variable 'fun'.
+} 
+C14_diff_finies
+Algorithme de Gauss-Newton
+ndigits 9 
+Vraie Jacobienne = 0
+[Warning: string is obsolete and will be discontinued.
+         Use char instead.] 
+[> In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',102,1)">C14_diff_finies at 102</a>] 
+{Error using <a href="matlab:helpUtils.errorDocCallback('plus')" style="font-weight:bold"> + </a>
+Matrix dimensions must agree.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('C14_diff_finies', 'G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m', 102)" style="font-weight:bold">C14_diff_finies</a> (<a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',102,0)">line 102</a>)
+disp( strcat('Methode diff finies = ' +  string(methode_finite_diff)) ) ;
+} 
+C14_diff_finies
+Algorithme de Gauss-Newton
+ndigits 9 
+Vraie Jacobienne = 0
+[Warning: string is obsolete and will be discontinued.
+         Use char instead.] 
+[> In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',102,1)">C14_diff_finies at 102</a>] 
+Methode diff finies =avants
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||s||       exitflag 
+------------------------------------------------------------------
+{Undefined function 'signe' for input arguments of type 'double'.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('diff_finies_avant', 'G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\diff_finies_avant.m', 25)" style="font-weight:bold">diff_finies_avant</a> (<a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\diff_finies_avant.m',25,0)">line 25</a>)
+    h(j) = sqrt(max(option,eps))*max(1, abs(x(j)))*signe(x(j));
+
+Error in <a href="matlab:helpUtils.errorDocCallback('C14_diff_finies', 'G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m', 113)" style="font-weight:bold">C14_diff_finies</a> (<a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',113,0)">line 113</a>)
+	    Jres = diff_finies_avant( @(beta) res_C14_ref(beta,Ti,Ai), beta0, ndigits);
+} 
+helpUtils.errorDocCallback('diff_finies_avant', 'G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\diff_finies_avant.m', 25)
+C14_diff_finies
+Algorithme de Gauss-Newton
+ndigits 9 
+Vraie Jacobienne = 0
+[Warning: string is obsolete and will be discontinued.
+         Use char instead.] 
+[> In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',102,1)">C14_diff_finies at 102</a>] 
+Methode diff finies =avants
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||s||       exitflag 
+------------------------------------------------------------------
+{Undefined function 'signe' for input arguments of type 'double'.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('diff_finies_avant', 'G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\diff_finies_avant.m', 25)" style="font-weight:bold">diff_finies_avant</a> (<a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\diff_finies_avant.m',25,0)">line 25</a>)
+    h(j) = sqrt(max(option,eps))*max(1, abs(x(j)))*signe(x(j));
+
+Error in <a href="matlab:helpUtils.errorDocCallback('C14_diff_finies', 'G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m', 113)" style="font-weight:bold">C14_diff_finies</a> (<a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',113,0)">line 113</a>)
+	    Jres = diff_finies_avant( @(beta) res_C14_ref(beta,Ti,Ai), beta0, ndigits);
+} 
+C14_diff_finies
+Algorithme de Gauss-Newton
+ndigits 9 
+Vraie Jacobienne = 0
+[Warning: string is obsolete and will be discontinued.
+         Use char instead.] 
+[> In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',102,1)">C14_diff_finies at 102</a>] 
+Methode diff finies =avants
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||s||       exitflag 
+------------------------------------------------------------------
+{Undefined function 'signe' for input arguments of type 'double'.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('diff_finies_avant', 'G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\diff_finies_avant.m', 25)" style="font-weight:bold">diff_finies_avant</a> (<a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\diff_finies_avant.m',25,0)">line 25</a>)
+    h(j) = sqrt(max(option,eps))*max(1, abs(x(j)))*signe(x(j));
+
+Error in <a href="matlab:helpUtils.errorDocCallback('C14_diff_finies', 'G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m', 113)" style="font-weight:bold">C14_diff_finies</a> (<a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',113,0)">line 113</a>)
+	    Jres = diff_finies_avant( @(beta) res_C14_ref(beta,Ti,Ai), beta0, ndigits);
+} 
+C14_diff_finies
+Algorithme de Gauss-Newton
+ndigits 9 
+Vraie Jacobienne = 0
+[Warning: string is obsolete and will be discontinued.
+         Use char instead.] 
+[> In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',102,1)">C14_diff_finies at 102</a>] 
+Methode diff finies =avants
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||s||       exitflag 
+------------------------------------------------------------------
+{Subscripted assignment dimension mismatch.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('diff_finies_avant', 'G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\diff_finies_avant.m', 26)" style="font-weight:bold">diff_finies_avant</a> (<a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\diff_finies_avant.m',26,0)">line 26</a>)
+    Jac (:,j) = (fun(x+h) - fun(x))/h;
+
+Error in <a href="matlab:helpUtils.errorDocCallback('C14_diff_finies', 'G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m', 113)" style="font-weight:bold">C14_diff_finies</a> (<a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',113,0)">line 113</a>)
+	    Jres = diff_finies_avant( @(beta) res_C14_ref(beta,Ti,Ai), beta0, ndigits);
+} 
+C14_diff_finies
+Algorithme de Gauss-Newton
+ndigits 9 
+Vraie Jacobienne = 0
+[Warning: string is obsolete and will be discontinued.
+         Use char instead.] 
+[> In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',102,1)">C14_diff_finies at 102</a>] 
+Methode diff finies =avants
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||s||       exitflag 
+------------------------------------------------------------------
+            0   6.8534e+01   4.8070e+01
+
+   1.0000e+00          NaN          Inf   2.6883e+00   4.0000e+00
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+     2   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+     3   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+     4   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+     5   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+     6   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+     7   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+     8   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+     9   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+    10   NaN   NaN   NaN     4
+
+------------------------------------------------------------------
+betak
+  Columns 1 through 7
+
+   1.0000e+01   8.2036e+00          NaN          NaN          NaN          NaN          NaN
+   1.0000e-04  -1.9999e+00          NaN          NaN          NaN          NaN          NaN
+
+  Columns 8 through 11
+
+          NaN          NaN          NaN          NaN
+          NaN          NaN          NaN          NaN
+
+Algorithme de Gauss-Newton
+ndigits 9 
+Vraie Jacobienne = 0
+[Warning: string is obsolete and will be discontinued.
+         Use char instead.] 
+[> In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',102,1)">C14_diff_finies at 102</a>] 
+Methode diff finies =centrees
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||s||       exitflag 
+------------------------------------------------------------------
+{Undefined function 'lenght' for input arguments of type 'double'.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('diff_finies_centree', 'G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\diff_finies_centree.m', 22)" style="font-weight:bold">diff_finies_centree</a> (<a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\diff_finies_centree.m',22,0)">line 22</a>)
+Jac = zeros(lenght(fdex),length(x));
+
+Error in <a href="matlab:helpUtils.errorDocCallback('C14_diff_finies', 'G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m', 116)" style="font-weight:bold">C14_diff_finies</a> (<a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',116,0)">line 116</a>)
+	     Jres = diff_finies_centree( @(beta) res_C14_ref(beta,Ti,Ai), beta0, ndigits);
+} 
+helpUtils.errorDocCallback('C14_diff_finies', 'G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m', 116)
+C14_diff_finies
+Algorithme de Gauss-Newton
+ndigits 9 
+Vraie Jacobienne = 0
+[Warning: string is obsolete and will be discontinued.
+         Use char instead.] 
+[> In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',102,1)">C14_diff_finies at 102</a>] 
+Methode diff finies =centrees
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||s||       exitflag 
+------------------------------------------------------------------
+{Undefined function or variable 'x_h'.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('diff_finies_centree', 'G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\diff_finies_centree.m', 26)" style="font-weight:bold">diff_finies_centree</a> (<a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\diff_finies_centree.m',26,0)">line 26</a>)
+    Jac (:,j) = (fun(x+h) - fun(x_h))/2*h(j);
+
+Error in <a href="matlab:helpUtils.errorDocCallback('C14_diff_finies', 'G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m', 116)" style="font-weight:bold">C14_diff_finies</a> (<a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',116,0)">line 116</a>)
+	     Jres = diff_finies_centree( @(beta) res_C14_ref(beta,Ti,Ai), beta0, ndigits);
+} 
+helpUtils.errorDocCallback('diff_finies_centree', 'G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\diff_finies_centree.m', 26)
+C14_diff_finies
+Algorithme de Gauss-Newton
+ndigits 9 
+Vraie Jacobienne = 0
+[Warning: string is obsolete and will be discontinued.
+         Use char instead.] 
+[> In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',102,1)">C14_diff_finies at 102</a>] 
+Methode diff finies =centrees
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||s||       exitflag 
+------------------------------------------------------------------
+            0          Inf   4.8070e+01
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+     1   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+     2   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+     3   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+     4   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+     5   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+     6   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+     7   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+     8   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+     9   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',137,1)">C14_diff_finies at 137</a>] 
+    10   NaN   NaN   NaN     4
+
+------------------------------------------------------------------
+betak
+  Columns 1 through 7
+
+   1.0000e+01          NaN          NaN          NaN          NaN          NaN          NaN
+   1.0000e-04          NaN          NaN          NaN          NaN          NaN          NaN
+
+  Columns 8 through 11
+
+          NaN          NaN          NaN          NaN
+          NaN          NaN          NaN          NaN
+
+Algorithme de Gauss-Newton
+ndigits 9 
+Vraie Jacobienne = 0
+[Warning: string is obsolete and will be discontinued.
+         Use char instead.] 
+[> In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',102,1)">C14_diff_finies at 102</a>] 
+Methode diff finies =avants
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||s||       exitflag 
+------------------------------------------------------------------
+            0   4.3680e+05   4.8070e+01
+
+   1.0000e+00   1.9325e+04   1.1835e-01   5.0344e+00   4.0000e+00
+
+   2.0000e+00   1.5310e+03   8.8711e-02   5.7372e-03   4.0000e+00
+
+   3.0000e+00   1.3038e+02   8.8686e-02   2.8994e-03   4.0000e+00
+
+   4.0000e+00   1.1116e+01   8.8672e-02   2.3851e-04   4.0000e+00
+
+   5.0000e+00   9.4817e-01   8.8673e-02   2.0456e-05   4.0000e+00
+
+   6.0000e+00   8.0874e-02   8.8673e-02   1.7440e-06   4.0000e+00
+
+   7.0000e+00   6.8982e-03   8.8673e-02   1.4876e-07   2.0000e+00
+
+   7.0000e+00   6.8982e-03   8.8673e-02   1.4876e-07   2.0000e+00
+
+   7.0000e+00   6.8982e-03   8.8673e-02   1.4876e-07   2.0000e+00
+
+   7.0000e+00   6.8982e-03   8.8673e-02   1.4876e-07   2.0000e+00
+
+------------------------------------------------------------------
+betak
+  Columns 1 through 7
+
+   1.0000e+01   1.5034e+01   1.5029e+01   1.5032e+01   1.5031e+01   1.5031e+01   1.5031e+01
+   1.0000e-04   1.0727e-04   1.0426e-04   1.0454e-04   1.0451e-04   1.0451e-04   1.0451e-04
+
+  Columns 8 through 11
+
+   1.5031e+01   1.5031e+01   1.5031e+01   1.5031e+01
+   1.0451e-04   1.0451e-04   1.0451e-04   1.0451e-04
+
+Algorithme de Gauss-Newton
+ndigits 9 
+Vraie Jacobienne = 0
+[Warning: string is obsolete and will be discontinued.
+         Use char instead.] 
+[> In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',102,1)">C14_diff_finies at 102</a>] 
+Methode diff finies =centrees
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||s||       exitflag 
+------------------------------------------------------------------
+            0   4.6437e-04   4.8070e+01
+
+   1.0000e+00            0   4.4718e+02   5.0207e+07   1.0000e+00
+
+   1.0000e+00            0   4.4718e+02   5.0207e+07   1.0000e+00
+
+   1.0000e+00            0   4.4718e+02   5.0207e+07   1.0000e+00
+
+   1.0000e+00            0   4.4718e+02   5.0207e+07   1.0000e+00
+
+   1.0000e+00            0   4.4718e+02   5.0207e+07   1.0000e+00
+
+   1.0000e+00            0   4.4718e+02   5.0207e+07   1.0000e+00
+
+   1.0000e+00            0   4.4718e+02   5.0207e+07   1.0000e+00
+
+   1.0000e+00            0   4.4718e+02   5.0207e+07   1.0000e+00
+
+   1.0000e+00            0   4.4718e+02   5.0207e+07   1.0000e+00
+
+   1.0000e+00            0   4.4718e+02   5.0207e+07   1.0000e+00
+
+------------------------------------------------------------------
+betak
+  Columns 1 through 7
+
+   1.0000e+01   5.0207e+07   5.0207e+07   5.0207e+07   5.0207e+07   5.0207e+07   5.0207e+07
+   1.0000e-04   6.2701e+03   6.2701e+03   6.2701e+03   6.2701e+03   6.2701e+03   6.2701e+03
+
+  Columns 8 through 11
+
+   5.0207e+07   5.0207e+07   5.0207e+07   5.0207e+07
+   6.2701e+03   6.2701e+03   6.2701e+03   6.2701e+03
+
+Algorithme de Gauss-Newton
+ndigits 9 
+Vraie Jacobienne = 0
+[Warning: string is obsolete and will be discontinued.
+         Use char instead.] 
+[> In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',102,1)">C14_diff_finies at 102</a>] 
+Methode diff finies =avants
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||s||       exitflag 
+------------------------------------------------------------------
+            0          Inf   4.8070e+01
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+     1   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+     2   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+     3   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+     4   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+     5   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+     6   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+     7   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+     8   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+     9   NaN   NaN   NaN     4
+
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+[Warning: Matrix is singular, close to singular or badly scaled. Results may be inaccurate. RCOND =
+NaN.] 
+[> In G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\GN_ref.p>GN_ref at 63
+  In <a href="matlab: opentoline('G:\Annee_1\Optimisation\optimisation-main\optimisation-main\Optimisation\TP\TP3-diff-finies\C14_diff_finies.m',134,1)">C14_diff_finies at 134</a>] 
+    10   NaN   NaN   NaN     4
+
+------------------------------------------------------------------
+betak
+  Columns 1 through 7
+
+   1.0000e+01          NaN          NaN          NaN          NaN          NaN          NaN
+   1.0000e-04          NaN          NaN          NaN          NaN          NaN          NaN
+
+  Columns 8 through 11
+
+          NaN          NaN          NaN          NaN
+          NaN          NaN          NaN          NaN
+
