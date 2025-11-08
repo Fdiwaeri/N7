@@ -1,0 +1,19 @@
+liste_noeud.h:
+void detruire_liste(liste_noeud_t** liste_ptr);
+car lisste_ptr est un pointeur sur la liste de type liste_noeud_t*
+
+liste_noeud.c:
+commentaires (inspiré par graphe.c)
+pour creer_liste, comme creer_graphe, on utilise malloc pour creer une liste (pointeur sur liste_noeud de taille 1*sizeof(liste_noeud)) et le casting est juste parce que malloc renvoie un retour de type void*, on veut s'assurer du type.
+J'ai ajouter une vérification: if (liste != NULL) avant de donner les valeurs de ses attributs pour vérifier les conditions.
+Pour: @return liste nouvellement créée (de type liste_noeud_t)
+je pense qu'elle reste vérifiér puisqu'on retourne une liste qui contient des liste_noeud, sinon on peut déréférencer le pointeur par (return *liste;), sinon je pense qu'il faut attendre pour voir ce dont on aura besoin dans le reste du sujet et implanter celle qui nous vaut mieux.
+
+Pour void detruire_liste(liste_noeud_t** liste_ptr) :
+il faut juste déréferencer puisque liste_ptr est un pointeur sur liste_noeud_t*
+je suis pas sure mais je pense qu'il faut juste verifier que premiere et derniere sont non nulles car on a dans les preconditions que liste ne doit pas etre null. Sinon j'ai ajouter une autre verification, c'est que l'enregistrement *liste == NULL
+
+
+Pour inserer_noeud_liste
+on pourra insérer la cellule au début ou à la fin pour une liste qui n'est pas vide, comme je suis pas sure j'ai choisi de l'insérer au début
+
