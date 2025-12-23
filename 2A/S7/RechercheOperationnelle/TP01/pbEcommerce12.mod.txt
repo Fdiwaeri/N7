@@ -1,0 +1,42 @@
+###############################  Model ###############################
+
+
+###############################  Sets  ###############################
+
+set CLIENTS;
+set MAGASINS;
+set FLUIDES;
+
+################### Variables ###################
+
+var X{i in CLIENTS, j in MAGASINS, k in FLUIDES}, >=0; 
+var livraison_active{j in MAGASINS, i in CLIENTS}, binary;
+ 
+
+###################  Constants: Data to load   #########################
+
+param commandes{i in CLIENTS, j in FLUIDES};
+param stocks{i in MAGASINS, j in FLUIDES};
+param couts_fixes{i in CLIENTS, j in MAGASINS};
+param couts_variables{i in CLIENTS, j in MAGASINS};
+param M := 100;
+
+################### Constraints ###################
+
+
+s.t. LimiteStock{j in MAGASINS, k in FLUIDES}:
+  sum{i in CLIENTS} X[i,j,k] <= stocks[j,k];
+
+s.t. commandeClient{i in CLIENTS , k in FLUIDES}:
+  sum{j in MAGASINS} X[i,j,k] >= commandes[i,k];
+
+s.t. livraisonPossible{j in MAGASINS , i in CLIENTS}:
+  sum{k in FLUIDES} X[i,j,k] <= M*livraison_active[j,i];
+
+###### Objective ######
+
+minimize cout: 
+		sum{i in CLIENTS, j in MAGASINS}( couts_fixes[i,j]*livraison_active[j,i] + sum{k in FLUIDES} X[i,j,k] * couts_fixes[i,j]); 
+
+
+end;

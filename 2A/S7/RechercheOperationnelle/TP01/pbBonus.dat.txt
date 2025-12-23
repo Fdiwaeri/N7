@@ -1,0 +1,25 @@
+# Bonus
+
+data;
+
+set MAGASINS := M1 M2;
+set CLIENTS  := C1 C2 C3;
+set PRODUITS := P1 P2;
+
+param dist : M1 M2 C1 C2 C3 :=
+M1 0 50 10 20 50
+M2 50 0 60 50 10
+C1 10 60 0 10 40
+C2 20 50 10 0 30
+C3 50 10 40 30 0;
+
+param demande : P1 P2 :=
+C1 50 0
+C2 20 20
+C3 0 60;
+
+param stock : P1 P2 :=
+M1 100 100
+M2 100 100;
+
+end;

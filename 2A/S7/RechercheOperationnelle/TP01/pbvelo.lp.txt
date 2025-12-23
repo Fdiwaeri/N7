@@ -1,0 +1,19 @@
+\* Problem: Assemblage velo *\
+
+Maximize
+Benefice: 650 Q1 + 250 Q2 
+
+Subject To
+ContrainteTemps : 0.13 Q1 + 0.11 Q2 <= 40
+ContrainteEspace : 3.5 Q1 + 1.5 Q2 <= 2000
+ContrainteCargo : Q1 <= 750
+
+Generals
+Q1
+Q2
+
+End
+
+
+ 
+

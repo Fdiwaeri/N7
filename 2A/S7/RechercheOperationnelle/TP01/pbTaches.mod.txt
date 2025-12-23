@@ -1,0 +1,37 @@
+#  GLPK model file created by SUN for RO teaching
+
+
+###############################  Model ###############################
+
+
+###############################  Sets  ###############################
+
+set PERSONNES; 
+
+set TACHES;	
+
+################### Variables ###################
+
+var X{i in PERSONNES, j in TACHES}, binary; 
+ 
+
+###################  Constants: Data to load   #########################
+
+param preferences{i in PERSONNES, j in TACHES};
+
+################### Constraints ###################
+
+
+s.t. UneTacheParPersonne{i in PERSONNES}:
+  sum{j in TACHES} X[i,j] = 1;
+
+s.t. UnePersonneParTache{j in TACHES}:
+  sum{i in PERSONNES} X[i,j] = 1;
+
+###### Objective ######
+
+maximize satisfaction: 
+		sum{i in PERSONNES, j in TACHES} preferences[i,j]* X[i,j]; 
+
+
+end;

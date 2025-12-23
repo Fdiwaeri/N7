@@ -1,0 +1,38 @@
+###############################  Model ###############################
+
+
+###############################  Sets  ###############################
+
+set NODES;
+
+###################  Constants: Data to load   #########################
+
+param dist{i in NODES, j in NODES};
+param N := card(NODES);
+
+################### Variables ###################
+
+var x{i in NODES, j in NODES}, binary;
+var u{i in NODES} >= 1, <= N;
+
+
+################### Constraints ###################
+
+s.t. PasDeBoucle{i in NODES}:
+    x[i,i] = 0;
+
+s.t. QuitterNode{i in NODES}:
+    sum{j in NODES} x[i,j] = 1;
+
+s.t. EntrerNode{j in NODES}:
+    sum{i in NODES} x[i,j] = 1;
+
+s.t. PasdeRetour{i in NODES, j in NODES: i != "ALPHA" and j != "ALPHA" and i != j}:
+    u[i] - u[j] + N * x[i,j] <= N - 1;
+
+
+###### Objective ######
+minimize DistanceTotale: 
+    sum{i in NODES, j in NODES} dist[i,j] * x[i,j];
+
+end;

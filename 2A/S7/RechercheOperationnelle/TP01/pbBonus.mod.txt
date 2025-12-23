@@ -1,0 +1,83 @@
+# Bonus
+
+###############################  Model ###############################
+
+
+###############################  Sets  ###############################
+set MAGASINS;
+set CLIENTS;
+set PRODUITS;
+set NODES := MAGASINS union CLIENTS; # L'ensemble des Noeuds regroupe Magasins et Clients
+
+###################  Constants: Data to load   #########################
+param dist{i in NODES, j in NODES};
+param demande{CLIENTS, PRODUITS};
+param stock{MAGASINS, PRODUITS};
+param A := 1.18e-5;
+param B := 2.14e-1;
+param M := sum{c in CLIENTS, p in PRODUITS} demande[c,p];
+param N_NODES := card(NODES);
+
+################### Variables ###################
+var livrer{m in MAGASINS, c in CLIENTS, p in PRODUITS} >= 0;
+var x{m in MAGASINS, i in NODES, j in NODES}, binary;
+var charge{m in MAGASINS, i in NODES, j in NODES} >= 0;
+var u{m in MAGASINS, i in NODES} >= 0;
+var visit{m in MAGASINS, c in CLIENTS}, binary;
+
+
+
+################### Constraints ###################
+
+
+# chaque commande doit être satisfaite en totalité
+s.t. DemandeSatisfaite{c in CLIENTS, p in PRODUITS}:
+    sum{m in MAGASINS} livrer[m,c,p] = demande[c,p];
+
+# aucun magasin ne peut faire livrer plus de produits qu’il n’en possède en stock
+s.t. StockSuffisant{m in MAGASINS, p in PRODUITS}:
+    sum{c in CLIENTS} livrer[m,c,p] <= stock[m,p];
+
+# Si on livre quelque chose, on doit marquer le client comme visité par ce camion
+s.t. MarquerVisite{m in MAGASINS, c in CLIENTS}:
+    sum{p in PRODUITS} livrer[m,c,p] <= M * visit[m,c];
+
+# le camion ne peut pas aller d'un noeud à lui-même
+s.t. PasDeBoucle{m in MAGASINS, i in NODES}:
+    x[m,i,i] = 0;
+
+# le camion d'un magasin ne peut pas passer par un autre magasin
+s.t. UniciteMC{m1 in MAGASINS, m2 in MAGASINS, j in NODES : m1 != m2}:
+    x[m1,m2,j] = 0;
+s.t. UniciteMC2{m1 in MAGASINS, m2 in MAGASINS, i in NODES : m1 != m2}:
+    x[m1,i,m2] = 0;
+
+# si on entre dans un noeud, on doit en sortir
+s.t. EntreeSortie{m in MAGASINS, k in NODES}:
+    sum{i in NODES} x[m,i,k] = sum{j in NODES} x[m,k,j];
+
+# Si un client est visité (visit=1), le camion doit y entrer exactement une fois
+s.t. ContrainteDeVisit{m in MAGASINS, c in CLIENTS}:
+    sum{i in NODES} x[m,i,c] = visit[m,c];
+
+# Pas de sous-tours
+s.t. PasDeSousTours{m in MAGASINS, i in CLIENTS, j in CLIENTS : i != j}:
+    u[m,i] - u[m,j] + N_NODES * x[m,i,j] <= N_NODES - 1;
+
+# Si pas de camion sur l'arc => pas de charge
+s.t. LimiteCharge{m in MAGASINS, i in NODES, j in NODES}:
+    charge[m,i,j] <= M * x[m,i,j];
+
+# Conservation de la charge à chaque client, c-a-d ChargeEntrante - ChargeSortante = ce qu'on a livré ici
+s.t. Conservationcharge{m in MAGASINS, c in CLIENTS}:
+    sum{i in NODES} charge[m,i,c] - sum{j in NODES} charge[m,c,j] = sum{p in PRODUITS} livrer[m,c,p];
+
+
+
+###### Objective ######
+
+minimize Emissions:
+    sum{m in MAGASINS, i in NODES, j in NODES} (
+        A * charge[m,i,j] * dist[i,j] + B * dist[i,j] * x[m,i,j] );
+
+end;
