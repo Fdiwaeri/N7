@@ -1,0 +1,3 @@
+(executable
+ (name tp7_etu)
+ (libraries unix graphics))
