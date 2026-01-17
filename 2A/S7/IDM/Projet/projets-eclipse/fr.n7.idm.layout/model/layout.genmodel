@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/fr.n7.idm.layout/src" modelPluginID="fr.n7.idm.layout"
+    modelName="Layout" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="17.0" copyrightFields="false"
+    usedGenPackages="../../fr.n7.idm.catalogue/model/catalogue.genmodel#//catalogue ../../fr.n7.idm.netlist/model/netlist.genmodel#//netlist"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>layout.ecore</foreignModel>
+  <genPackages prefix="Layout" disposableProviderFactory="true" ecorePackage="layout.ecore#/">
+    <genClasses ecoreClass="layout.ecore#//Layout">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute layout.ecore#//Layout/nom"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference layout.ecore#//Layout/boards"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference layout.ecore#//Layout/circuit"/>
+    </genClasses>
+    <genClasses ecoreClass="layout.ecore#//Board">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute layout.ecore#//Board/nom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute layout.ecore#//Board/largeur"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute layout.ecore#//Board/hauteur"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference layout.ecore#//Board/couches"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="layout.ecore#//Couche">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute layout.ecore#//Couche/nom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute layout.ecore#//Couche/numero"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference layout.ecore#//Couche/pistes"/>
+    </genClasses>
+    <genClasses ecoreClass="layout.ecore#//CoucheExterne">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference layout.ecore#//CoucheExterne/composants"/>
+    </genClasses>
+    <genClasses ecoreClass="layout.ecore#//CoucheInterne"/>
+    <genClasses ecoreClass="layout.ecore#//ComposantPosition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute layout.ecore#//ComposantPosition/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute layout.ecore#//ComposantPosition/y"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute layout.ecore#//ComposantPosition/rotation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference layout.ecore#//ComposantPosition/instance"/>
+    </genClasses>
+    <genClasses ecoreClass="layout.ecore#//Piste">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute layout.ecore#//Piste/nom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute layout.ecore#//Piste/largeur"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference layout.ecore#//Piste/points"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference layout.ecore#//Piste/connexion"/>
+    </genClasses>
+    <genClasses ecoreClass="layout.ecore#//Point">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute layout.ecore#//Point/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute layout.ecore#//Point/y"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

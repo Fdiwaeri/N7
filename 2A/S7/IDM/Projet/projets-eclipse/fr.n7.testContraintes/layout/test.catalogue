@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogue:Catalogue xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:catalogue="http://www.example.org/catalogue">
+  <composants nom="Puce">
+    <empreinte largeur="10.0" hauteur="10.0"/>
+  </composants>
+</catalogue:Catalogue>

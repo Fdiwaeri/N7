@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogue:Catalogue xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:catalogue="http://www.example.org/catalogue">
+  <composants nom="Batterie" fabricant="Saft" description="Batterie Li-ion haute capacité">
+    <ports nom="p_alim" type="SORTIE"/>
+    <empreinte largeur="10.0" hauteur="15.0">
+      <positionsPort x="5.0" port="//@composants.0/@ports.0"/>
+    </empreinte>
+  </composants>
+  <composants nom="Resistance" fabricant="Vishay" description="Résistance de précision">
+    <ports nom="p_in" type="ENTREE"/>
+    <ports nom="p_out" type="SORTIE"/>
+    <empreinte largeur="2.0" hauteur="5.0">
+      <positionsPort x="1.0" port="//@composants.1/@ports.0"/>
+      <positionsPort x="1.0" y="5.0" port="//@composants.1/@ports.1"/>
+    </empreinte>
+  </composants>
+</catalogue:Catalogue>

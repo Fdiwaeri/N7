@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:layout="http://www.example.org/layout" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_kaTTMO1FEfC9QMko6eNCvQ" selectedViews="_oe04kO1FEfC9QMko6eNCvQ" version="15.2.0.202303281325">
+    <semanticResources>Mylayout.layout</semanticResources>
+    <semanticResources>monCircuit.netlist</semanticResources>
+    <semanticResources>filter.netlist</semanticResources>
+    <semanticResources>passives.catalogue</semanticResources>
+    <semanticResources>board.layout</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_oe04kO1FEfC9QMko6eNCvQ">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/fr.n7.layout.design/description/layout.odesign#//@ownedViewpoints[name='LayoutViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_pjxucO1FEfC9QMko6eNCvQ" name="Layout - Circuit" repPath="#_pjwgUO1FEfC9QMko6eNCvQ" changeId="1767954405732">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/fr.n7.layout.design/description/layout.odesign#//@ownedViewpoints[name='LayoutViewpoint']/@ownedRepresentations[name='LayoutDiagram']"/>
+        <target xmi:type="layout:Layout" href="Mylayout.layout#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_6-6rcO1MEfCpfp6XmkzycQ">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/fr.n7.layout.design/description/layout.odesign#//@ownedViewpoints[name='LayoutViewpoint']"/>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_pjwgUO1FEfC9QMko6eNCvQ">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_pj2m8O1FEfC9QMko6eNCvQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_pj2m8e1FEfC9QMko6eNCvQ" type="Sirius" element="_pjwgUO1FEfC9QMko6eNCvQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_pkOaYO1FEfC9QMko6eNCvQ" type="2002" element="_pj2m8-1FEfC9QMko6eNCvQ">
+          <children xmi:type="notation:Node" xmi:id="_pkPogO1FEfC9QMko6eNCvQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_pkQPkO1FEfC9QMko6eNCvQ" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_pkQPk-1FEfC9QMko6eNCvQ" type="3008" element="_pj4cIe1FEfC9QMko6eNCvQ">
+              <children xmi:type="notation:Node" xmi:id="_pkQ2oO1FEfC9QMko6eNCvQ" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_pkQ2oe1FEfC9QMko6eNCvQ" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_pkSEwO1FEfC9QMko6eNCvQ" type="3007" element="_pj9UoO1FEfC9QMko6eNCvQ">
+                  <children xmi:type="notation:Node" xmi:id="_pkSr0O1FEfC9QMko6eNCvQ" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_pkSr0e1FEfC9QMko6eNCvQ" x="-1"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_pkYLYu1FEfC9QMko6eNCvQ" type="3003" element="_pj-iwO1FEfC9QMko6eNCvQ">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_pkYLY-1FEfC9QMko6eNCvQ" fontName="Ubuntu Sans"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pkYLZO1FEfC9QMko6eNCvQ"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_pkSEwe1FEfC9QMko6eNCvQ" fontName="Ubuntu Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pkSEwu1FEfC9QMko6eNCvQ" x="30" y="29" width="80" height="80"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_pkXkUO1FEfC9QMko6eNCvQ" type="3007" element="_pj_J0e1FEfC9QMko6eNCvQ">
+                  <children xmi:type="notation:Node" xmi:id="_pkYLYO1FEfC9QMko6eNCvQ" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_pkYLYe1FEfC9QMko6eNCvQ" x="-1"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_pkYycO1FEfC9QMko6eNCvQ" type="3003" element="_pj_w4O1FEfC9QMko6eNCvQ">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_pkYyce1FEfC9QMko6eNCvQ" fontName="Ubuntu Sans"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pkYycu1FEfC9QMko6eNCvQ"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_pkXkUe1FEfC9QMko6eNCvQ" fontName="Ubuntu Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pkXkUu1FEfC9QMko6eNCvQ" x="140" y="29" width="80" height="80"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_pkQ2ou1FEfC9QMko6eNCvQ"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_pkQ2o-1FEfC9QMko6eNCvQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_pkQPlO1FEfC9QMko6eNCvQ" fontName="Ubuntu Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pkQPle1FEfC9QMko6eNCvQ" x="169" y="43"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_pkRdsO1FEfC9QMko6eNCvQ" type="3008" element="_pj6RUO1FEfC9QMko6eNCvQ">
+              <children xmi:type="notation:Node" xmi:id="_pkRds-1FEfC9QMko6eNCvQ" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_pkRdtO1FEfC9QMko6eNCvQ" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_pkRdte1FEfC9QMko6eNCvQ"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_pkRdtu1FEfC9QMko6eNCvQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_pkRdse1FEfC9QMko6eNCvQ" fontName="Ubuntu Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pkRdsu1FEfC9QMko6eNCvQ" x="518" y="33"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_pkQPke1FEfC9QMko6eNCvQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_pkQPku1FEfC9QMko6eNCvQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_pkOaYe1FEfC9QMko6eNCvQ" fontName="Ubuntu Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pkOaYu1FEfC9QMko6eNCvQ" x="225" y="165" width="643" height="278"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_pj2m8u1FEfC9QMko6eNCvQ"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_pkMlMO1FEfC9QMko6eNCvQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_pkMlMe1FEfC9QMko6eNCvQ"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_pj2m8-1FEfC9QMko6eNCvQ" name="board principal (100.0x80.0 mm)">
+      <target xmi:type="layout:Board" href="Mylayout.layout#//@boards.0"/>
+      <semanticElements xmi:type="layout:Board" href="Mylayout.layout#//@boards.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_pj31EO1FEfC9QMko6eNCvQ" borderSize="2" borderSizeComputationExpression="2" backgroundColor="194,239,255" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/fr.n7.layout.design/description/layout.odesign#//@ownedViewpoints[name='LayoutViewpoint']/@ownedRepresentations[name='LayoutDiagram']/@defaultLayer/@containerMappings[name='BoardContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/fr.n7.layout.design/description/layout.odesign#//@ownedViewpoints[name='LayoutViewpoint']/@ownedRepresentations[name='LayoutDiagram']/@defaultLayer/@containerMappings[name='BoardContainer']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_pj4cIe1FEfC9QMko6eNCvQ" name="toplayer (Externe - Couche 1)">
+        <target xmi:type="layout:CoucheExterne" href="Mylayout.layout#//@boards.0/@couches.0"/>
+        <semanticElements xmi:type="layout:CoucheExterne" href="Mylayout.layout#//@boards.0/@couches.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_pj5qQO1FEfC9QMko6eNCvQ" borderSize="1" borderSizeComputationExpression="1" borderColor="77,137,20" backgroundColor="204,242,166" foregroundColor="255,255,255">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/fr.n7.layout.design/description/layout.odesign#//@ownedViewpoints[name='LayoutViewpoint']/@ownedRepresentations[name='LayoutDiagram']/@defaultLayer/@containerMappings[name='BoardContainer']/@subContainerMappings[name='CoucheContainer']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/fr.n7.layout.design/description/layout.odesign#//@ownedViewpoints[name='LayoutViewpoint']/@ownedRepresentations[name='LayoutDiagram']/@defaultLayer/@containerMappings[name='BoardContainer']/@subContainerMappings[name='CoucheContainer']"/>
+        <ownedDiagramElements xmi:type="diagram:DNode" uid="_pj9UoO1FEfC9QMko6eNCvQ" tooltipText="Position: (25.0, 30.0) - Rotation: 0.0°" width="8" height="8">
+          <target xmi:type="layout:ComposantPosition" href="Mylayout.layout#//@boards.0/@couches.0/@composants.0"/>
+          <semanticElements xmi:type="layout:ComposantPosition" href="Mylayout.layout#//@boards.0/@couches.0/@composants.0"/>
+          <ownedStyle xmi:type="diagram:Square" uid="_pj-iwO1FEfC9QMko6eNCvQ" borderColor="224,133,3" color="252,175,62">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/fr.n7.layout.design/description/layout.odesign#//@ownedViewpoints[name='LayoutViewpoint']/@ownedRepresentations[name='LayoutDiagram']/@defaultLayer/@containerMappings[name='BoardContainer']/@subContainerMappings[name='CoucheContainer']/@subNodeMappings[name='ComposantNode']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/fr.n7.layout.design/description/layout.odesign#//@ownedViewpoints[name='LayoutViewpoint']/@ownedRepresentations[name='LayoutDiagram']/@defaultLayer/@containerMappings[name='BoardContainer']/@subContainerMappings[name='CoucheContainer']/@subNodeMappings[name='ComposantNode']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNode" uid="_pj_J0e1FEfC9QMko6eNCvQ" tooltipText="Position: (60.0, 30.0) - Rotation: 0.0°" width="8" height="8">
+          <target xmi:type="layout:ComposantPosition" href="Mylayout.layout#//@boards.0/@couches.0/@composants.1"/>
+          <semanticElements xmi:type="layout:ComposantPosition" href="Mylayout.layout#//@boards.0/@couches.0/@composants.1"/>
+          <ownedStyle xmi:type="diagram:Square" uid="_pj_w4O1FEfC9QMko6eNCvQ" borderColor="224,133,3" color="252,175,62">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/fr.n7.layout.design/description/layout.odesign#//@ownedViewpoints[name='LayoutViewpoint']/@ownedRepresentations[name='LayoutDiagram']/@defaultLayer/@containerMappings[name='BoardContainer']/@subContainerMappings[name='CoucheContainer']/@subNodeMappings[name='ComposantNode']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/fr.n7.layout.design/description/layout.odesign#//@ownedViewpoints[name='LayoutViewpoint']/@ownedRepresentations[name='LayoutDiagram']/@defaultLayer/@containerMappings[name='BoardContainer']/@subContainerMappings[name='CoucheContainer']/@subNodeMappings[name='ComposantNode']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_pj6RUO1FEfC9QMko6eNCvQ" name="innerlayer (Interne - Couche 2)">
+        <target xmi:type="layout:CoucheInterne" href="Mylayout.layout#//@boards.0/@couches.1"/>
+        <semanticElements xmi:type="layout:CoucheInterne" href="Mylayout.layout#//@boards.0/@couches.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_pj6RUe1FEfC9QMko6eNCvQ" borderSize="1" borderSizeComputationExpression="1" borderColor="136,136,136" backgroundColor="209,209,209" foregroundColor="255,255,255">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/fr.n7.layout.design/description/layout.odesign#//@ownedViewpoints[name='LayoutViewpoint']/@ownedRepresentations[name='LayoutDiagram']/@defaultLayer/@containerMappings[name='BoardContainer']/@subContainerMappings[name='CoucheContainer']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/fr.n7.layout.design/description/layout.odesign#//@ownedViewpoints[name='LayoutViewpoint']/@ownedRepresentations[name='LayoutDiagram']/@defaultLayer/@containerMappings[name='BoardContainer']/@subContainerMappings[name='CoucheContainer']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/fr.n7.layout.design/description/layout.odesign#//@ownedViewpoints[name='LayoutViewpoint']/@ownedRepresentations[name='LayoutDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_pjwgUe1FEfC9QMko6eNCvQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/fr.n7.layout.design/description/layout.odesign#//@ownedViewpoints[name='LayoutViewpoint']/@ownedRepresentations[name='LayoutDiagram']/@defaultLayer"/>
+    <target xmi:type="layout:Layout" href="Mylayout.layout#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

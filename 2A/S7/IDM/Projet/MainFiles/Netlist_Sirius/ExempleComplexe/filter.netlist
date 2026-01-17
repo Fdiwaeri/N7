@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<netlist:Circuit xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:netlist="http://www.example.org/netlist" nom="Passive_Filter_Bank" description="Banc de filtrage RLC haute capacité">
+  
+  <catalogue href="passives.catalogue#/"/>
+
+  <instances nom="BAT1" id="B1">
+    <definition href="passives.catalogue#//@composants.0"/>
+  </instances>
+
+  <instances nom="L1_MainChoke" id="L1">
+    <definition href="passives.catalogue#//@composants.3"/>
+  </instances>
+
+  <instances nom="C1_Bulk" id="C1">
+    <definition href="passives.catalogue#//@composants.1"/>
+  </instances>
+  <instances nom="C2_Bulk" id="C2">
+    <definition href="passives.catalogue#//@composants.1"/>
+  </instances>
+  <instances nom="C3_HF" id="C3">
+    <definition href="passives.catalogue#//@composants.2"/>
+  </instances>
+  <instances nom="C4_HF" id="C4">
+    <definition href="passives.catalogue#//@composants.2"/>
+  </instances>
+
+  <instances nom="R1_Load" id="R1">
+    <definition href="passives.catalogue#//@composants.4"/>
+  </instances>
+  <instances nom="R2_Load" id="R2">
+    <definition href="passives.catalogue#//@composants.4"/>
+  </instances>
+
+  <connexions nom="V_UNREG">
+    <connextionsPort instance="//@instances.0"> <port href="passives.catalogue#//@composants.0/@ports.0"/> </connextionsPort>
+    <connextionsPort instance="//@instances.1"> <port href="passives.catalogue#//@composants.3/@ports.0"/> </connextionsPort>
+  </connexions>
+
+  <connexions nom="V_FILTERED">
+    <connextionsPort instance="//@instances.1"> <port href="passives.catalogue#//@composants.3/@ports.1"/> </connextionsPort>
+    <connextionsPort instance="//@instances.2"> <port href="passives.catalogue#//@composants.1/@ports.0"/> </connextionsPort>
+    <connextionsPort instance="//@instances.3"> <port href="passives.catalogue#//@composants.1/@ports.0"/> </connextionsPort>
+    <connextionsPort instance="//@instances.4"> <port href="passives.catalogue#//@composants.2/@ports.0"/> </connextionsPort>
+    <connextionsPort instance="//@instances.5"> <port href="passives.catalogue#//@composants.2/@ports.0"/> </connextionsPort>
+    <connextionsPort instance="//@instances.6"> <port href="passives.catalogue#//@composants.4/@ports.0"/> </connextionsPort>
+    <connextionsPort instance="//@instances.7"> <port href="passives.catalogue#//@composants.4/@ports.0"/> </connextionsPort>
+  </connexions>
+
+  <connexions nom="GND_MASSIVE">
+    <connextionsPort instance="//@instances.0"> <port href="passives.catalogue#//@composants.0/@ports.1"/> </connextionsPort> <connextionsPort instance="//@instances.2"> <port href="passives.catalogue#//@composants.1/@ports.1"/> </connextionsPort> <connextionsPort instance="//@instances.3"> <port href="passives.catalogue#//@composants.1/@ports.1"/> </connextionsPort> <connextionsPort instance="//@instances.4"> <port href="passives.catalogue#//@composants.2/@ports.1"/> </connextionsPort> <connextionsPort instance="//@instances.5"> <port href="passives.catalogue#//@composants.2/@ports.1"/> </connextionsPort> <connextionsPort instance="//@instances.6"> <port href="passives.catalogue#//@composants.4/@ports.1"/> </connextionsPort> <connextionsPort instance="//@instances.7"> <port href="passives.catalogue#//@composants.4/@ports.1"/> </connextionsPort> </connexions>
+
+</netlist:Circuit>

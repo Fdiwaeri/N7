@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogue:Catalogue xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:catalogue="http://www.example.org/catalogue">
+  
+  <composants nom="Battery_9V" fabricant="Duracell" description="Bloc pile 9V Standard">
+    <ports nom="POS" type="Power"/>
+    <ports nom="NEG" type="Power"/>
+    <empreinte largeur="25.0" hauteur="48.0">
+      <positionsPort x="5.0" y="48.0" port="//@composants.0/@ports.0"/>
+      <positionsPort x="20.0" y="48.0" port="//@composants.0/@ports.1"/>
+    </empreinte>
+    <contraintes xsi:type="catalogue:ContrainteGeometrique" distanceMin="2.0" distanceMax="0.0" zoneInterdite="TOP_LAYER_OVERLAY"/>
+  </composants>
+
+  <composants nom="Cap_Elec_470uF" fabricant="Panasonic" description="Condensateur de lissage 470uF">
+    <ports nom="+" type="Passive"/>
+    <ports nom="-" type="Passive"/>
+    <empreinte largeur="10.0" hauteur="10.0">
+      <positionsPort x="0.0" y="5.0" port="//@composants.1/@ports.0"/>
+      <positionsPort x="10.0" y="5.0" port="//@composants.1/@ports.1"/>
+    </empreinte>
+  </composants>
+
+  <composants nom="Cap_Cer_100nF" fabricant="Murata" description="Découplage haute fréquence">
+    <ports nom="1" type="Passive"/>
+    <ports nom="2" type="Passive"/>
+    <empreinte largeur="3.0" hauteur="1.5">
+      <positionsPort x="0.0" y="0.75" port="//@composants.2/@ports.0"/>
+      <positionsPort x="3.0" y="0.75" port="//@composants.2/@ports.1"/>
+    </empreinte>
+  </composants>
+
+  <composants nom="Inductor_10mH" fabricant="Bourns" description="Bobine de filtrage courant fort">
+    <ports nom="IN" type="Passive"/>
+    <ports nom="OUT" type="Passive"/>
+    <empreinte largeur="12.0" hauteur="12.0">
+      <positionsPort x="0.0" y="6.0" port="//@composants.3/@ports.0"/>
+      <positionsPort x="12.0" y="6.0" port="//@composants.3/@ports.1"/>
+    </empreinte>
+    <contraintes xsi:type="catalogue:ContrainteGeometrique" distanceMin="1.0" distanceMax="50.0" zoneInterdite="MagneticSensitive"/>
+  </composants>
+
+  <composants nom="Resistor_10W" fabricant="Vishay" description="Résistance de charge 10 Watts">
+    <ports nom="A" type="Passive"/>
+    <ports nom="B" type="Passive"/>
+    <empreinte largeur="20.0" hauteur="6.0">
+      <positionsPort x="0.0" y="3.0" port="//@composants.4/@ports.0"/>
+      <positionsPort x="20.0" y="3.0" port="//@composants.4/@ports.1"/>
+    </empreinte>
+    <contraintes xsi:type="catalogue:ContrainteGeometrique" distanceMin="5.0" distanceMax="1000.0" zoneInterdite="HeatSensitive"/>
+  </composants>
+
+</catalogue:Catalogue>

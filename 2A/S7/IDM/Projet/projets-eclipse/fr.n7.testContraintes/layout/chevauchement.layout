@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout:Layout xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:layout="http://www.example.org/layout">
+  <boards nom="CarteMere" largeur="100.0" hauteur="100.0">
+    <couches xsi:type="layout:CoucheExterne" nom="Top" numero="1">
+      <composants x="10.0" y="10.0">
+        <instance href="test.netlist#//@instances.0"/>
+      </composants>
+      <composants x="12.0" y="12.0">
+        <instance href="test.netlist#//@instances.1"/>
+      </composants>
+    </couches>
+  </boards>
+</layout:Layout>

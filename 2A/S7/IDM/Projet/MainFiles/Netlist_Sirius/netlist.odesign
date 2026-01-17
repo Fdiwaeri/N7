@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" 
+    xmlns:xmi="http://www.omg.org/XMI" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" 
+    xmlns:diagram="http://www.eclipse.org/sirius/diagram/description/1.1.0" 
+    xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" 
+    xmlns:tool="http://www.eclipse.org/sirius/description/tool/1.1.0" 
+    xmlns:tool_1="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" 
+    name="NetlistViewpoint" 
+    version="1.0.0">
+
+  <ownedViewpoints name="NetlistViewpoint">
+
+    <ownedRepresentations xsi:type="diagram:DiagramDescription" name="NetlistDiagram" domainClass="netlist.Circuit">
+
+      <metamodel href="http://www.example.org/netlist#/"/>
+      <metamodel href="http://www.example.org/catalogue#/"/>
+
+      <defaultLayer name="Default">
+
+        <nodeMappings name="InstanceNode" domainClass="netlist.InstanceComposant" semanticCandidatesExpression="aql:self.instances">
+          <style xsi:type="style:SquareDescription" labelExpression="aql:self.nom" width="12" height="6">
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+
+        <nodeMappings name="ConnexionNode" domainClass="netlist.Connexion" semanticCandidatesExpression="aql:self.connexions">
+          <style xsi:type="style:SquareDescription" labelExpression="aql:self.nom" width="6" height="6">
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+
+        <edgeMappings name="ConnexionEdge" domainClass="netlist.Connexion" semanticCandidatesExpression="aql:self.connexions" sourceMapping="//@ownedViewpoints.0/@ownedRepresentations.0/@defaultLayer/@nodeMappings[name='ConnexionNode']" targetMapping="//@ownedViewpoints.0/@ownedRepresentations.0/@defaultLayer/@nodeMappings[name='InstanceNode']" sourceFinderExpression="aql:self" targetFinderExpression="aql:self.connextionsPort.instance">
+          <style xsi:type="style:EdgeStyleDescription">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </edgeMappings>
+
+        <toolSections name="CreationTools">
+
+          <ownedTools xsi:type="tool_1:NodeCreationDescription" name="CreateInstanceTool" label="Instance Composant" nodeMappings="//@ownedViewpoints[name='NetlistViewpoint']/@ownedRepresentations[name='NetlistDiagram']/@defaultLayer/@nodeMappings[name='InstanceNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool:SelectionWizard" name="SelectDefinition" label="Choisir un composant" candidatesExpression="aql:self.catalogue.composants" multiple="false">
+                  <element name="selectedComposant"/>
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="netlist.InstanceComposant" referenceName="instances" variableName="newInstance">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="nom" valueExpression="aql:'C' + (container.instances->size()+1).toString()"/>
+                    <subModelOperations xsi:type="tool:SetValue" featureName="definition" valueExpression="var:selectedComposant"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+
+          <ownedTools xsi:type="tool_1:NodeCreationDescription" name="CreateConnexionNodeTool" label="Nœud de Connexion" nodeMappings="//@ownedViewpoints[name='NetlistViewpoint']/@ownedRepresentations[name='NetlistDiagram']/@defaultLayer/@nodeMappings[name='ConnexionNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool:CreateInstance" typeName="netlist.Connexion" referenceName="connexions" variableName="newConnexion">
+                  <subModelOperations xsi:type="tool:SetValue" featureName="nom" valueExpression="aql:'Net_' + (container.connexions->size()+1).toString()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+
+          <ownedTools xsi:type="tool_1:EdgeCreationDescription" name="LinkConnexionTool" label="Lier au Port" edgeMappings="//@ownedViewpoints[name='NetlistViewpoint']/@ownedRepresentations[name='NetlistDiagram']/@defaultLayer/@edgeMappings[name='ConnexionEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool:SelectionWizard" name="SelectPort" label="Choisir le Port" candidatesExpression="aql:target.definition.ports" multiple="false">
+                  <element name="selectedPort"/>
+                  <subModelOperations xsi:type="tool:CreateInstance" typeName="netlist.ConnexionPort" referenceName="connextionsPort" variableName="newLink">
+                    <subModelOperations xsi:type="tool:SetValue" featureName="instance" valueExpression="var:target"/>
+                    <subModelOperations xsi:type="tool:SetValue" featureName="port" valueExpression="var:selectedPort"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          
+          <ownedTools xsi:type="tool_1:DeleteElementDescription" name="Delete">
+             <element name="element"/>
+             <elementView name="elementView"/>
+             <containerView name="containerView"/>
+             <initialOperation>
+               <firstModelOperations xsi:type="tool:RemoveElement"/>
+             </initialOperation>
+          </ownedTools>
+
+        </toolSections>
+
+      </defaultLayer>
+    </ownedRepresentations>
+  </ownedViewpoints>
+</description:Group>

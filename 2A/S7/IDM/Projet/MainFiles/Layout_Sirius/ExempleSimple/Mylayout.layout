@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout:Layout
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:layout="http://www.example.org/layout"
+    nom="Circuit">
+  <circuit href="CircuitRB.xmi#/"/>
+
+  <boards nom="board principal" largeur="100.0" hauteur="80.0">
+
+    <couches xsi:type="layout:CoucheExterne" nom="toplayer" numero="1">
+
+      <pistes nom="piste1" largeur="0.5">
+        <points x="60.0" y="30.0"/>
+        <points x="20.0" y="30.0"/>
+        <connexion href="CircuitRB.xmi#//@connexions.0"/>
+      </pistes>
+
+      <composants x="25.0" y="30.0">
+        <instance href="CircuitRB.xmi#//@instances.0"/>
+      </composants>
+
+      <composants x="60.0" y="30.0">
+        <instance href="CircuitRB.xmi#//@instances.1"/>
+      </composants>
+
+    </couches>
+
+    <couches xsi:type="layout:CoucheInterne" nom="innerlayer" numero="2"/>
+
+  </boards>
+
+</layout:Layout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout:Layout xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:layout="http://www.example.org/layout" nom="Filter_PCB_Layout">
+  
+  <circuit href="filter.netlist#/"/>
+
+  <boards nom="Main_PCB" largeur="100.0" hauteur="60.0">
+    
+    <couches xsi:type="layout:CoucheExterne" nom="Top_Layer" numero="1">
+      
+      <composants x="5.0" y="5.0" rotation="0.0">    <instance href="filter.netlist#//@instances.0"/> </composants> <composants x="40.0" y="10.0" rotation="90.0"> <instance href="filter.netlist#//@instances.1"/> </composants> <composants x="60.0" y="10.0" rotation="0.0">  <instance href="filter.netlist#//@instances.2"/> </composants> <composants x="75.0" y="10.0" rotation="0.0">  <instance href="filter.netlist#//@instances.3"/> </composants> <composants x="60.0" y="25.0" rotation="0.0">  <instance href="filter.netlist#//@instances.4"/> </composants> <composants x="75.0" y="25.0" rotation="0.0">  <instance href="filter.netlist#//@instances.5"/> </composants> <composants x="50.0" y="40.0" rotation="0.0">  <instance href="filter.netlist#//@instances.6"/> </composants> <composants x="50.0" y="50.0" rotation="0.0">  <instance href="filter.netlist#//@instances.7"/> </composants> <pistes nom="Track_V_Unreg" largeur="2.0">
+        <connexion href="filter.netlist#//@connexions.0"/>
+        <points x="30.0" y="53.0"/> <points x="40.0" y="53.0"/>
+        <points x="40.0" y="22.0"/> </pistes>
+
+      <pistes nom="Track_GND_Main" largeur="3.0">
+        <connexion href="filter.netlist#//@connexions.2"/>
+        <points x="10.0" y="53.0"/> <points x="10.0" y="58.0"/>
+        <points x="90.0" y="58.0"/> </pistes>
+
+    </couches>
+
+    <couches xsi:type="layout:CoucheExterne" nom="Bottom_Layer" numero="2">
+       <pistes nom="Track_GND_Return" largeur="3.0">
+          <connexion href="filter.netlist#//@connexions.2"/>
+          <points x="60.0" y="15.0"/> <points x="60.0" y="30.0"/>
+          <points x="90.0" y="58.0"/> </pistes>
+    </couches>
+
+  </boards>
+</layout:Layout>

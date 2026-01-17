@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated catalogue -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.n7.idm.catalogue.presentation.CatalogueModelWizardID"
+            name="%_UI_CatalogueModelWizard_label"
+            class="fr.n7.idm.catalogue.presentation.CatalogueModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/CatalogueModelFile.gif">
+         <description>%_UI_CatalogueModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated catalogue -->
+      <editor
+            id="fr.n7.idm.catalogue.presentation.CatalogueEditorID"
+            name="%_UI_CatalogueEditor_label"
+            icon="icons/full/obj16/CatalogueModelFile.gif"
+            extensions="catalogue"
+            class="fr.n7.idm.catalogue.presentation.CatalogueEditor"
+            contributorClass="fr.n7.idm.catalogue.presentation.CatalogueActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated netlist -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="netlist.presentation.NetlistModelWizardID"
+            name="%_UI_NetlistModelWizard_label"
+            class="netlist.presentation.NetlistModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/NetlistModelFile.gif">
+         <description>%_UI_NetlistModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated netlist -->
+      <editor
+            id="netlist.presentation.NetlistEditorID"
+            name="%_UI_NetlistEditor_label"
+            icon="icons/full/obj16/NetlistModelFile.gif"
+            extensions="netlist"
+            class="netlist.presentation.NetlistEditor"
+            contributorClass="netlist.presentation.NetlistActionBarContributor">
+      </editor>
+   </extension>
+</plugin>

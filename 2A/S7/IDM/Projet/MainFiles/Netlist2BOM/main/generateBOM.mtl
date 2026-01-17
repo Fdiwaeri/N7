@@ -1,0 +1,14 @@
+[comment encoding = UTF-8 /]
+[module generateBOM('http://www.example.org/netlist')]
+
+[template public generateBOM(aCircuit : Circuit)]
+[comment @main /]
+[file ('BOM.csv', false, 'UTF-8')]
+
+ID_Instance;Nom_Instance;Nom_Composant;Fabricant;Description
+[for (inst : InstanceComposant | aCircuit.instances)]
+[inst.id/];[inst.nom/];[inst.definition.nom/];[if inst.definition.fabricant <> null][inst.definition.fabricant/][else]N/A[/if];[if inst.definition.description <> null][inst.definition.description/][else]N/A[/if]
+[/for]
+
+[/file]
+[/template]

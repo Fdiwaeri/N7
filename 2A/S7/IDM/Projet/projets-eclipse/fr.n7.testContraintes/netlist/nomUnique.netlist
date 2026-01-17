@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<netlist:Circuit xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:netlist="http://www.example.org/netlist">
+  <instances nom="R1" id="">
+    <definition href="My.catalogue#//@composants.0"/>
+  </instances>
+  <instances nom="R1" id="">
+    <definition href="My.catalogue#//@composants.0"/>
+  </instances>
+</netlist:Circuit>

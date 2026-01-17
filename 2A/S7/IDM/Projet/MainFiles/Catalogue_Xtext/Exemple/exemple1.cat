@@ -1,0 +1,24 @@
+catalogue {
+    composant MaPuce {
+        fabricant "Intel"
+        port P1 type "Entree"
+        port P2 type "Sortie"
+        
+        
+        
+        empreinte {
+            largeur 10.5
+            hauteur 20.0
+            position pour P1 : x 0.0 y 5.0
+            position pour P2 : x 10.5 y 5.0
+        }
+
+        // contraintes
+        geo { min 5.0 max 10.0 }
+        redondance { min 2 }
+        AND (
+            geo { min 1.0 max 2.0 },
+            NOT ( redondance { min 2 } )
+        )
+    }
+}
