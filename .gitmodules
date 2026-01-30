@@ -1,0 +1,3 @@
+[submodule "2A/S7/Programmation_Fonctionnelle/ProjetLong/newtonoid"]
+	path = 2A/S7/Programmation_Fonctionnelle/ProjetLong/newtonoid
+	url = git@github.com:Fdiwaeri/newtonoid.git
