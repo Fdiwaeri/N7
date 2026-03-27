@@ -1,0 +1,402 @@
+@startuml "Class Diagram"
+title "Class Diagram"
+hide empty members
+class renderer.controller.ColorMapFactory {
+	+ {static} create(Maps) : ColorMap
+	- {static} buildViridis() : Color[]
+	- {static} buildMagma() : Color[]
+}
+class renderer.controller.Renderer {
+	- {static} DEFAULT_FILENAME : String
+	- {static} DIVIDER : double
+	- {static} normalLength : double
+	- scene : Scene
+	- mesh : Mesh
+	- rasterizer : Rasterizer
+	- shader : Shader
+	- xform : Transformation
+	- lighting : Lighting
+	- lightingEnabled : boolean
+	- normalsRendered : boolean
+	- vertexRendered : boolean
+	- wiredRendered : boolean
+	- solidRendered : boolean
+	- texture : String
+	- combineColorState : boolean
+	+ setScene(String) : void
+	+ projectVertices() : Fragment[]
+	- initNormalLength() : void
+	+ setShader(Shader) : void
+	+ setShader(String) : boolean
+	- renderVertices() : void
+	- renderWireframe() : void
+	- renderSolid() : void
+	+ renderNormal() : void
+	+ setTexture(String) : boolean
+	+ setCombineWithBaseColor(boolean) : void
+	+ setColorMap(Maps) : void
+	+ setLightingEnabled(boolean) : void
+	+ setRasterizer() : void
+	+ setPerspectiveCorrectRasterizer() : void
+	+ render() : ImageWrapper
+	+ getTransformation() : Transformation
+	+ setNormalsRendered(boolean) : void
+	+ setWiredRendered(boolean) : void
+	+ setSolidRendered(boolean) : void
+	+ setVertexRendered(boolean) : void
+}
+class renderer.controller.ShaderFactory {
+	- {static} SHADER_SET : Set
+	+ {static} init() : void
+	+ {static} create(String) : Optional
+	+ {static} getShaderSet() : Set
+	+ {static} getShaderSetAsStringArray() : String[]
+}
+class renderer.controller.ImageWrapper {
+	- {static} DEFAULT_WIDTH : int
+	- {static} DEFAULT_HEIGHT : int
+	- {static} DEFAULT_BACKGROUND_COLOR : int
+	- init(int) : void
+	+ isClipped(Fragment) : boolean
+	+ setPixel(int, int, Color) : void
+	+ {static} getDefaultBackgroundColor() : int
+}
+class renderer.algebra.Matrix {
+	- nRows : int
+	- nCols : int
+	+ {static} DEFAULT_NAME : String
+	+ add(Matrix) : Matrix
+	+ get(int, int) : double
+	+ toString() : String
+	+ scale(double) : Matrix
+	+ set(int, int, double) : void
+	+ multiply(Vector) : Vector
+	+ multiply(Matrix) : Matrix
+	+ subtract(Matrix) : Matrix
+	+ {static} createIdentity(int) : Matrix
+	+ {static} createIdentity(String, int) : Matrix
+	+ getSubMatrix(int, int, int, int) : Matrix
+	+ getDimensionString() : String
+	- {static} validateAndComputeSize(int, int) : int
+	- validateSameDimensions(Matrix) : void
+	+ getNRows() : int
+	+ getNCols() : int
+	- validateVectorSizeForColumn(Vector) : void
+	- validateColumnIndex(int) : void
+	- validateVectorSizeForRow(Vector) : void
+	- validateRowIndex(int) : void
+	- sameSize(Matrix) : boolean
+	+ {static} createRandom(String, int, int) : Matrix
+	+ transpose() : Matrix
+	+ setCol(int, Vector) : void
+	+ getCol(int) : Vector
+	+ setRow(int, Vector) : void
+	+ getRow(int) : Vector
+}
+class renderer.algebra.MathUtils {
+	+ {static} MAX8INT : int
+	+ {static} clamp(Comparable, Comparable, Comparable) : Comparable
+	+ {static} isInRange(Number, Number, Number) : boolean
+	- {static} isIntegerType(Number) : boolean
+	- {static} isFloatingType(Number) : boolean
+}
+exception renderer.algebra.SizeMismatchException {
+}
+class renderer.algebra.ArrayBase {
+	- name : String
+	- values : double[]
+	+ getName() : String
+	# getValue(int) : double
+	+ size() : int
+	+ setName(String) : void
+	# setValue(int, double) : void
+	# setAll(double) : void
+	+ getDimensionString() : String
+	# fillRandom() : void
+	# getValues() : double[]
+	# addValues(double[], double[]) : void
+	# subtractValues(double[], double[]) : void
+	# scaleValues(double, double[]) : void
+	- validateDestinationSize(double[]) : void
+	- validateBinaryOperationSizes(double[], double[]) : void
+	# copyValues(double[]) : void
+	# copyValues(double[], int, int) : void
+	# multiplyValues(double[], double[]) : void
+	# sumValues() : double
+}
+class renderer.algebra.Vector {
+	+ {static} DEFAULT_NAME : String
+	- {static} DIM_Z : int
+	+ add(Vector) : Vector
+	+ get(int) : double
+	+ toString() : String
+	# clone() : Vector
+	# clone() : Object
+	+ scale(double) : Vector
+	+ dot(Vector) : double
+	+ set(int, double) : void
+	+ set(double[]) : void
+	+ normalize() : Vector
+	+ subtract(Vector) : Vector
+	+ zeros() : Vector
+	+ getSubVector(int, int) : Vector
+	+ norm() : double
+	+ cross(Vector) : Vector
+	+ homogeneousPoint() : Vector
+	+ getX() : double
+	+ getY() : double
+	+ clamp(double, double) : Vector
+	- homogeneous(double) : Vector
+	+ toMatrix() : Matrix
+	+ {static} createRandom(String, int) : Vector
+	- validateSameSize(Vector) : void
+	- validateCrossProductSize() : void
+	- validateMinimumSize(int, String) : void
+	+ homogeneousVector() : Vector
+	+ ones() : Vector
+	+ getZ() : double
+}
+class renderer.core.shader.DepthBuffer {
+	- buffer : Matrix
+	- width : int
+	- height : int
+	+ clear() : void
+	+ resize(int, int) : void
+	- isWithinBounds(Fragment) : boolean
+	+ testFragment(Fragment) : boolean
+	+ writeFragment(Fragment) : void
+}
+class renderer.core.shader.Fragment {
+	- x : int
+	- y : int
+	- numAttributes : int
+	- {static} NUM_ATTRIBUTES : int
+	- attributes : double[]
+	+ {static} DEPTH : int
+	+ {static} COLOR_R : int
+	+ {static} COLOR_G : int
+	+ {static} COLOR_B : int
+	+ {static} NORMAL_X : int
+	+ {static} NORMAL_Y : int
+	+ {static} NORMAL_Z : int
+	+ {static} TEXTURE_U : int
+	+ {static} TEXTURE_V : int
+	- {static} MAX_PIX_VAL : double
+	+ toString() : String
+	+ clone() : Fragment
+	+ clone() : Object
+	- {static} inRange(double, double, double) : boolean
+	+ setAttribute(int, double) : void
+	+ getAttribute(int, int) : double[]
+	+ getAttribute(int) : double
+	+ setColor(Color) : void
+	+ setColor(double, double, double) : void
+	+ getColor() : Color
+	+ getNormal() : Vector
+	+ setNormal(double, double, double) : void
+	+ setNormal(Vector) : void
+	+ setDepth(double) : void
+	+ getX() : int
+	+ getY() : int
+	+ getNumAttributes() : int
+	+ setPosition(int, int) : void
+	+ getDepth() : double
+	+ {static} colorToInt(double) : int
+	+ {static} colorToFloat(int) : double
+	+ getPosition() : int[]
+}
+class renderer.core.shader.TextureShader {
+	- {static} START_TEXTURE_ATTRIBUTE : int
+	- {static} NUMBER_TEXTURE_ATTRIBUTE : int
+	- depth : DepthBuffer
+	- texture : Texture
+	- combineWithBaseColor : boolean
+	+ init(Renderer, ImageWrapper) : void
+	+ reset() : void
+	+ shade(Fragment) : void
+	+ setTexture(String) : boolean
+	+ setCombineWithBaseColor(boolean) : void
+	+ getCombineWithBaseColor() : boolean
+}
+class renderer.core.shader.SimpleShader {
+	+ reset() : void
+	+ shade(Fragment) : void
+}
+abstract abstract class renderer.core.shader.Shader {
+	# screen : ImageWrapper
+	+ init(Renderer, ImageWrapper) : void
+	+ {abstract} reset() : void
+	+ isClipped(Fragment) : boolean
+	+ {abstract} shade(Fragment) : void
+	+ supportsColorMap() : boolean
+	+ setColorMap(Maps) : void
+}
+class renderer.core.shader.PainterShader {
+	- depth : DepthBuffer
+	+ init(Renderer, ImageWrapper) : void
+	+ reset() : void
+	+ shade(Fragment) : void
+}
+class renderer.core.mesh.Texture {
+	- width : int
+	- height : int
+	- image : BufferedImage
+	+ sample(double, double) : Color
+}
+class renderer.core.mesh.Mesh {
+	- {static} VERTICES_PER_FACE : int
+	- {static} COLOR_COMPONENTS_PER_VERTEX : int
+	- {static} VERTEX_DIMENSION : int
+	- vertices : Vector[]
+	- faces : int[]
+	- colors : double[]
+	- normals : Vector[]
+	- texCoords : double[]
+	- {static} nextLine(BufferedReader) : String
+	+ getVertices() : Vector[]
+	+ getNormals() : Vector[]
+	+ getColors() : double[]
+	+ getTextureCoordinates() : double[]
+	+ getFaces() : int[]
+	+ getNumFaces() : int
+	- computeNormals() : Vector[]
+	+ getNumVertices() : int
+}
+class renderer.core.mesh.Scene {
+	- meshFilename : String
+	- cameraPosition : Vector
+	- cameraLookAt : Vector
+	- cameraUp : Vector
+	- cameraFocal : double
+	- screenW : int
+	- screenH : int
+	- ambientI : double
+	- sourceI : double
+	- sourceCoord : double[]
+	- material : double[]
+	- {static} nextLine(BufferedReader) : String
+	+ getMeshFileName() : String
+	+ getCameraPosition() : Vector
+	+ getCameraLookAt() : Vector
+	+ getCameraUp() : Vector
+	+ getCameraFocal() : double
+	+ getScreenW() : int
+	+ getScreenH() : int
+	+ getAmbientI() : double
+	+ getSourceCoord() : double[]
+	+ getSourceI() : double
+	+ getMaterial() : double[]
+}
+class renderer.core.rasterizer.Rasterizer {
+	- {static} MIDDLE_DOUBLE_VALUE : double
+	# shader : Shader
+	+ rasterizeEdge(Fragment, Fragment) : void
+	+ setShader(Shader) : void
+	+ rasterizeVertex(Fragment) : void
+	- interpolate2(Fragment, Fragment, Fragment) : void
+	- {static} swapXAndY(Fragment) : void
+	~ {static} triangleArea(Fragment, Fragment, Fragment) : double
+	# {static} makeBarycentricCoordsMatrix(Fragment, Fragment, Fragment) : Matrix
+	+ rasterizeFace(Fragment, Fragment, Fragment) : void
+}
+class renderer.core.rasterizer.PerspectiveCorrectRasterizer {
+	+ rasterizeFace(Fragment, Fragment, Fragment) : void
+}
+abstract class renderer.core.light.Light {
+	# intensity : double
+	+ {abstract} getContribution(Vector, Vector, double[], Vector, double, double, double, double) : double
+	+ getIntensity() : double
+}
+class renderer.core.light.AmbientLight {
+	+ getContribution(Vector, Vector, double[], Vector, double, double, double, double) : double
+}
+class renderer.core.light.Lighting {
+	- lights : List
+	+ reset() : void
+	+ addAmbientLight(double) : void
+	+ addPointLight(double, double, double, double) : void
+	+ applyLights(Vector, Vector, double[], Vector, double, double, double, double) : double[]
+	- {static} clampColor(double) : double
+}
+class renderer.core.light.PointLight {
+	- x : double
+	- y : double
+	- z : double
+	+ getContribution(Vector, Vector, double[], Vector, double, double, double, double) : double
+	- getPositionAsVector() : Vector
+}
+class renderer.core.camera.Transformation {
+	- worldToCamera : Matrix
+	- projection : Matrix
+	- calibration : Matrix
+	+ projectPoint(Vector) : Vector
+	+ setLookAt(Vector, Vector, Vector) : void
+	+ setProjection() : void
+	+ setCalibration(double, double, double) : void
+	+ transformVector(Vector) : Vector
+}
+class renderer.core.shader.colormap.ColorMap {
+	- lut : Color[]
+	+ length() : int
+	+ getColor(int) : Color
+}
+renderer.core.light.Light ..> renderer.algebra.Vector
+renderer.core.shader.Shader ..> renderer.controller.ColorMapFactory.Maps
+renderer.core.shader.Shader ..> renderer.controller.ImageWrapper
+renderer.core.shader.Shader ..> renderer.controller.Renderer
+renderer.algebra.Matrix --|> renderer.algebra.ArrayBase
+renderer.algebra.Vector --|> renderer.algebra.ArrayBase
+renderer.controller.ColorMapFactory ..> renderer.core.shader.colormap.ColorMap
+renderer.controller.ImageWrapper ..> renderer.core.mesh.Scene
+renderer.controller.ImageWrapper ..> renderer.core.shader.Fragment
+renderer.controller.Renderer ..> renderer.core.shader.Shader
+renderer.controller.Renderer ..> renderer.algebra.SizeMismatchException
+renderer.controller.Renderer ..> renderer.algebra.Vector
+renderer.controller.Renderer ..> renderer.controller.ColorMapFactory.Maps
+renderer.controller.Renderer ..> renderer.core.camera.Transformation
+renderer.controller.Renderer ..> renderer.core.light.Lighting
+renderer.controller.Renderer ..> renderer.core.mesh.Mesh
+renderer.controller.Renderer ..> renderer.core.mesh.Scene
+renderer.controller.Renderer ..> renderer.core.rasterizer.PerspectiveCorrectRasterizer
+renderer.controller.Renderer ..> renderer.core.rasterizer.Rasterizer
+renderer.controller.Renderer ..> renderer.core.shader.Fragment
+renderer.controller.Renderer ..> renderer.core.shader.TextureShader
+renderer.controller.ShaderFactory ..> renderer.core.shader.Shader
+renderer.core.camera.Transformation ..> renderer.algebra.Matrix
+renderer.core.camera.Transformation ..> renderer.algebra.SizeMismatchException
+renderer.core.camera.Transformation ..> renderer.algebra.Vector
+renderer.core.light.AmbientLight --|> renderer.core.light.Light
+renderer.core.light.AmbientLight ..> renderer.algebra.Vector
+renderer.core.light.Lighting ..> renderer.algebra.MathUtils
+renderer.core.light.Lighting ..> renderer.algebra.Vector
+renderer.core.light.PointLight --|> renderer.core.light.Light
+renderer.core.light.PointLight ..> renderer.algebra.Vector
+renderer.core.mesh.Mesh ..> renderer.algebra.Vector
+renderer.core.mesh.Scene ..> renderer.algebra.Vector
+renderer.core.rasterizer.PerspectiveCorrectRasterizer ..> renderer.core.shader.Shader
+renderer.core.rasterizer.PerspectiveCorrectRasterizer ..> renderer.algebra.MathUtils
+renderer.core.rasterizer.PerspectiveCorrectRasterizer ..> renderer.algebra.Matrix
+renderer.core.rasterizer.PerspectiveCorrectRasterizer ..> renderer.algebra.SizeMismatchException
+renderer.core.rasterizer.PerspectiveCorrectRasterizer ..> renderer.algebra.Vector
+renderer.core.rasterizer.PerspectiveCorrectRasterizer --|> renderer.core.rasterizer.Rasterizer
+renderer.core.rasterizer.PerspectiveCorrectRasterizer ..> renderer.core.shader.Fragment
+renderer.core.rasterizer.Rasterizer ..> renderer.core.shader.Shader
+renderer.core.rasterizer.Rasterizer ..> renderer.algebra.MathUtils
+renderer.core.rasterizer.Rasterizer ..> renderer.algebra.Matrix
+renderer.core.rasterizer.Rasterizer ..> renderer.algebra.SizeMismatchException
+renderer.core.rasterizer.Rasterizer ..> renderer.algebra.Vector
+renderer.core.rasterizer.Rasterizer ..> renderer.core.shader.Fragment
+renderer.core.shader.DepthBuffer ..> renderer.algebra.Matrix
+renderer.core.shader.Fragment ..> renderer.algebra.MathUtils
+renderer.core.shader.Fragment ..> renderer.algebra.Vector
+renderer.core.shader.PainterShader --|> renderer.core.shader.Shader
+renderer.core.shader.PainterShader ..> renderer.controller.ImageWrapper
+renderer.core.shader.PainterShader ..> renderer.controller.Renderer
+renderer.core.shader.SimpleShader --|> renderer.core.shader.Shader
+renderer.core.shader.TextureShader --|> renderer.core.shader.Shader
+renderer.core.shader.TextureShader ..> renderer.algebra.MathUtils
+renderer.core.shader.TextureShader ..> renderer.controller.ImageWrapper
+renderer.core.shader.TextureShader ..> renderer.controller.Renderer
+renderer.core.shader.TextureShader ..> renderer.core.mesh.Texture
+renderer.model.light.Lighting *-- renderer.model.light.Light
+@enduml
