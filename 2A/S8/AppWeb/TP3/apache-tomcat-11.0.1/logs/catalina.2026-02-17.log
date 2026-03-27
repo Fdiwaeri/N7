@@ -1,0 +1,45 @@
+17-Feb-2026 14:06:09.794 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/11.0.1
+17-Feb-2026 14:06:09.796 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Nov 6 2024 19:08:24 UTC
+17-Feb-2026 14:06:09.796 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               11.0.1.0
+17-Feb-2026 14:06:09.796 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Linux
+17-Feb-2026 14:06:09.796 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       6.14.0-37-generic
+17-Feb-2026 14:06:09.796 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+17-Feb-2026 14:06:09.797 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        /usr/lib/jvm/java-17-openjdk-amd64
+17-Feb-2026 14:06:09.797 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      17.0.18+8-Ubuntu-124.04.1
+17-Feb-2026 14:06:09.797 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Ubuntu
+17-Feb-2026 14:06:09.797 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+17-Feb-2026 14:06:09.797 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+17-Feb-2026 14:06:09.803 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/conf/logging.properties
+17-Feb-2026 14:06:09.803 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Feb-2026 14:06:09.803 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+17-Feb-2026 14:06:09.803 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+17-Feb-2026 14:06:09.803 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Feb-2026 14:06:09.804 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+17-Feb-2026 14:06:09.804 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+17-Feb-2026 14:06:09.804 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Feb-2026 14:06:09.804 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Feb-2026 14:06:09.804 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --enable-native-access=ALL-UNNAMED
+17-Feb-2026 14:06:09.804 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+17-Feb-2026 14:06:09.804 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+17-Feb-2026 14:06:09.804 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/temp
+17-Feb-2026 14:06:09.809 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La librairie Apache Tomcat Native basée sur APR qui permet des performances optimales dans les environnements de production n'a pas été trouvée sur le java.library.path : [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+17-Feb-2026 14:06:09.938 INFOS [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+17-Feb-2026 14:06:09.952 INFOS [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [381] millisecondes
+17-Feb-2026 14:06:09.998 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+17-Feb-2026 14:06:09.998 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/11.0.1]
+17-Feb-2026 14:06:10.058 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+17-Feb-2026 14:06:10.839 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [778] ms
+17-Feb-2026 14:06:10.899 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+17-Feb-2026 14:06:11.648 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [749] ms
+17-Feb-2026 14:06:11.648 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/ROOT]
+17-Feb-2026 14:06:11.689 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/ROOT] de l'application web s'est terminé en [41] ms
+17-Feb-2026 14:06:11.689 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/manager]
+17-Feb-2026 14:06:11.755 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/manager] de l'application web s'est terminé en [66] ms
+17-Feb-2026 14:06:11.756 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/examples]
+17-Feb-2026 14:06:12.622 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/examples] de l'application web s'est terminé en [866] ms
+17-Feb-2026 14:06:12.622 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/docs]
+17-Feb-2026 14:06:12.679 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/docs] de l'application web s'est terminé en [57] ms
+17-Feb-2026 14:06:12.680 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/host-manager]
+17-Feb-2026 14:06:12.733 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/host-manager] de l'application web s'est terminé en [52] ms
+17-Feb-2026 14:06:12.735 INFOS [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+17-Feb-2026 14:06:12.749 INFOS [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [2797] millisecondes

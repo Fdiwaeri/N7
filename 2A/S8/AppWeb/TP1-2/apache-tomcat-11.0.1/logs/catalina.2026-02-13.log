@@ -1,0 +1,81 @@
+13-Feb-2026 08:22:04.779 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/11.0.1
+13-Feb-2026 08:22:04.780 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Nov 6 2024 19:08:24 UTC
+13-Feb-2026 08:22:04.781 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               11.0.1.0
+13-Feb-2026 08:22:04.781 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Linux
+13-Feb-2026 08:22:04.781 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       6.14.0-37-generic
+13-Feb-2026 08:22:04.781 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+13-Feb-2026 08:22:04.781 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        /usr/lib/jvm/java-17-openjdk-amd64
+13-Feb-2026 08:22:04.781 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      17.0.18+8-Ubuntu-124.04.1
+13-Feb-2026 08:22:04.781 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Ubuntu
+13-Feb-2026 08:22:04.781 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+13-Feb-2026 08:22:04.781 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+13-Feb-2026 08:22:04.788 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/conf/logging.properties
+13-Feb-2026 08:22:04.788 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --enable-native-access=ALL-UNNAMED
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/temp
+13-Feb-2026 08:22:04.794 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La librairie Apache Tomcat Native basée sur APR qui permet des performances optimales dans les environnements de production n'a pas été trouvée sur le java.library.path : [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+13-Feb-2026 08:22:04.894 INFOS [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+13-Feb-2026 08:22:04.909 INFOS [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [306] millisecondes
+13-Feb-2026 08:22:04.937 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+13-Feb-2026 08:22:04.937 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/11.0.1]
+13-Feb-2026 08:22:05.006 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+13-Feb-2026 08:22:05.753 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [746] ms
+13-Feb-2026 08:22:05.753 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/ROOT]
+13-Feb-2026 08:22:05.794 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/ROOT] de l'application web s'est terminé en [41] ms
+13-Feb-2026 08:22:05.794 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/manager]
+13-Feb-2026 08:22:05.890 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/manager] de l'application web s'est terminé en [96] ms
+13-Feb-2026 08:22:05.890 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/examples]
+13-Feb-2026 08:22:06.639 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/examples] de l'application web s'est terminé en [749] ms
+13-Feb-2026 08:22:06.639 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/docs]
+13-Feb-2026 08:22:06.690 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/docs] de l'application web s'est terminé en [51] ms
+13-Feb-2026 08:22:06.690 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/host-manager]
+13-Feb-2026 08:22:06.742 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/host-manager] de l'application web s'est terminé en [52] ms
+13-Feb-2026 08:22:06.744 INFOS [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+13-Feb-2026 08:22:06.748 INFOS [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [1839] millisecondes
+13-Feb-2026 08:23:36.921 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+13-Feb-2026 08:23:37.341 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+13-Feb-2026 08:23:38.987 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [1 646] ms
+13-Feb-2026 08:54:51.686 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 08:54:51.907 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [221] ms
+13-Feb-2026 09:05:02.767 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 09:05:02.856 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 09:05:03.990 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 134] ms
+13-Feb-2026 09:06:54.129 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 09:06:54.374 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 09:06:55.465 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 090] ms
+13-Feb-2026 09:38:37.902 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 09:38:38.170 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 09:38:39.502 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 332] ms
+13-Feb-2026 09:41:39.750 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 09:41:40.152 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 09:41:41.905 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 753] ms
+13-Feb-2026 09:46:32.439 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 09:46:32.719 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 09:46:33.863 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 143] ms
+13-Feb-2026 09:46:53.892 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 09:46:54.166 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 09:46:55.446 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 281] ms
+13-Feb-2026 09:50:55.773 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 09:50:56.753 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 09:50:57.902 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 149] ms
+13-Feb-2026 09:52:28.042 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 09:52:28.314 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 09:52:29.523 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 208] ms
+13-Feb-2026 09:57:09.937 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 09:57:10.251 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 09:57:11.436 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 185] ms
+13-Feb-2026 09:59:21.652 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 09:59:21.929 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 09:59:23.080 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 151] ms
+13-Feb-2026 10:00:43.216 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 10:00:43.481 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 10:00:44.694 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 213] ms

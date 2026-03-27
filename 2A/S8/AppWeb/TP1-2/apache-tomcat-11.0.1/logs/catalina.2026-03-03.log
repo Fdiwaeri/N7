@@ -1,0 +1,192 @@
+03-Mar-2026 16:45:54.866 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/11.0.1
+03-Mar-2026 16:45:54.868 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Nov 6 2024 19:08:24 UTC
+03-Mar-2026 16:45:54.868 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               11.0.1.0
+03-Mar-2026 16:45:54.868 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Linux
+03-Mar-2026 16:45:54.868 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       6.14.0-33-generic
+03-Mar-2026 16:45:54.868 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+03-Mar-2026 16:45:54.868 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        /usr/lib/jvm/java-17-openjdk-amd64
+03-Mar-2026 16:45:54.868 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      17.0.18+8-Ubuntu-124.04.1
+03-Mar-2026 16:45:54.868 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Ubuntu
+03-Mar-2026 16:45:54.868 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+03-Mar-2026 16:45:54.868 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/conf/logging.properties
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --enable-native-access=ALL-UNNAMED
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/temp
+03-Mar-2026 16:45:54.877 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La librairie Apache Tomcat Native basée sur APR qui permet des performances optimales dans les environnements de production n'a pas été trouvée sur le java.library.path : [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+03-Mar-2026 16:45:55.033 INFOS [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+03-Mar-2026 16:45:55.047 GRAVE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Echec d'initialisation du composant [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: L'initialisation du gestionnaire de protocole a échoué
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1035)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:525)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:953)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:706)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:729)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:299)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:469)
+	Caused by: java.net.BindException: Adresse déjà utilisée
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:567)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:240)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:195)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1472)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1485)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:633)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:83)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1033)
+		... 13 more
+03-Mar-2026 16:45:55.048 INFOS [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [364] millisecondes
+03-Mar-2026 16:45:55.090 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+03-Mar-2026 16:45:55.090 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/11.0.1]
+03-Mar-2026 16:45:55.124 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+03-Mar-2026 16:45:55.768 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [642] ms
+03-Mar-2026 16:45:55.775 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+03-Mar-2026 16:45:56.139 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [363] ms
+03-Mar-2026 16:45:56.143 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade-0.0.1-SNAPSHOT.war] de l'application web
+03-Mar-2026 16:46:00.693 INFOS [main] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+03-Mar-2026 16:46:03.547 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade-0.0.1-SNAPSHOT.war] s'est terminé en [7 404] ms
+03-Mar-2026 16:46:03.549 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/ROOT]
+03-Mar-2026 16:46:03.583 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/ROOT] de l'application web s'est terminé en [33] ms
+03-Mar-2026 16:46:03.584 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/manager]
+03-Mar-2026 16:46:03.639 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/manager] de l'application web s'est terminé en [54] ms
+03-Mar-2026 16:46:03.640 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/examples]
+03-Mar-2026 16:46:04.288 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/examples] de l'application web s'est terminé en [648] ms
+03-Mar-2026 16:46:04.290 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/docs]
+03-Mar-2026 16:46:04.344 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/docs] de l'application web s'est terminé en [53] ms
+03-Mar-2026 16:46:04.345 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/host-manager]
+03-Mar-2026 16:46:04.400 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/host-manager] de l'application web s'est terminé en [56] ms
+03-Mar-2026 16:46:04.404 INFOS [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [9356] millisecondes
+03-Mar-2026 16:46:04.406 GRAVE [main] org.apache.catalina.core.StandardServer.await Impossible de créer le sokcet d'arrêt du serveur à l'adresse [localhost] et au port [8005] (port de base [8005] et offset [0])
+	java.net.BindException: Adresse déjà utilisée
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:567)
+		at java.base/sun.nio.ch.Net.bind(Net.java:556)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:648)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:388)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:274)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:532)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:845)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:793)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:470)
+03-Mar-2026 16:46:04.407 INFOS [main] org.apache.coyote.AbstractProtocol.pause Le gestionnaire de protocole ["http-nio-8080"] est mis en pause
+03-Mar-2026 16:46:04.407 INFOS [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service [Catalina]
+03-Mar-2026 16:46:04.521 INFOS [main] org.apache.coyote.AbstractProtocol.stop Arrêt du gestionnaire de protocole ["http-nio-8080"]
+03-Mar-2026 16:46:04.522 INFOS [main] org.apache.coyote.AbstractProtocol.destroy Destruction du gestionnaire de protocole ["http-nio-8080"]
+03-Mar-2026 17:15:48.576 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/11.0.1
+03-Mar-2026 17:15:48.578 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Nov 6 2024 19:08:24 UTC
+03-Mar-2026 17:15:48.578 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               11.0.1.0
+03-Mar-2026 17:15:48.578 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Linux
+03-Mar-2026 17:15:48.578 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       6.14.0-33-generic
+03-Mar-2026 17:15:48.578 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+03-Mar-2026 17:15:48.578 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        /usr/lib/jvm/java-17-openjdk-amd64
+03-Mar-2026 17:15:48.579 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      17.0.18+8-Ubuntu-124.04.1
+03-Mar-2026 17:15:48.579 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Ubuntu
+03-Mar-2026 17:15:48.579 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+03-Mar-2026 17:15:48.579 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+03-Mar-2026 17:15:48.583 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/conf/logging.properties
+03-Mar-2026 17:15:48.583 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+03-Mar-2026 17:15:48.583 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+03-Mar-2026 17:15:48.584 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+03-Mar-2026 17:15:48.584 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+03-Mar-2026 17:15:48.584 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+03-Mar-2026 17:15:48.584 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+03-Mar-2026 17:15:48.584 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+03-Mar-2026 17:15:48.584 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+03-Mar-2026 17:15:48.584 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --enable-native-access=ALL-UNNAMED
+03-Mar-2026 17:15:48.584 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+03-Mar-2026 17:15:48.584 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+03-Mar-2026 17:15:48.584 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/temp
+03-Mar-2026 17:15:48.585 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La librairie Apache Tomcat Native basée sur APR qui permet des performances optimales dans les environnements de production n'a pas été trouvée sur le java.library.path : [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+03-Mar-2026 17:15:48.748 INFOS [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+03-Mar-2026 17:15:48.758 INFOS [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [271] millisecondes
+03-Mar-2026 17:15:48.787 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+03-Mar-2026 17:15:48.787 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/11.0.1]
+03-Mar-2026 17:15:48.814 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] de l'application web
+03-Mar-2026 17:15:54.143 INFOS [main] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+03-Mar-2026 17:15:57.300 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] s'est terminé en [8 486] ms
+03-Mar-2026 17:15:57.306 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+03-Mar-2026 17:15:57.651 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [345] ms
+03-Mar-2026 17:15:57.657 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+03-Mar-2026 17:15:57.943 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [286] ms
+03-Mar-2026 17:15:57.944 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/ROOT]
+03-Mar-2026 17:15:57.964 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/ROOT] de l'application web s'est terminé en [20] ms
+03-Mar-2026 17:15:57.965 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/manager]
+03-Mar-2026 17:15:58.009 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/manager] de l'application web s'est terminé en [44] ms
+03-Mar-2026 17:15:58.010 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/examples]
+03-Mar-2026 17:15:58.795 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/examples] de l'application web s'est terminé en [785] ms
+03-Mar-2026 17:15:58.796 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/docs]
+03-Mar-2026 17:15:58.836 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/docs] de l'application web s'est terminé en [40] ms
+03-Mar-2026 17:15:58.837 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/host-manager]
+03-Mar-2026 17:15:58.878 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/host-manager] de l'application web s'est terminé en [41] ms
+03-Mar-2026 17:15:58.880 INFOS [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+03-Mar-2026 17:15:58.885 INFOS [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [10126] millisecondes
+03-Mar-2026 17:17:39.296 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/facade]
+03-Mar-2026 17:17:40.411 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] de l'application web
+03-Mar-2026 17:17:45.833 INFOS [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+03-Mar-2026 17:17:48.459 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] s'est terminé en [8 049] ms
+03-Mar-2026 17:39:10.344 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/Annuaire.war] de l'application web
+03-Mar-2026 17:39:15.783 INFOS [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+03-Mar-2026 17:39:15.949 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/Annuaire.war] s'est terminé en [5 605] ms
+03-Mar-2026 17:39:35.982 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/facade]
+03-Mar-2026 17:39:37.222 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] de l'application web
+03-Mar-2026 17:39:42.283 INFOS [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+03-Mar-2026 17:39:45.072 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] s'est terminé en [7 850] ms
+03-Mar-2026 17:41:05.291 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/Annuaire]
+03-Mar-2026 17:41:06.303 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/Annuaire.war] de l'application web
+03-Mar-2026 17:41:12.091 INFOS [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+03-Mar-2026 17:41:12.223 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/Annuaire.war] s'est terminé en [5 919] ms
+03-Mar-2026 17:41:22.235 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/facade]
+03-Mar-2026 17:41:23.609 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] de l'application web
+03-Mar-2026 17:41:28.340 INFOS [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+03-Mar-2026 17:41:30.798 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] s'est terminé en [7 189] ms
+03-Mar-2026 17:53:11.776 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/Annuaire]
+03-Mar-2026 17:53:12.991 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/Annuaire.war] de l'application web
+03-Mar-2026 17:53:19.134 INFOS [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+03-Mar-2026 17:53:19.449 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/Annuaire.war] s'est terminé en [6 458] ms
+03-Mar-2026 17:53:29.467 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/facade]
+03-Mar-2026 17:53:30.424 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] de l'application web
+03-Mar-2026 17:53:35.400 INFOS [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+03-Mar-2026 17:53:37.859 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] s'est terminé en [7 435] ms
+03-Mar-2026 17:54:28.085 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/Annuaire]
+03-Mar-2026 17:54:28.957 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/Annuaire.war] de l'application web
+03-Mar-2026 17:54:34.062 INFOS [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+03-Mar-2026 17:54:34.175 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/Annuaire.war] s'est terminé en [5 217] ms
+03-Mar-2026 17:54:44.529 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/facade]
+03-Mar-2026 17:54:45.469 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] de l'application web
+03-Mar-2026 17:54:50.251 INFOS [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+03-Mar-2026 17:54:52.669 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] s'est terminé en [7 200] ms
+03-Mar-2026 18:01:14.400 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/Annuaire]
+03-Mar-2026 18:01:15.756 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/Annuaire.war] de l'application web
+03-Mar-2026 18:01:21.287 INFOS [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+03-Mar-2026 18:01:21.458 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/Annuaire.war] s'est terminé en [5 701] ms
+03-Mar-2026 18:01:41.535 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/facade]
+03-Mar-2026 18:01:43.134 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] de l'application web
+03-Mar-2026 18:01:49.346 INFOS [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+03-Mar-2026 18:01:52.030 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] s'est terminé en [8 896] ms
+03-Mar-2026 18:02:21.156 INFOS [Thread-2] org.apache.coyote.AbstractProtocol.pause Le gestionnaire de protocole ["http-nio-8080"] est mis en pause
+03-Mar-2026 18:02:21.157 INFOS [Thread-2] org.apache.catalina.core.StandardService.stopInternal Arrêt du service [Catalina]
+03-Mar-2026 18:02:21.308 INFOS [Thread-2] org.apache.coyote.AbstractProtocol.stop Arrêt du gestionnaire de protocole ["http-nio-8080"]
+03-Mar-2026 18:02:21.310 INFOS [Thread-2] org.apache.coyote.AbstractProtocol.destroy Destruction du gestionnaire de protocole ["http-nio-8080"]

@@ -1,0 +1,765 @@
+Unrecognized option: --enable-native-access=ALL-UNNAMED
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+Unrecognized option: --enable-native-access=ALL-UNNAMED
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+06-Feb-2026 16:43:29.928 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/11.0.1
+06-Feb-2026 16:43:29.930 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Nov 6 2024 19:08:24 UTC
+06-Feb-2026 16:43:29.930 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               11.0.1.0
+06-Feb-2026 16:43:29.930 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Linux
+06-Feb-2026 16:43:29.930 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       6.14.0-37-generic
+06-Feb-2026 16:43:29.930 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+06-Feb-2026 16:43:29.930 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        /usr/lib/jvm/java-17-openjdk-amd64
+06-Feb-2026 16:43:29.930 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      17.0.18+8-Ubuntu-124.04.1
+06-Feb-2026 16:43:29.931 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Ubuntu
+06-Feb-2026 16:43:29.931 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+06-Feb-2026 16:43:29.931 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+06-Feb-2026 16:43:29.936 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/conf/logging.properties
+06-Feb-2026 16:43:29.936 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Feb-2026 16:43:29.936 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+06-Feb-2026 16:43:29.936 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Feb-2026 16:43:29.936 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Feb-2026 16:43:29.936 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+06-Feb-2026 16:43:29.937 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+06-Feb-2026 16:43:29.937 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Feb-2026 16:43:29.937 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Feb-2026 16:43:29.937 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --enable-native-access=ALL-UNNAMED
+06-Feb-2026 16:43:29.937 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+06-Feb-2026 16:43:29.937 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+06-Feb-2026 16:43:29.937 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/temp
+06-Feb-2026 16:43:29.941 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La librairie Apache Tomcat Native basée sur APR qui permet des performances optimales dans les environnements de production n'a pas été trouvée sur le java.library.path : [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+06-Feb-2026 16:43:30.063 INFOS [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+06-Feb-2026 16:43:30.074 INFOS [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [318] millisecondes
+06-Feb-2026 16:43:30.102 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+06-Feb-2026 16:43:30.102 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/11.0.1]
+06-Feb-2026 16:43:30.125 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/ROOT]
+06-Feb-2026 16:43:30.382 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/ROOT] de l'application web s'est terminé en [255] ms
+06-Feb-2026 16:43:30.382 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/manager]
+06-Feb-2026 16:43:30.434 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/manager] de l'application web s'est terminé en [52] ms
+06-Feb-2026 16:43:30.434 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/examples]
+06-Feb-2026 16:43:31.162 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/examples] de l'application web s'est terminé en [727] ms
+06-Feb-2026 16:43:31.162 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/docs]
+06-Feb-2026 16:43:31.211 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/docs] de l'application web s'est terminé en [49] ms
+06-Feb-2026 16:43:31.211 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/host-manager]
+06-Feb-2026 16:43:31.262 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/host-manager] de l'application web s'est terminé en [51] ms
+06-Feb-2026 16:43:31.265 INFOS [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+06-Feb-2026 16:43:31.281 INFOS [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [1206] millisecondes
+06-Feb-2026 16:55:22.375 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+06-Feb-2026 16:55:23.805 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [1 430] ms
+06-Feb-2026 16:59:04.089 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+06-Feb-2026 16:59:04.327 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+06-Feb-2026 16:59:05.439 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [1 112] ms
+06-Feb-2026 17:06:36.079 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+06-Feb-2026 17:06:36.357 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+06-Feb-2026 17:06:37.528 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [1 171] ms
+06-Feb-2026 17:12:08.014 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+06-Feb-2026 17:12:08.290 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+06-Feb-2026 17:12:09.479 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [1 189] ms
+06-Feb-2026 17:12:59.544 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+06-Feb-2026 17:12:59.892 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+06-Feb-2026 17:13:01.997 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [2 105] ms
+06-Feb-2026 17:14:32.152 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+06-Feb-2026 17:14:32.410 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+06-Feb-2026 17:14:33.602 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [1 192] ms
+06-Feb-2026 17:14:43.618 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+06-Feb-2026 17:14:43.847 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+06-Feb-2026 17:14:44.986 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [1 139] ms
+06-Feb-2026 17:15:05.014 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+06-Feb-2026 17:15:05.242 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+06-Feb-2026 17:15:06.419 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [1 177] ms
+06-Feb-2026 17:16:36.610 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+06-Feb-2026 17:16:46.879 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+06-Feb-2026 17:16:48.182 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [1 303] ms
+06-Feb-2026 17:17:18.242 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+06-Feb-2026 17:17:38.567 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+06-Feb-2026 17:17:39.748 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [1 180] ms
+06-Feb-2026 17:18:39.840 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+06-Feb-2026 17:18:40.081 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+06-Feb-2026 17:18:41.279 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [1 198] ms
+06-Feb-2026 17:19:01.309 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+06-Feb-2026 17:19:11.631 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+06-Feb-2026 17:19:12.802 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [1 171] ms
+06-Feb-2026 17:19:32.842 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+06-Feb-2026 17:19:43.110 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+06-Feb-2026 17:19:44.338 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [1 228] ms
+06-Feb-2026 17:26:14.891 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+06-Feb-2026 17:26:15.149 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+06-Feb-2026 17:26:16.460 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [1 311] ms
+06-Feb-2026 17:29:36.768 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+06-Feb-2026 17:29:37.103 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+06-Feb-2026 17:29:38.380 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [1 276] ms
+06-Feb-2026 17:29:48.409 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+06-Feb-2026 17:29:48.704 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+06-Feb-2026 17:29:49.894 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [1 190] ms
+06-Feb-2026 17:33:50.237 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+06-Feb-2026 17:33:50.552 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+06-Feb-2026 17:33:51.879 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [1 327] ms
+13-Feb-2026 08:22:04.779 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/11.0.1
+13-Feb-2026 08:22:04.780 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Nov 6 2024 19:08:24 UTC
+13-Feb-2026 08:22:04.781 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               11.0.1.0
+13-Feb-2026 08:22:04.781 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Linux
+13-Feb-2026 08:22:04.781 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       6.14.0-37-generic
+13-Feb-2026 08:22:04.781 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+13-Feb-2026 08:22:04.781 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        /usr/lib/jvm/java-17-openjdk-amd64
+13-Feb-2026 08:22:04.781 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      17.0.18+8-Ubuntu-124.04.1
+13-Feb-2026 08:22:04.781 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Ubuntu
+13-Feb-2026 08:22:04.781 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+13-Feb-2026 08:22:04.781 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+13-Feb-2026 08:22:04.788 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/conf/logging.properties
+13-Feb-2026 08:22:04.788 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --enable-native-access=ALL-UNNAMED
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+13-Feb-2026 08:22:04.789 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/temp
+13-Feb-2026 08:22:04.794 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La librairie Apache Tomcat Native basée sur APR qui permet des performances optimales dans les environnements de production n'a pas été trouvée sur le java.library.path : [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+13-Feb-2026 08:22:04.894 INFOS [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+13-Feb-2026 08:22:04.909 INFOS [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [306] millisecondes
+13-Feb-2026 08:22:04.937 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+13-Feb-2026 08:22:04.937 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/11.0.1]
+13-Feb-2026 08:22:05.006 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+13-Feb-2026 08:22:05.753 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [746] ms
+13-Feb-2026 08:22:05.753 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/ROOT]
+13-Feb-2026 08:22:05.794 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/ROOT] de l'application web s'est terminé en [41] ms
+13-Feb-2026 08:22:05.794 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/manager]
+13-Feb-2026 08:22:05.890 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/manager] de l'application web s'est terminé en [96] ms
+13-Feb-2026 08:22:05.890 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/examples]
+13-Feb-2026 08:22:06.639 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/examples] de l'application web s'est terminé en [749] ms
+13-Feb-2026 08:22:06.639 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/docs]
+13-Feb-2026 08:22:06.690 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/docs] de l'application web s'est terminé en [51] ms
+13-Feb-2026 08:22:06.690 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/host-manager]
+13-Feb-2026 08:22:06.742 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/host-manager] de l'application web s'est terminé en [52] ms
+13-Feb-2026 08:22:06.744 INFOS [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+13-Feb-2026 08:22:06.748 INFOS [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [1839] millisecondes
+13-Feb-2026 08:23:36.921 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/hello]
+13-Feb-2026 08:23:37.341 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+13-Feb-2026 08:23:38.987 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [1 646] ms
+13-Feb-2026 08:54:51.686 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 08:54:51.907 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [221] ms
+13-Feb-2026 09:05:02.767 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 09:05:02.856 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 09:05:03.990 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 134] ms
+13-Feb-2026 09:06:54.129 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 09:06:54.374 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 09:06:55.465 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 090] ms
+13-Feb-2026 09:38:37.902 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 09:38:38.170 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 09:38:39.502 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 332] ms
+13-Feb-2026 09:41:39.750 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 09:41:40.152 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 09:41:41.905 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 753] ms
+13-Feb-2026 09:46:32.439 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 09:46:32.719 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 09:46:33.863 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 143] ms
+13-Feb-2026 09:46:53.892 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 09:46:54.166 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 09:46:55.446 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 281] ms
+13-Feb-2026 09:50:55.773 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 09:50:56.753 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 09:50:57.902 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 149] ms
+13-Feb-2026 09:52:28.042 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 09:52:28.314 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 09:52:29.523 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 208] ms
+13-Feb-2026 09:57:09.937 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 09:57:10.251 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 09:57:11.436 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 185] ms
+13-Feb-2026 09:59:21.652 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 09:59:21.929 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 09:59:23.080 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 151] ms
+13-Feb-2026 10:00:43.216 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/annuaire]
+13-Feb-2026 10:00:43.481 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+13-Feb-2026 10:00:44.694 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [1 213] ms
+17-Feb-2026 14:06:09.794 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/11.0.1
+17-Feb-2026 14:06:09.796 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Nov 6 2024 19:08:24 UTC
+17-Feb-2026 14:06:09.796 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               11.0.1.0
+17-Feb-2026 14:06:09.796 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Linux
+17-Feb-2026 14:06:09.796 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       6.14.0-37-generic
+17-Feb-2026 14:06:09.796 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+17-Feb-2026 14:06:09.797 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        /usr/lib/jvm/java-17-openjdk-amd64
+17-Feb-2026 14:06:09.797 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      17.0.18+8-Ubuntu-124.04.1
+17-Feb-2026 14:06:09.797 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Ubuntu
+17-Feb-2026 14:06:09.797 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+17-Feb-2026 14:06:09.797 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+17-Feb-2026 14:06:09.803 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/conf/logging.properties
+17-Feb-2026 14:06:09.803 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Feb-2026 14:06:09.803 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+17-Feb-2026 14:06:09.803 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+17-Feb-2026 14:06:09.803 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Feb-2026 14:06:09.804 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+17-Feb-2026 14:06:09.804 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+17-Feb-2026 14:06:09.804 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Feb-2026 14:06:09.804 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Feb-2026 14:06:09.804 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --enable-native-access=ALL-UNNAMED
+17-Feb-2026 14:06:09.804 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+17-Feb-2026 14:06:09.804 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+17-Feb-2026 14:06:09.804 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/temp
+17-Feb-2026 14:06:09.809 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La librairie Apache Tomcat Native basée sur APR qui permet des performances optimales dans les environnements de production n'a pas été trouvée sur le java.library.path : [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+17-Feb-2026 14:06:09.938 INFOS [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+17-Feb-2026 14:06:09.952 INFOS [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [381] millisecondes
+17-Feb-2026 14:06:09.998 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+17-Feb-2026 14:06:09.998 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/11.0.1]
+17-Feb-2026 14:06:10.058 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+17-Feb-2026 14:06:10.839 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [778] ms
+17-Feb-2026 14:06:10.899 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+17-Feb-2026 14:06:11.648 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [749] ms
+17-Feb-2026 14:06:11.648 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/ROOT]
+17-Feb-2026 14:06:11.689 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/ROOT] de l'application web s'est terminé en [41] ms
+17-Feb-2026 14:06:11.689 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/manager]
+17-Feb-2026 14:06:11.755 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/manager] de l'application web s'est terminé en [66] ms
+17-Feb-2026 14:06:11.756 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/examples]
+17-Feb-2026 14:06:12.622 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/examples] de l'application web s'est terminé en [866] ms
+17-Feb-2026 14:06:12.622 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/docs]
+17-Feb-2026 14:06:12.679 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/docs] de l'application web s'est terminé en [57] ms
+17-Feb-2026 14:06:12.680 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/host-manager]
+17-Feb-2026 14:06:12.733 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/host-manager] de l'application web s'est terminé en [52] ms
+17-Feb-2026 14:06:12.735 INFOS [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+17-Feb-2026 14:06:12.749 INFOS [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [2797] millisecondes
+03-Mar-2026 16:45:54.866 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/11.0.1
+03-Mar-2026 16:45:54.868 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Nov 6 2024 19:08:24 UTC
+03-Mar-2026 16:45:54.868 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               11.0.1.0
+03-Mar-2026 16:45:54.868 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Linux
+03-Mar-2026 16:45:54.868 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       6.14.0-33-generic
+03-Mar-2026 16:45:54.868 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+03-Mar-2026 16:45:54.868 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        /usr/lib/jvm/java-17-openjdk-amd64
+03-Mar-2026 16:45:54.868 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      17.0.18+8-Ubuntu-124.04.1
+03-Mar-2026 16:45:54.868 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Ubuntu
+03-Mar-2026 16:45:54.868 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+03-Mar-2026 16:45:54.868 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/conf/logging.properties
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --enable-native-access=ALL-UNNAMED
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+03-Mar-2026 16:45:54.873 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/temp
+03-Mar-2026 16:45:54.877 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La librairie Apache Tomcat Native basée sur APR qui permet des performances optimales dans les environnements de production n'a pas été trouvée sur le java.library.path : [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+03-Mar-2026 16:45:55.033 INFOS [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+03-Mar-2026 16:45:55.047 GRAVE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Echec d'initialisation du composant [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: L'initialisation du gestionnaire de protocole a échoué
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1035)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:525)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:953)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:706)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:729)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:299)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:469)
+	Caused by: java.net.BindException: Adresse déjà utilisée
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:567)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:240)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:195)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1472)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1485)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:633)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:83)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1033)
+		... 13 more
+03-Mar-2026 16:45:55.048 INFOS [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [364] millisecondes
+03-Mar-2026 16:45:55.090 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+03-Mar-2026 16:45:55.090 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/11.0.1]
+03-Mar-2026 16:45:55.124 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+03-Mar-2026 16:45:55.768 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [642] ms
+03-Mar-2026 16:45:55.775 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+03-Mar-2026 16:45:56.139 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [363] ms
+03-Mar-2026 16:45:56.143 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade-0.0.1-SNAPSHOT.war] de l'application web
+03-Mar-2026 16:46:00.693 INFOS [main] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.3)
+
+2026-03-03T16:46:01.102+01:00  INFO 1648423 --- [facade] [           main] n7.facade.ServletInitializer             : Starting ServletInitializer v0.0.1-SNAPSHOT using Java 17.0.18 with PID 1648423 (/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade-0.0.1-SNAPSHOT/WEB-INF/classes started by fek2775 in /home/fek2775/Annee_2/AppWeb/TP1)
+2026-03-03T16:46:01.105+01:00  INFO 1648423 --- [facade] [           main] n7.facade.ServletInitializer             : No active profile set, falling back to 1 default profile: "default"
+2026-03-03T16:46:01.528+01:00  INFO 1648423 --- [facade] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-03T16:46:01.548+01:00  INFO 1648423 --- [facade] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+2026-03-03T16:46:01.672+01:00  INFO 1648423 --- [facade] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 541 ms
+2026-03-03T16:46:01.906+01:00  INFO 1648423 --- [facade] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-03T16:46:02.075+01:00  INFO 1648423 --- [facade] [           main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2026-03-03T16:46:02.076+01:00  INFO 1648423 --- [facade] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@409b96d2
+2026-03-03T16:46:02.077+01:00  INFO 1648423 --- [facade] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-03T16:46:02.104+01:00  INFO 1648423 --- [facade] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-03T16:46:02.246+01:00  INFO 1648423 --- [facade] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-03T16:46:02.671+01:00  INFO 1648423 --- [facade] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-03T16:46:02.784+01:00  INFO 1648423 --- [facade] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:hsqldb:mem:9a982400-81d6-4416-a8d1-cd858de6858e]
+	Database driver: HSQL Database Engine Driver
+	Database dialect: HSQLDialect
+	Database version: 2.7.3
+	Default catalog/schema: PUBLIC/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-03T16:46:03.169+01:00  INFO 1648423 --- [facade] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03T16:46:03.176+01:00  INFO 1648423 --- [facade] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T16:46:03.225+01:00  WARN 1648423 --- [facade] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-03T16:46:03.472+01:00  INFO 1648423 --- [facade] [           main] n7.facade.ServletInitializer             : Started ServletInitializer in 2.659 seconds (process running for 9.136)
+03-Mar-2026 16:46:03.547 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade-0.0.1-SNAPSHOT.war] s'est terminé en [7 404] ms
+03-Mar-2026 16:46:03.549 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/ROOT]
+03-Mar-2026 16:46:03.583 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/ROOT] de l'application web s'est terminé en [33] ms
+03-Mar-2026 16:46:03.584 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/manager]
+03-Mar-2026 16:46:03.639 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/manager] de l'application web s'est terminé en [54] ms
+03-Mar-2026 16:46:03.640 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/examples]
+03-Mar-2026 16:46:04.288 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/examples] de l'application web s'est terminé en [648] ms
+03-Mar-2026 16:46:04.290 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/docs]
+03-Mar-2026 16:46:04.344 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/docs] de l'application web s'est terminé en [53] ms
+03-Mar-2026 16:46:04.345 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/host-manager]
+03-Mar-2026 16:46:04.400 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/host-manager] de l'application web s'est terminé en [56] ms
+03-Mar-2026 16:46:04.404 INFOS [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [9356] millisecondes
+03-Mar-2026 16:46:04.406 GRAVE [main] org.apache.catalina.core.StandardServer.await Impossible de créer le sokcet d'arrêt du serveur à l'adresse [localhost] et au port [8005] (port de base [8005] et offset [0])
+	java.net.BindException: Adresse déjà utilisée
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:567)
+		at java.base/sun.nio.ch.Net.bind(Net.java:556)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:648)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:388)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:274)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:532)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:845)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:793)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:470)
+03-Mar-2026 16:46:04.407 INFOS [main] org.apache.coyote.AbstractProtocol.pause Le gestionnaire de protocole ["http-nio-8080"] est mis en pause
+03-Mar-2026 16:46:04.407 INFOS [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service [Catalina]
+2026-03-03T16:46:04.437+01:00  INFO 1648423 --- [facade] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T16:46:04.438+01:00  INFO 1648423 --- [facade] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-03T16:46:04.439+01:00  INFO 1648423 --- [facade] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+03-Mar-2026 16:46:04.521 INFOS [main] org.apache.coyote.AbstractProtocol.stop Arrêt du gestionnaire de protocole ["http-nio-8080"]
+03-Mar-2026 16:46:04.522 INFOS [main] org.apache.coyote.AbstractProtocol.destroy Destruction du gestionnaire de protocole ["http-nio-8080"]
+03-Mar-2026 17:15:48.576 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/11.0.1
+03-Mar-2026 17:15:48.578 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Nov 6 2024 19:08:24 UTC
+03-Mar-2026 17:15:48.578 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               11.0.1.0
+03-Mar-2026 17:15:48.578 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Linux
+03-Mar-2026 17:15:48.578 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       6.14.0-33-generic
+03-Mar-2026 17:15:48.578 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+03-Mar-2026 17:15:48.578 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        /usr/lib/jvm/java-17-openjdk-amd64
+03-Mar-2026 17:15:48.579 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      17.0.18+8-Ubuntu-124.04.1
+03-Mar-2026 17:15:48.579 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Ubuntu
+03-Mar-2026 17:15:48.579 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+03-Mar-2026 17:15:48.579 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+03-Mar-2026 17:15:48.583 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/conf/logging.properties
+03-Mar-2026 17:15:48.583 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+03-Mar-2026 17:15:48.583 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+03-Mar-2026 17:15:48.584 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+03-Mar-2026 17:15:48.584 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+03-Mar-2026 17:15:48.584 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+03-Mar-2026 17:15:48.584 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+03-Mar-2026 17:15:48.584 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+03-Mar-2026 17:15:48.584 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+03-Mar-2026 17:15:48.584 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --enable-native-access=ALL-UNNAMED
+03-Mar-2026 17:15:48.584 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+03-Mar-2026 17:15:48.584 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1
+03-Mar-2026 17:15:48.584 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/temp
+03-Mar-2026 17:15:48.585 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La librairie Apache Tomcat Native basée sur APR qui permet des performances optimales dans les environnements de production n'a pas été trouvée sur le java.library.path : [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+03-Mar-2026 17:15:48.748 INFOS [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+03-Mar-2026 17:15:48.758 INFOS [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [271] millisecondes
+03-Mar-2026 17:15:48.787 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+03-Mar-2026 17:15:48.787 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/11.0.1]
+03-Mar-2026 17:15:48.814 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] de l'application web
+03-Mar-2026 17:15:54.143 INFOS [main] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.3)
+
+2026-03-03T17:15:54.659+01:00  INFO 1670714 --- [facade] [           main] n7.facade.ServletInitializer             : Starting ServletInitializer v0.0.1-SNAPSHOT using Java 17.0.18 with PID 1670714 (/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade/WEB-INF/classes started by fek2775 in /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/bin)
+2026-03-03T17:15:54.662+01:00  INFO 1670714 --- [facade] [           main] n7.facade.ServletInitializer             : No active profile set, falling back to 1 default profile: "default"
+2026-03-03T17:15:55.121+01:00  INFO 1670714 --- [facade] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-03T17:15:55.137+01:00  INFO 1670714 --- [facade] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2026-03-03T17:15:55.261+01:00  INFO 1670714 --- [facade] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 560 ms
+2026-03-03T17:15:55.456+01:00  INFO 1670714 --- [facade] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-03T17:15:55.672+01:00  INFO 1670714 --- [facade] [           main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2026-03-03T17:15:55.674+01:00  INFO 1670714 --- [facade] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@7ec01520
+2026-03-03T17:15:55.675+01:00  INFO 1670714 --- [facade] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-03T17:15:55.713+01:00  INFO 1670714 --- [facade] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-03T17:15:55.852+01:00  INFO 1670714 --- [facade] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-03T17:15:56.293+01:00  INFO 1670714 --- [facade] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-03T17:15:56.413+01:00  INFO 1670714 --- [facade] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:hsqldb:mem:de9ea91a-98e1-4a80-8133-6c2febaa9f98]
+	Database driver: HSQL Database Engine Driver
+	Database dialect: HSQLDialect
+	Database version: 2.7.3
+	Default catalog/schema: PUBLIC/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-03T17:15:56.792+01:00  INFO 1670714 --- [facade] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03T17:15:56.798+01:00  INFO 1670714 --- [facade] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T17:15:56.838+01:00  WARN 1670714 --- [facade] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-03T17:15:57.202+01:00  INFO 1670714 --- [facade] [           main] n7.facade.ServletInitializer             : Started ServletInitializer in 2.89 seconds (process running for 8.861)
+03-Mar-2026 17:15:57.300 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] s'est terminé en [8 486] ms
+03-Mar-2026 17:15:57.306 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] de l'application web
+03-Mar-2026 17:15:57.651 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/annuaire.war] s'est terminé en [345] ms
+03-Mar-2026 17:15:57.657 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] de l'application web
+03-Mar-2026 17:15:57.943 INFOS [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/hello.war] s'est terminé en [286] ms
+03-Mar-2026 17:15:57.944 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/ROOT]
+03-Mar-2026 17:15:57.964 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/ROOT] de l'application web s'est terminé en [20] ms
+03-Mar-2026 17:15:57.965 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/manager]
+03-Mar-2026 17:15:58.009 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/manager] de l'application web s'est terminé en [44] ms
+03-Mar-2026 17:15:58.010 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/examples]
+03-Mar-2026 17:15:58.795 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/examples] de l'application web s'est terminé en [785] ms
+03-Mar-2026 17:15:58.796 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/docs]
+03-Mar-2026 17:15:58.836 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/docs] de l'application web s'est terminé en [40] ms
+03-Mar-2026 17:15:58.837 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/host-manager]
+03-Mar-2026 17:15:58.878 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/host-manager] de l'application web s'est terminé en [41] ms
+03-Mar-2026 17:15:58.880 INFOS [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+03-Mar-2026 17:15:58.885 INFOS [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [10126] millisecondes
+2026-03-03T17:15:59.055+01:00  INFO 1670714 --- [facade] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-03T17:15:59.056+01:00  INFO 1670714 --- [facade] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-03T17:16:11.287+01:00  WARN 1670714 --- [facade] [nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'num' for method parameter type int is not present]
+03-Mar-2026 17:17:39.296 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/facade]
+2026-03-03T17:17:39.332+01:00  INFO 1670714 --- [facade] [alina-utility-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T17:17:39.333+01:00  INFO 1670714 --- [facade] [alina-utility-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-03T17:17:39.334+01:00  INFO 1670714 --- [facade] [alina-utility-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+03-Mar-2026 17:17:40.411 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] de l'application web
+03-Mar-2026 17:17:45.833 INFOS [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.3)
+
+2026-03-03T17:17:46.165+01:00  INFO 1670714 --- [facade] [alina-utility-2] n7.facade.ServletInitializer             : Starting ServletInitializer v0.0.1-SNAPSHOT using Java 17.0.18 with PID 1670714 (/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade/WEB-INF/classes started by fek2775 in /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/bin)
+2026-03-03T17:17:46.166+01:00  INFO 1670714 --- [facade] [alina-utility-2] n7.facade.ServletInitializer             : No active profile set, falling back to 1 default profile: "default"
+2026-03-03T17:17:46.517+01:00  INFO 1670714 --- [facade] [alina-utility-2] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-03T17:17:46.530+01:00  INFO 1670714 --- [facade] [alina-utility-2] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2026-03-03T17:17:46.680+01:00  INFO 1670714 --- [facade] [alina-utility-2] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 484 ms
+2026-03-03T17:17:46.844+01:00  INFO 1670714 --- [facade] [alina-utility-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-03-03T17:17:47.053+01:00  INFO 1670714 --- [facade] [alina-utility-2] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Driver does not support get/set network timeout for connections. (feature not supported)
+2026-03-03T17:17:47.054+01:00  INFO 1670714 --- [facade] [alina-utility-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.hsqldb.jdbc.JDBCConnection@1cc7e94f
+2026-03-03T17:17:47.056+01:00  INFO 1670714 --- [facade] [alina-utility-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-03-03T17:17:47.091+01:00  INFO 1670714 --- [facade] [alina-utility-2] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-03T17:17:47.205+01:00  INFO 1670714 --- [facade] [alina-utility-2] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-03T17:17:47.554+01:00  INFO 1670714 --- [facade] [alina-utility-2] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-03T17:17:47.649+01:00  INFO 1670714 --- [facade] [alina-utility-2] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:hsqldb:mem:12e2c5bd-f48c-46dd-b8bb-2b8233982bf2]
+	Database driver: HSQL Database Engine Driver
+	Database dialect: HSQLDialect
+	Database version: 2.7.3
+	Default catalog/schema: PUBLIC/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-03T17:17:48.110+01:00  INFO 1670714 --- [facade] [alina-utility-2] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03T17:17:48.117+01:00  INFO 1670714 --- [facade] [alina-utility-2] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T17:17:48.162+01:00  WARN 1670714 --- [facade] [alina-utility-2] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-03T17:17:48.367+01:00  INFO 1670714 --- [facade] [alina-utility-2] n7.facade.ServletInitializer             : Started ServletInitializer in 2.421 seconds (process running for 120.027)
+03-Mar-2026 17:17:48.459 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] s'est terminé en [8 049] ms
+2026-03-03T17:18:48.712+01:00  INFO 1670714 --- [facade] [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-03T17:18:48.713+01:00  INFO 1670714 --- [facade] [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+03-Mar-2026 17:39:10.344 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/Annuaire.war] de l'application web
+03-Mar-2026 17:39:15.783 INFOS [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+03-Mar-2026 17:39:15.949 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/Annuaire.war] s'est terminé en [5 605] ms
+03-Mar-2026 17:39:35.982 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/facade]
+2026-03-03T17:39:36.022+01:00  INFO 1670714 --- [facade] [alina-utility-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T17:39:36.023+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-03-03T17:39:36.023+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+03-Mar-2026 17:39:37.222 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] de l'application web
+03-Mar-2026 17:39:42.283 INFOS [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.3)
+
+2026-03-03T17:39:42.603+01:00  INFO 1670714 --- [facade] [alina-utility-1] n7.facade.ServletInitializer             : Starting ServletInitializer v0.0.1-SNAPSHOT using Java 17.0.18 with PID 1670714 (/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade/WEB-INF/classes started by fek2775 in /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/bin)
+2026-03-03T17:39:42.605+01:00  INFO 1670714 --- [facade] [alina-utility-1] n7.facade.ServletInitializer             : No active profile set, falling back to 1 default profile: "default"
+2026-03-03T17:39:42.944+01:00  INFO 1670714 --- [facade] [alina-utility-1] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-03T17:39:42.956+01:00  INFO 1670714 --- [facade] [alina-utility-1] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2026-03-03T17:39:43.105+01:00  INFO 1670714 --- [facade] [alina-utility-1] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 481 ms
+2026-03-03T17:39:43.341+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-03-03T17:39:43.522+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-3 - Driver does not support get/set network timeout for connections. (feature not supported)
+2026-03-03T17:39:43.523+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.hsqldb.jdbc.JDBCConnection@d530aa0
+2026-03-03T17:39:43.525+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-03-03T17:39:43.566+01:00  INFO 1670714 --- [facade] [alina-utility-1] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-03T17:39:43.711+01:00  INFO 1670714 --- [facade] [alina-utility-1] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-03T17:39:44.092+01:00  INFO 1670714 --- [facade] [alina-utility-1] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-03T17:39:44.195+01:00  INFO 1670714 --- [facade] [alina-utility-1] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:hsqldb:mem:8e1902ca-b21e-44dd-af69-14edc796bae6]
+	Database driver: HSQL Database Engine Driver
+	Database dialect: HSQLDialect
+	Database version: 2.7.3
+	Default catalog/schema: PUBLIC/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-03T17:39:44.703+01:00  INFO 1670714 --- [facade] [alina-utility-1] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03T17:39:44.713+01:00  INFO 1670714 --- [facade] [alina-utility-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T17:39:44.754+01:00  WARN 1670714 --- [facade] [alina-utility-1] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-03T17:39:44.998+01:00  INFO 1670714 --- [facade] [alina-utility-1] n7.facade.ServletInitializer             : Started ServletInitializer in 2.613 seconds (process running for 1436.658)
+03-Mar-2026 17:39:45.072 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] s'est terminé en [7 850] ms
+03-Mar-2026 17:41:05.291 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/Annuaire]
+03-Mar-2026 17:41:06.303 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/Annuaire.war] de l'application web
+03-Mar-2026 17:41:12.091 INFOS [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+03-Mar-2026 17:41:12.223 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/Annuaire.war] s'est terminé en [5 919] ms
+03-Mar-2026 17:41:22.235 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/facade]
+2026-03-03T17:41:22.317+01:00  INFO 1670714 --- [facade] [alina-utility-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T17:41:22.319+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-03-03T17:41:22.320+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+03-Mar-2026 17:41:23.609 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] de l'application web
+03-Mar-2026 17:41:28.340 INFOS [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.3)
+
+2026-03-03T17:41:28.630+01:00  INFO 1670714 --- [facade] [alina-utility-1] n7.facade.ServletInitializer             : Starting ServletInitializer v0.0.1-SNAPSHOT using Java 17.0.18 with PID 1670714 (/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade/WEB-INF/classes started by fek2775 in /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/bin)
+2026-03-03T17:41:28.632+01:00  INFO 1670714 --- [facade] [alina-utility-1] n7.facade.ServletInitializer             : No active profile set, falling back to 1 default profile: "default"
+2026-03-03T17:41:28.924+01:00  INFO 1670714 --- [facade] [alina-utility-1] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-03T17:41:28.941+01:00  INFO 1670714 --- [facade] [alina-utility-1] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2026-03-03T17:41:29.053+01:00  INFO 1670714 --- [facade] [alina-utility-1] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 404 ms
+2026-03-03T17:41:29.230+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-03-03T17:41:29.398+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-4 - Driver does not support get/set network timeout for connections. (feature not supported)
+2026-03-03T17:41:29.398+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.hsqldb.jdbc.JDBCConnection@413ccabf
+2026-03-03T17:41:29.399+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-03-03T17:41:29.429+01:00  INFO 1670714 --- [facade] [alina-utility-1] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-03T17:41:29.573+01:00  INFO 1670714 --- [facade] [alina-utility-1] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-03T17:41:30.024+01:00  INFO 1670714 --- [facade] [alina-utility-1] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-03T17:41:30.115+01:00  INFO 1670714 --- [facade] [alina-utility-1] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:hsqldb:mem:7f5cf7bc-2af5-403c-aa43-563b5eb0834a]
+	Database driver: HSQL Database Engine Driver
+	Database dialect: HSQLDialect
+	Database version: 2.7.3
+	Default catalog/schema: PUBLIC/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-03T17:41:30.490+01:00  INFO 1670714 --- [facade] [alina-utility-1] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03T17:41:30.496+01:00  INFO 1670714 --- [facade] [alina-utility-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T17:41:30.527+01:00  WARN 1670714 --- [facade] [alina-utility-1] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-03T17:41:30.725+01:00  INFO 1670714 --- [facade] [alina-utility-1] n7.facade.ServletInitializer             : Started ServletInitializer in 2.282 seconds (process running for 1542.385)
+03-Mar-2026 17:41:30.798 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] s'est terminé en [7 189] ms
+2026-03-03T17:42:17.429+01:00  INFO 1670714 --- [facade] [io-8080-exec-24] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-03T17:42:17.431+01:00  INFO 1670714 --- [facade] [io-8080-exec-24] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-03T17:42:22.202+01:00  WARN 1670714 --- [facade] [io-8080-exec-21] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-03-03T17:42:25.356+01:00  WARN 1670714 --- [facade] [io-8080-exec-30] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-03-03T17:42:26.484+01:00  WARN 1670714 --- [facade] [io-8080-exec-31] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-03-03T17:42:27.213+01:00  WARN 1670714 --- [facade] [io-8080-exec-32] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+03-Mar-2026 17:53:11.776 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/Annuaire]
+03-Mar-2026 17:53:12.991 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/Annuaire.war] de l'application web
+03-Mar-2026 17:53:19.134 INFOS [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+03-Mar-2026 17:53:19.449 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/Annuaire.war] s'est terminé en [6 458] ms
+03-Mar-2026 17:53:29.467 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/facade]
+2026-03-03T17:53:29.495+01:00  INFO 1670714 --- [facade] [alina-utility-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T17:53:29.496+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-03-03T17:53:29.497+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+03-Mar-2026 17:53:30.424 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] de l'application web
+03-Mar-2026 17:53:35.400 INFOS [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.3)
+
+2026-03-03T17:53:35.677+01:00  INFO 1670714 --- [facade] [alina-utility-1] n7.facade.ServletInitializer             : Starting ServletInitializer v0.0.1-SNAPSHOT using Java 17.0.18 with PID 1670714 (/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade/WEB-INF/classes started by fek2775 in /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/bin)
+2026-03-03T17:53:35.679+01:00  INFO 1670714 --- [facade] [alina-utility-1] n7.facade.ServletInitializer             : No active profile set, falling back to 1 default profile: "default"
+2026-03-03T17:53:36.068+01:00  INFO 1670714 --- [facade] [alina-utility-1] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-03T17:53:36.089+01:00  INFO 1670714 --- [facade] [alina-utility-1] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2026-03-03T17:53:36.209+01:00  INFO 1670714 --- [facade] [alina-utility-1] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 513 ms
+2026-03-03T17:53:36.334+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-03-03T17:53:36.472+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-5 - Driver does not support get/set network timeout for connections. (feature not supported)
+2026-03-03T17:53:36.474+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection org.hsqldb.jdbc.JDBCConnection@49b6b754
+2026-03-03T17:53:36.475+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-03-03T17:53:36.514+01:00  INFO 1670714 --- [facade] [alina-utility-1] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-03T17:53:36.669+01:00  INFO 1670714 --- [facade] [alina-utility-1] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-03T17:53:37.128+01:00  INFO 1670714 --- [facade] [alina-utility-1] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-03T17:53:37.221+01:00  INFO 1670714 --- [facade] [alina-utility-1] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:hsqldb:mem:ce02436f-a9b6-4851-b121-e35cb8755e05]
+	Database driver: HSQL Database Engine Driver
+	Database dialect: HSQLDialect
+	Database version: 2.7.3
+	Default catalog/schema: PUBLIC/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-03T17:53:37.573+01:00  INFO 1670714 --- [facade] [alina-utility-1] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03T17:53:37.579+01:00  INFO 1670714 --- [facade] [alina-utility-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T17:53:37.612+01:00  WARN 1670714 --- [facade] [alina-utility-1] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-03T17:53:37.778+01:00  INFO 1670714 --- [facade] [alina-utility-1] n7.facade.ServletInitializer             : Started ServletInitializer in 2.281 seconds (process running for 2269.437)
+03-Mar-2026 17:53:37.859 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] s'est terminé en [7 435] ms
+2026-03-03T17:53:39.071+01:00  INFO 1670714 --- [facade] [io-8080-exec-31] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-03T17:53:39.072+01:00  INFO 1670714 --- [facade] [io-8080-exec-31] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-03T17:53:39.115+01:00  WARN 1670714 --- [facade] [io-8080-exec-31] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-03-03T17:53:40.598+01:00  WARN 1670714 --- [facade] [io-8080-exec-38] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-03-03T17:53:41.528+01:00  WARN 1670714 --- [facade] [io-8080-exec-34] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-03-03T17:53:42.480+01:00  WARN 1670714 --- [facade] [io-8080-exec-33] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-03-03T17:53:43.343+01:00  WARN 1670714 --- [facade] [io-8080-exec-30] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+03-Mar-2026 17:54:28.085 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/Annuaire]
+03-Mar-2026 17:54:28.957 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/Annuaire.war] de l'application web
+03-Mar-2026 17:54:34.062 INFOS [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+03-Mar-2026 17:54:34.175 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/Annuaire.war] s'est terminé en [5 217] ms
+03-Mar-2026 17:54:44.529 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/facade]
+2026-03-03T17:54:44.556+01:00  INFO 1670714 --- [facade] [alina-utility-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T17:54:44.558+01:00  INFO 1670714 --- [facade] [alina-utility-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-03-03T17:54:44.558+01:00  INFO 1670714 --- [facade] [alina-utility-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+03-Mar-2026 17:54:45.469 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] de l'application web
+03-Mar-2026 17:54:50.251 INFOS [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.3)
+
+2026-03-03T17:54:50.556+01:00  INFO 1670714 --- [facade] [alina-utility-2] n7.facade.ServletInitializer             : Starting ServletInitializer v0.0.1-SNAPSHOT using Java 17.0.18 with PID 1670714 (/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade/WEB-INF/classes started by fek2775 in /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/bin)
+2026-03-03T17:54:50.557+01:00  INFO 1670714 --- [facade] [alina-utility-2] n7.facade.ServletInitializer             : No active profile set, falling back to 1 default profile: "default"
+2026-03-03T17:54:50.866+01:00  INFO 1670714 --- [facade] [alina-utility-2] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-03T17:54:50.878+01:00  INFO 1670714 --- [facade] [alina-utility-2] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2026-03-03T17:54:50.959+01:00  INFO 1670714 --- [facade] [alina-utility-2] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 383 ms
+2026-03-03T17:54:51.113+01:00  INFO 1670714 --- [facade] [alina-utility-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-03-03T17:54:51.251+01:00  INFO 1670714 --- [facade] [alina-utility-2] com.zaxxer.hikari.pool.PoolBase          : HikariPool-6 - Driver does not support get/set network timeout for connections. (feature not supported)
+2026-03-03T17:54:51.252+01:00  INFO 1670714 --- [facade] [alina-utility-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection org.hsqldb.jdbc.JDBCConnection@2d733830
+2026-03-03T17:54:51.254+01:00  INFO 1670714 --- [facade] [alina-utility-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-03-03T17:54:51.280+01:00  INFO 1670714 --- [facade] [alina-utility-2] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-03T17:54:51.446+01:00  INFO 1670714 --- [facade] [alina-utility-2] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-03T17:54:51.880+01:00  INFO 1670714 --- [facade] [alina-utility-2] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-03T17:54:51.985+01:00  INFO 1670714 --- [facade] [alina-utility-2] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:hsqldb:mem:9046c15b-db81-4025-ba35-6ece1209ab7c]
+	Database driver: HSQL Database Engine Driver
+	Database dialect: HSQLDialect
+	Database version: 2.7.3
+	Default catalog/schema: PUBLIC/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-03T17:54:52.365+01:00  INFO 1670714 --- [facade] [alina-utility-2] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03T17:54:52.372+01:00  INFO 1670714 --- [facade] [alina-utility-2] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T17:54:52.406+01:00  WARN 1670714 --- [facade] [alina-utility-2] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-03T17:54:52.588+01:00  INFO 1670714 --- [facade] [alina-utility-2] n7.facade.ServletInitializer             : Started ServletInitializer in 2.235 seconds (process running for 2344.247)
+03-Mar-2026 17:54:52.669 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] s'est terminé en [7 200] ms
+03-Mar-2026 18:01:14.400 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/Annuaire]
+03-Mar-2026 18:01:15.756 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/Annuaire.war] de l'application web
+03-Mar-2026 18:01:21.287 INFOS [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+03-Mar-2026 18:01:21.458 INFOS [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/Annuaire.war] s'est terminé en [5 701] ms
+03-Mar-2026 18:01:41.535 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/facade]
+2026-03-03T18:01:41.573+01:00  INFO 1670714 --- [facade] [alina-utility-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T18:01:41.575+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2026-03-03T18:01:41.576+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+03-Mar-2026 18:01:43.134 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] de l'application web
+03-Mar-2026 18:01:49.346 INFOS [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.3)
+
+2026-03-03T18:01:49.675+01:00  INFO 1670714 --- [facade] [alina-utility-1] n7.facade.ServletInitializer             : Starting ServletInitializer v0.0.1-SNAPSHOT using Java 17.0.18 with PID 1670714 (/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade/WEB-INF/classes started by fek2775 in /home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/bin)
+2026-03-03T18:01:49.677+01:00  INFO 1670714 --- [facade] [alina-utility-1] n7.facade.ServletInitializer             : No active profile set, falling back to 1 default profile: "default"
+2026-03-03T18:01:49.987+01:00  INFO 1670714 --- [facade] [alina-utility-1] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-03T18:01:50.002+01:00  INFO 1670714 --- [facade] [alina-utility-1] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2026-03-03T18:01:50.117+01:00  INFO 1670714 --- [facade] [alina-utility-1] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 423 ms
+2026-03-03T18:01:50.258+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2026-03-03T18:01:50.381+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-7 - Driver does not support get/set network timeout for connections. (feature not supported)
+2026-03-03T18:01:50.382+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection org.hsqldb.jdbc.JDBCConnection@30c2770e
+2026-03-03T18:01:50.382+01:00  INFO 1670714 --- [facade] [alina-utility-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2026-03-03T18:01:50.413+01:00  INFO 1670714 --- [facade] [alina-utility-1] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-03T18:01:50.573+01:00  INFO 1670714 --- [facade] [alina-utility-1] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-03T18:01:51.109+01:00  INFO 1670714 --- [facade] [alina-utility-1] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-03T18:01:51.202+01:00  INFO 1670714 --- [facade] [alina-utility-1] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:hsqldb:mem:9cde4c44-57f2-4e71-b6d4-bda218518d2a]
+	Database driver: HSQL Database Engine Driver
+	Database dialect: HSQLDialect
+	Database version: 2.7.3
+	Default catalog/schema: PUBLIC/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-03T18:01:51.599+01:00  INFO 1670714 --- [facade] [alina-utility-1] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03T18:01:51.606+01:00  INFO 1670714 --- [facade] [alina-utility-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T18:01:51.662+01:00  WARN 1670714 --- [facade] [alina-utility-1] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-03T18:01:51.938+01:00  INFO 1670714 --- [facade] [alina-utility-1] n7.facade.ServletInitializer             : Started ServletInitializer in 2.484 seconds (process running for 2763.598)
+03-Mar-2026 18:01:52.030 INFOS [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [/home/fek2775/Annee_2/AppWeb/TP1/apache-tomcat-11.0.1/webapps/facade.war] s'est terminé en [8 896] ms
+2026-03-03T18:01:54.131+01:00  INFO 1670714 --- [facade] [io-8080-exec-49] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-03T18:01:54.132+01:00  INFO 1670714 --- [facade] [io-8080-exec-49] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-03T18:01:54.267+01:00  WARN 1670714 --- [facade] [io-8080-exec-49] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'nom' for method parameter type String is not present]
+2026-03-03T18:01:55.874+01:00  WARN 1670714 --- [facade] [io-8080-exec-52] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'nom' for method parameter type String is not present]
+03-Mar-2026 18:02:21.156 INFOS [Thread-2] org.apache.coyote.AbstractProtocol.pause Le gestionnaire de protocole ["http-nio-8080"] est mis en pause
+03-Mar-2026 18:02:21.157 INFOS [Thread-2] org.apache.catalina.core.StandardService.stopInternal Arrêt du service [Catalina]
+2026-03-03T18:02:21.221+01:00  INFO 1670714 --- [facade] [       Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03T18:02:21.223+01:00  INFO 1670714 --- [facade] [       Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2026-03-03T18:02:21.223+01:00  INFO 1670714 --- [facade] [       Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+03-Mar-2026 18:02:21.308 INFOS [Thread-2] org.apache.coyote.AbstractProtocol.stop Arrêt du gestionnaire de protocole ["http-nio-8080"]
+03-Mar-2026 18:02:21.310 INFOS [Thread-2] org.apache.coyote.AbstractProtocol.destroy Destruction du gestionnaire de protocole ["http-nio-8080"]

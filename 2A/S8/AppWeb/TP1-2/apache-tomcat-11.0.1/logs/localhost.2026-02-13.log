@@ -1,0 +1,905 @@
+13-Feb-2026 08:22:06.618 INFOS [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+13-Feb-2026 08:22:06.619 INFOS [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+13-Feb-2026 08:22:06.622 INFOS [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@476aac9')
+13-Feb-2026 08:53:31.563 GRAVE [http-nio-8080-exec-12] org.apache.catalina.core.StandardWrapperValve.invoke "Servlet.service()" pour la servlet [pack.Serv] a généré une exception
+	java.lang.NumberFormatException: Cannot parse null string
+		at java.base/java.lang.Integer.parseInt(Integer.java:630)
+		at java.base/java.lang.Integer.parseInt(Integer.java:786)
+		at pack.Serv.doGet(Serv.java:17)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:619)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+13-Feb-2026 09:05:06.002 GRAVE [http-nio-8080-exec-15] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() du Servlet [pack.Serv] dans le contexte au chemin [/annuaire] a retourné une exception [L'exécution de la servlet a lancé une exception] avec la cause
+	java.lang.Error: Unresolved compilation problems: 
+	The method getParamater(String) is undefined for the type HttpServletRequest
+	The method getParamater(String) is undefined for the type HttpServletRequest
+
+		at pack.Serv.doPost(Serv.java:25)
+		at pack.Serv.doGet(Serv.java:17)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:619)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+13-Feb-2026 09:05:07.519 GRAVE [http-nio-8080-exec-18] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() du Servlet [pack.Serv] dans le contexte au chemin [/annuaire] a retourné une exception [L'exécution de la servlet a lancé une exception] avec la cause
+	java.lang.Error: Unresolved compilation problems: 
+	The method getParamater(String) is undefined for the type HttpServletRequest
+	The method getParamater(String) is undefined for the type HttpServletRequest
+
+		at pack.Serv.doPost(Serv.java:25)
+		at pack.Serv.doGet(Serv.java:17)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:619)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+13-Feb-2026 09:05:27.077 GRAVE [http-nio-8080-exec-14] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() du Servlet [pack.Serv] dans le contexte au chemin [/annuaire] a retourné une exception [L'exécution de la servlet a lancé une exception] avec la cause
+	java.lang.Error: Unresolved compilation problems: 
+	The method getParamater(String) is undefined for the type HttpServletRequest
+	The method getParamater(String) is undefined for the type HttpServletRequest
+
+		at pack.Serv.doPost(Serv.java:25)
+		at pack.Serv.doGet(Serv.java:17)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:619)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+13-Feb-2026 09:42:37.766 GRAVE [http-nio-8080-exec-41] org.apache.catalina.core.ApplicationDispatcher.invoke "Servlet.service()" pour la servlet [jsp] a lancé une exception
+	org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne : [6] dans le fichier jsp : [/choix.jsp]
+Collection cannot be resolved to a type
+3:     <body>
+4:         <form method="get" action="Serv">
+5:             <h3>Choisissez la personne:</h3>
+6:             <% Collection<Personne> lp = (Collection<Personne>)request.getAttribute("lp");
+7:                 for (Personne p : lp) {
+8:                     int id = p.getId();
+9:                     String label = p.getNom() + " " + p.getPrenom();
+
+
+Une erreur s'est produite à la ligne : [6] dans le fichier jsp : [/choix.jsp]
+Personne cannot be resolved to a type
+3:     <body>
+4:         <form method="get" action="Serv">
+5:             <h3>Choisissez la personne:</h3>
+6:             <% Collection<Personne> lp = (Collection<Personne>)request.getAttribute("lp");
+7:                 for (Personne p : lp) {
+8:                     int id = p.getId();
+9:                     String label = p.getNom() + " " + p.getPrenom();
+
+
+Une erreur s'est produite à la ligne : [6] dans le fichier jsp : [/choix.jsp]
+Collection cannot be resolved to a type
+3:     <body>
+4:         <form method="get" action="Serv">
+5:             <h3>Choisissez la personne:</h3>
+6:             <% Collection<Personne> lp = (Collection<Personne>)request.getAttribute("lp");
+7:                 for (Personne p : lp) {
+8:                     int id = p.getId();
+9:                     String label = p.getNom() + " " + p.getPrenom();
+
+
+Une erreur s'est produite à la ligne : [6] dans le fichier jsp : [/choix.jsp]
+Personne cannot be resolved to a type
+3:     <body>
+4:         <form method="get" action="Serv">
+5:             <h3>Choisissez la personne:</h3>
+6:             <% Collection<Personne> lp = (Collection<Personne>)request.getAttribute("lp");
+7:                 for (Personne p : lp) {
+8:                     int id = p.getId();
+9:                     String label = p.getNom() + " " + p.getPrenom();
+
+
+Une erreur s'est produite à la ligne : [7] dans le fichier jsp : [/choix.jsp]
+Personne cannot be resolved to a type
+4:         <form method="get" action="Serv">
+5:             <h3>Choisissez la personne:</h3>
+6:             <% Collection<Personne> lp = (Collection<Personne>)request.getAttribute("lp");
+7:                 for (Personne p : lp) {
+8:                     int id = p.getId();
+9:                     String label = p.getNom() + " " + p.getPrenom();
+10:             %>
+
+
+Une erreur s'est produite à la ligne : [11] dans le fichier jsp : [/choix.jsp]
+Syntax error on token "=", @ expected
+8:                     int id = p.getId();
+9:                     String label = p.getNom() + " " + p.getPrenom();
+10:             %>
+11:             <input type="radio" name="idp" value="<% =id %>">
+12:             <% =label %><br>
+13:             <% } %>
+14: 
+
+
+Une erreur s'est produite à la ligne : [11] dans le fichier jsp : [/choix.jsp]
+Syntax error, type annotations are illegal here
+8:                     int id = p.getId();
+9:                     String label = p.getNom() + " " + p.getPrenom();
+10:             %>
+11:             <input type="radio" name="idp" value="<% =id %>">
+12:             <% =label %><br>
+13:             <% } %>
+14: 
+
+
+Une erreur s'est produite à la ligne : [12] dans le fichier jsp : [/choix.jsp]
+Syntax error on token "=", @ expected
+9:                     String label = p.getNom() + " " + p.getPrenom();
+10:             %>
+11:             <input type="radio" name="idp" value="<% =id %>">
+12:             <% =label %><br>
+13:             <% } %>
+14: 
+15:             <h3>Coisissez l'adresse:</h3>
+
+
+Une erreur s'est produite à la ligne : [12] dans le fichier jsp : [/choix.jsp]
+Syntax error, type annotations are illegal here
+9:                     String label = p.getNom() + " " + p.getPrenom();
+10:             %>
+11:             <input type="radio" name="idp" value="<% =id %>">
+12:             <% =label %><br>
+13:             <% } %>
+14: 
+15:             <h3>Coisissez l'adresse:</h3>
+
+
+Une erreur s'est produite à la ligne : [16] dans le fichier jsp : [/choix.jsp]
+Collection cannot be resolved to a type
+13:             <% } %>
+14: 
+15:             <h3>Coisissez l'adresse:</h3>
+16:             <% Collection<Adresse> la = (Collection<Adresse>) request.getAttribute("la");
+17:                 for (Adresse a : la) {
+18:                     int id = a.getId();
+19:                     String label = a.getRue() + " " + a.getVille();
+
+
+Une erreur s'est produite à la ligne : [16] dans le fichier jsp : [/choix.jsp]
+Adresse cannot be resolved to a type
+13:             <% } %>
+14: 
+15:             <h3>Coisissez l'adresse:</h3>
+16:             <% Collection<Adresse> la = (Collection<Adresse>) request.getAttribute("la");
+17:                 for (Adresse a : la) {
+18:                     int id = a.getId();
+19:                     String label = a.getRue() + " " + a.getVille();
+
+
+Une erreur s'est produite à la ligne : [16] dans le fichier jsp : [/choix.jsp]
+Collection cannot be resolved to a type
+13:             <% } %>
+14: 
+15:             <h3>Coisissez l'adresse:</h3>
+16:             <% Collection<Adresse> la = (Collection<Adresse>) request.getAttribute("la");
+17:                 for (Adresse a : la) {
+18:                     int id = a.getId();
+19:                     String label = a.getRue() + " " + a.getVille();
+
+
+Une erreur s'est produite à la ligne : [16] dans le fichier jsp : [/choix.jsp]
+Adresse cannot be resolved to a type
+13:             <% } %>
+14: 
+15:             <h3>Coisissez l'adresse:</h3>
+16:             <% Collection<Adresse> la = (Collection<Adresse>) request.getAttribute("la");
+17:                 for (Adresse a : la) {
+18:                     int id = a.getId();
+19:                     String label = a.getRue() + " " + a.getVille();
+
+
+Une erreur s'est produite à la ligne : [17] dans le fichier jsp : [/choix.jsp]
+Adresse cannot be resolved to a type
+14: 
+15:             <h3>Coisissez l'adresse:</h3>
+16:             <% Collection<Adresse> la = (Collection<Adresse>) request.getAttribute("la");
+17:                 for (Adresse a : la) {
+18:                     int id = a.getId();
+19:                     String label = a.getRue() + " " + a.getVille();
+20:             %>
+
+
+Une erreur s'est produite à la ligne : [21] dans le fichier jsp : [/choix.jsp]
+Syntax error on token "=", @ expected
+18:                     int id = a.getId();
+19:                     String label = a.getRue() + " " + a.getVille();
+20:             %>
+21:             <input type="radio" name="ida" value="<% =id %>">
+22:             <% =label %>
+23:             <%  } %>
+24: 
+
+
+Une erreur s'est produite à la ligne : [21] dans le fichier jsp : [/choix.jsp]
+Syntax error, type annotations are illegal here
+18:                     int id = a.getId();
+19:                     String label = a.getRue() + " " + a.getVille();
+20:             %>
+21:             <input type="radio" name="ida" value="<% =id %>">
+22:             <% =label %>
+23:             <%  } %>
+24: 
+
+
+Une erreur s'est produite à la ligne : [22] dans le fichier jsp : [/choix.jsp]
+Syntax error on token "=", @ expected
+19:                     String label = a.getRue() + " " + a.getVille();
+20:             %>
+21:             <input type="radio" name="ida" value="<% =id %>">
+22:             <% =label %>
+23:             <%  } %>
+24: 
+25:             <input type="submit" value="OK">
+
+
+Une erreur s'est produite à la ligne : [22] dans le fichier jsp : [/choix.jsp]
+Syntax error, type annotations are illegal here
+19:                     String label = a.getRue() + " " + a.getVille();
+20:             %>
+21:             <input type="radio" name="ida" value="<% =id %>">
+22:             <% =label %>
+23:             <%  } %>
+24: 
+25:             <input type="submit" value="OK">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:538)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:352)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:274)
+		at pack.Serv.doPost(Serv.java:41)
+		at pack.Serv.doGet(Serv.java:17)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:619)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+13-Feb-2026 09:42:37.766 GRAVE [http-nio-8080-exec-41] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() du Servlet [pack.Serv] dans le contexte au chemin [/annuaire] a retourné une exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne : [6] dans le fichier jsp : [/choix.jsp]
+Collection cannot be resolved to a type
+3:     <body>
+4:         <form method="get" action="Serv">
+5:             <h3>Choisissez la personne:</h3>
+6:             <% Collection<Personne> lp = (Collection<Personne>)request.getAttribute("lp");
+7:                 for (Personne p : lp) {
+8:                     int id = p.getId();
+9:                     String label = p.getNom() + " " + p.getPrenom();
+
+
+Une erreur s'est produite à la ligne : [6] dans le fichier jsp : [/choix.jsp]
+Personne cannot be resolved to a type
+3:     <body>
+4:         <form method="get" action="Serv">
+5:             <h3>Choisissez la personne:</h3>
+6:             <% Collection<Personne> lp = (Collection<Personne>)request.getAttribute("lp");
+7:                 for (Personne p : lp) {
+8:                     int id = p.getId();
+9:                     String label = p.getNom() + " " + p.getPrenom();
+
+
+Une erreur s'est produite à la ligne : [6] dans le fichier jsp : [/choix.jsp]
+Collection cannot be resolved to a type
+3:     <body>
+4:         <form method="get" action="Serv">
+5:             <h3>Choisissez la personne:</h3>
+6:             <% Collection<Personne> lp = (Collection<Personne>)request.getAttribute("lp");
+7:                 for (Personne p : lp) {
+8:                     int id = p.getId();
+9:                     String label = p.getNom() + " " + p.getPrenom();
+
+
+Une erreur s'est produite à la ligne : [6] dans le fichier jsp : [/choix.jsp]
+Personne cannot be resolved to a type
+3:     <body>
+4:         <form method="get" action="Serv">
+5:             <h3>Choisissez la personne:</h3>
+6:             <% Collection<Personne> lp = (Collection<Personne>)request.getAttribute("lp");
+7:                 for (Personne p : lp) {
+8:                     int id = p.getId();
+9:                     String label = p.getNom() + " " + p.getPrenom();
+
+
+Une erreur s'est produite à la ligne : [7] dans le fichier jsp : [/choix.jsp]
+Personne cannot be resolved to a type
+4:         <form method="get" action="Serv">
+5:             <h3>Choisissez la personne:</h3>
+6:             <% Collection<Personne> lp = (Collection<Personne>)request.getAttribute("lp");
+7:                 for (Personne p : lp) {
+8:                     int id = p.getId();
+9:                     String label = p.getNom() + " " + p.getPrenom();
+10:             %>
+
+
+Une erreur s'est produite à la ligne : [11] dans le fichier jsp : [/choix.jsp]
+Syntax error on token "=", @ expected
+8:                     int id = p.getId();
+9:                     String label = p.getNom() + " " + p.getPrenom();
+10:             %>
+11:             <input type="radio" name="idp" value="<% =id %>">
+12:             <% =label %><br>
+13:             <% } %>
+14: 
+
+
+Une erreur s'est produite à la ligne : [11] dans le fichier jsp : [/choix.jsp]
+Syntax error, type annotations are illegal here
+8:                     int id = p.getId();
+9:                     String label = p.getNom() + " " + p.getPrenom();
+10:             %>
+11:             <input type="radio" name="idp" value="<% =id %>">
+12:             <% =label %><br>
+13:             <% } %>
+14: 
+
+
+Une erreur s'est produite à la ligne : [12] dans le fichier jsp : [/choix.jsp]
+Syntax error on token "=", @ expected
+9:                     String label = p.getNom() + " " + p.getPrenom();
+10:             %>
+11:             <input type="radio" name="idp" value="<% =id %>">
+12:             <% =label %><br>
+13:             <% } %>
+14: 
+15:             <h3>Coisissez l'adresse:</h3>
+
+
+Une erreur s'est produite à la ligne : [12] dans le fichier jsp : [/choix.jsp]
+Syntax error, type annotations are illegal here
+9:                     String label = p.getNom() + " " + p.getPrenom();
+10:             %>
+11:             <input type="radio" name="idp" value="<% =id %>">
+12:             <% =label %><br>
+13:             <% } %>
+14: 
+15:             <h3>Coisissez l'adresse:</h3>
+
+
+Une erreur s'est produite à la ligne : [16] dans le fichier jsp : [/choix.jsp]
+Collection cannot be resolved to a type
+13:             <% } %>
+14: 
+15:             <h3>Coisissez l'adresse:</h3>
+16:             <% Collection<Adresse> la = (Collection<Adresse>) request.getAttribute("la");
+17:                 for (Adresse a : la) {
+18:                     int id = a.getId();
+19:                     String label = a.getRue() + " " + a.getVille();
+
+
+Une erreur s'est produite à la ligne : [16] dans le fichier jsp : [/choix.jsp]
+Adresse cannot be resolved to a type
+13:             <% } %>
+14: 
+15:             <h3>Coisissez l'adresse:</h3>
+16:             <% Collection<Adresse> la = (Collection<Adresse>) request.getAttribute("la");
+17:                 for (Adresse a : la) {
+18:                     int id = a.getId();
+19:                     String label = a.getRue() + " " + a.getVille();
+
+
+Une erreur s'est produite à la ligne : [16] dans le fichier jsp : [/choix.jsp]
+Collection cannot be resolved to a type
+13:             <% } %>
+14: 
+15:             <h3>Coisissez l'adresse:</h3>
+16:             <% Collection<Adresse> la = (Collection<Adresse>) request.getAttribute("la");
+17:                 for (Adresse a : la) {
+18:                     int id = a.getId();
+19:                     String label = a.getRue() + " " + a.getVille();
+
+
+Une erreur s'est produite à la ligne : [16] dans le fichier jsp : [/choix.jsp]
+Adresse cannot be resolved to a type
+13:             <% } %>
+14: 
+15:             <h3>Coisissez l'adresse:</h3>
+16:             <% Collection<Adresse> la = (Collection<Adresse>) request.getAttribute("la");
+17:                 for (Adresse a : la) {
+18:                     int id = a.getId();
+19:                     String label = a.getRue() + " " + a.getVille();
+
+
+Une erreur s'est produite à la ligne : [17] dans le fichier jsp : [/choix.jsp]
+Adresse cannot be resolved to a type
+14: 
+15:             <h3>Coisissez l'adresse:</h3>
+16:             <% Collection<Adresse> la = (Collection<Adresse>) request.getAttribute("la");
+17:                 for (Adresse a : la) {
+18:                     int id = a.getId();
+19:                     String label = a.getRue() + " " + a.getVille();
+20:             %>
+
+
+Une erreur s'est produite à la ligne : [21] dans le fichier jsp : [/choix.jsp]
+Syntax error on token "=", @ expected
+18:                     int id = a.getId();
+19:                     String label = a.getRue() + " " + a.getVille();
+20:             %>
+21:             <input type="radio" name="ida" value="<% =id %>">
+22:             <% =label %>
+23:             <%  } %>
+24: 
+
+
+Une erreur s'est produite à la ligne : [21] dans le fichier jsp : [/choix.jsp]
+Syntax error, type annotations are illegal here
+18:                     int id = a.getId();
+19:                     String label = a.getRue() + " " + a.getVille();
+20:             %>
+21:             <input type="radio" name="ida" value="<% =id %>">
+22:             <% =label %>
+23:             <%  } %>
+24: 
+
+
+Une erreur s'est produite à la ligne : [22] dans le fichier jsp : [/choix.jsp]
+Syntax error on token "=", @ expected
+19:                     String label = a.getRue() + " " + a.getVille();
+20:             %>
+21:             <input type="radio" name="ida" value="<% =id %>">
+22:             <% =label %>
+23:             <%  } %>
+24: 
+25:             <input type="submit" value="OK">
+
+
+Une erreur s'est produite à la ligne : [22] dans le fichier jsp : [/choix.jsp]
+Syntax error, type annotations are illegal here
+19:                     String label = a.getRue() + " " + a.getVille();
+20:             %>
+21:             <input type="radio" name="ida" value="<% =id %>">
+22:             <% =label %>
+23:             <%  } %>
+24: 
+25:             <input type="submit" value="OK">
+
+
+Stacktrace:] avec la cause
+	org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne : [6] dans le fichier jsp : [/choix.jsp]
+Collection cannot be resolved to a type
+3:     <body>
+4:         <form method="get" action="Serv">
+5:             <h3>Choisissez la personne:</h3>
+6:             <% Collection<Personne> lp = (Collection<Personne>)request.getAttribute("lp");
+7:                 for (Personne p : lp) {
+8:                     int id = p.getId();
+9:                     String label = p.getNom() + " " + p.getPrenom();
+
+
+Une erreur s'est produite à la ligne : [6] dans le fichier jsp : [/choix.jsp]
+Personne cannot be resolved to a type
+3:     <body>
+4:         <form method="get" action="Serv">
+5:             <h3>Choisissez la personne:</h3>
+6:             <% Collection<Personne> lp = (Collection<Personne>)request.getAttribute("lp");
+7:                 for (Personne p : lp) {
+8:                     int id = p.getId();
+9:                     String label = p.getNom() + " " + p.getPrenom();
+
+
+Une erreur s'est produite à la ligne : [6] dans le fichier jsp : [/choix.jsp]
+Collection cannot be resolved to a type
+3:     <body>
+4:         <form method="get" action="Serv">
+5:             <h3>Choisissez la personne:</h3>
+6:             <% Collection<Personne> lp = (Collection<Personne>)request.getAttribute("lp");
+7:                 for (Personne p : lp) {
+8:                     int id = p.getId();
+9:                     String label = p.getNom() + " " + p.getPrenom();
+
+
+Une erreur s'est produite à la ligne : [6] dans le fichier jsp : [/choix.jsp]
+Personne cannot be resolved to a type
+3:     <body>
+4:         <form method="get" action="Serv">
+5:             <h3>Choisissez la personne:</h3>
+6:             <% Collection<Personne> lp = (Collection<Personne>)request.getAttribute("lp");
+7:                 for (Personne p : lp) {
+8:                     int id = p.getId();
+9:                     String label = p.getNom() + " " + p.getPrenom();
+
+
+Une erreur s'est produite à la ligne : [7] dans le fichier jsp : [/choix.jsp]
+Personne cannot be resolved to a type
+4:         <form method="get" action="Serv">
+5:             <h3>Choisissez la personne:</h3>
+6:             <% Collection<Personne> lp = (Collection<Personne>)request.getAttribute("lp");
+7:                 for (Personne p : lp) {
+8:                     int id = p.getId();
+9:                     String label = p.getNom() + " " + p.getPrenom();
+10:             %>
+
+
+Une erreur s'est produite à la ligne : [11] dans le fichier jsp : [/choix.jsp]
+Syntax error on token "=", @ expected
+8:                     int id = p.getId();
+9:                     String label = p.getNom() + " " + p.getPrenom();
+10:             %>
+11:             <input type="radio" name="idp" value="<% =id %>">
+12:             <% =label %><br>
+13:             <% } %>
+14: 
+
+
+Une erreur s'est produite à la ligne : [11] dans le fichier jsp : [/choix.jsp]
+Syntax error, type annotations are illegal here
+8:                     int id = p.getId();
+9:                     String label = p.getNom() + " " + p.getPrenom();
+10:             %>
+11:             <input type="radio" name="idp" value="<% =id %>">
+12:             <% =label %><br>
+13:             <% } %>
+14: 
+
+
+Une erreur s'est produite à la ligne : [12] dans le fichier jsp : [/choix.jsp]
+Syntax error on token "=", @ expected
+9:                     String label = p.getNom() + " " + p.getPrenom();
+10:             %>
+11:             <input type="radio" name="idp" value="<% =id %>">
+12:             <% =label %><br>
+13:             <% } %>
+14: 
+15:             <h3>Coisissez l'adresse:</h3>
+
+
+Une erreur s'est produite à la ligne : [12] dans le fichier jsp : [/choix.jsp]
+Syntax error, type annotations are illegal here
+9:                     String label = p.getNom() + " " + p.getPrenom();
+10:             %>
+11:             <input type="radio" name="idp" value="<% =id %>">
+12:             <% =label %><br>
+13:             <% } %>
+14: 
+15:             <h3>Coisissez l'adresse:</h3>
+
+
+Une erreur s'est produite à la ligne : [16] dans le fichier jsp : [/choix.jsp]
+Collection cannot be resolved to a type
+13:             <% } %>
+14: 
+15:             <h3>Coisissez l'adresse:</h3>
+16:             <% Collection<Adresse> la = (Collection<Adresse>) request.getAttribute("la");
+17:                 for (Adresse a : la) {
+18:                     int id = a.getId();
+19:                     String label = a.getRue() + " " + a.getVille();
+
+
+Une erreur s'est produite à la ligne : [16] dans le fichier jsp : [/choix.jsp]
+Adresse cannot be resolved to a type
+13:             <% } %>
+14: 
+15:             <h3>Coisissez l'adresse:</h3>
+16:             <% Collection<Adresse> la = (Collection<Adresse>) request.getAttribute("la");
+17:                 for (Adresse a : la) {
+18:                     int id = a.getId();
+19:                     String label = a.getRue() + " " + a.getVille();
+
+
+Une erreur s'est produite à la ligne : [16] dans le fichier jsp : [/choix.jsp]
+Collection cannot be resolved to a type
+13:             <% } %>
+14: 
+15:             <h3>Coisissez l'adresse:</h3>
+16:             <% Collection<Adresse> la = (Collection<Adresse>) request.getAttribute("la");
+17:                 for (Adresse a : la) {
+18:                     int id = a.getId();
+19:                     String label = a.getRue() + " " + a.getVille();
+
+
+Une erreur s'est produite à la ligne : [16] dans le fichier jsp : [/choix.jsp]
+Adresse cannot be resolved to a type
+13:             <% } %>
+14: 
+15:             <h3>Coisissez l'adresse:</h3>
+16:             <% Collection<Adresse> la = (Collection<Adresse>) request.getAttribute("la");
+17:                 for (Adresse a : la) {
+18:                     int id = a.getId();
+19:                     String label = a.getRue() + " " + a.getVille();
+
+
+Une erreur s'est produite à la ligne : [17] dans le fichier jsp : [/choix.jsp]
+Adresse cannot be resolved to a type
+14: 
+15:             <h3>Coisissez l'adresse:</h3>
+16:             <% Collection<Adresse> la = (Collection<Adresse>) request.getAttribute("la");
+17:                 for (Adresse a : la) {
+18:                     int id = a.getId();
+19:                     String label = a.getRue() + " " + a.getVille();
+20:             %>
+
+
+Une erreur s'est produite à la ligne : [21] dans le fichier jsp : [/choix.jsp]
+Syntax error on token "=", @ expected
+18:                     int id = a.getId();
+19:                     String label = a.getRue() + " " + a.getVille();
+20:             %>
+21:             <input type="radio" name="ida" value="<% =id %>">
+22:             <% =label %>
+23:             <%  } %>
+24: 
+
+
+Une erreur s'est produite à la ligne : [21] dans le fichier jsp : [/choix.jsp]
+Syntax error, type annotations are illegal here
+18:                     int id = a.getId();
+19:                     String label = a.getRue() + " " + a.getVille();
+20:             %>
+21:             <input type="radio" name="ida" value="<% =id %>">
+22:             <% =label %>
+23:             <%  } %>
+24: 
+
+
+Une erreur s'est produite à la ligne : [22] dans le fichier jsp : [/choix.jsp]
+Syntax error on token "=", @ expected
+19:                     String label = a.getRue() + " " + a.getVille();
+20:             %>
+21:             <input type="radio" name="ida" value="<% =id %>">
+22:             <% =label %>
+23:             <%  } %>
+24: 
+25:             <input type="submit" value="OK">
+
+
+Une erreur s'est produite à la ligne : [22] dans le fichier jsp : [/choix.jsp]
+Syntax error, type annotations are illegal here
+19:                     String label = a.getRue() + " " + a.getVille();
+20:             %>
+21:             <input type="radio" name="ida" value="<% =id %>">
+22:             <% =label %>
+23:             <%  } %>
+24: 
+25:             <input type="submit" value="OK">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:538)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:352)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:274)
+		at pack.Serv.doPost(Serv.java:41)
+		at pack.Serv.doGet(Serv.java:17)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:619)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+13-Feb-2026 09:47:03.798 GRAVE [http-nio-8080-exec-52] org.apache.catalina.core.ApplicationDispatcher.invoke "Servlet.service()" pour la servlet [jsp] a lancé une exception
+	org.apache.jasper.JasperException: /choix.jsp (ligne : [2], colonne : [16]) Symbole égal (equal) attendu
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:32)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:299)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:99)
+		at org.apache.jasper.compiler.Parser.parseAttribute(Parser.java:224)
+		at org.apache.jasper.compiler.Parser.parseAttributes(Parser.java:159)
+		at org.apache.jasper.compiler.Parser.parseAttributes(Parser.java:187)
+		at org.apache.jasper.compiler.ParserController.getPageEncodingForJspSyntax(ParserController.java:479)
+		at org.apache.jasper.compiler.ParserController.determineSyntaxAndEncoding(ParserController.java:421)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:220)
+		at org.apache.jasper.compiler.ParserController.parseDirectives(ParserController.java:131)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:207)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:538)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:352)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:274)
+		at pack.Serv.doPost(Serv.java:41)
+		at pack.Serv.doGet(Serv.java:17)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:619)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+13-Feb-2026 09:47:03.798 GRAVE [http-nio-8080-exec-52] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() du Servlet [pack.Serv] dans le contexte au chemin [/annuaire] a retourné une exception [/choix.jsp (ligne : [2], colonne : [16]) Symbole égal (equal) attendu] avec la cause
+	org.apache.jasper.JasperException: /choix.jsp (ligne : [2], colonne : [16]) Symbole égal (equal) attendu
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:32)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:299)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:99)
+		at org.apache.jasper.compiler.Parser.parseAttribute(Parser.java:224)
+		at org.apache.jasper.compiler.Parser.parseAttributes(Parser.java:159)
+		at org.apache.jasper.compiler.Parser.parseAttributes(Parser.java:187)
+		at org.apache.jasper.compiler.ParserController.getPageEncodingForJspSyntax(ParserController.java:479)
+		at org.apache.jasper.compiler.ParserController.determineSyntaxAndEncoding(ParserController.java:421)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:220)
+		at org.apache.jasper.compiler.ParserController.parseDirectives(ParserController.java:131)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:207)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:538)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:352)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:274)
+		at pack.Serv.doPost(Serv.java:41)
+		at pack.Serv.doGet(Serv.java:17)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:619)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:840)

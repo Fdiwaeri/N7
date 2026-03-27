@@ -1,0 +1,11 @@
+03-Mar-2026 16:39:31.719 INFOS [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+03-Mar-2026 16:43:33.277 INFOS [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+03-Mar-2026 16:43:33.277 INFOS [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+03-Mar-2026 16:43:33.281 INFOS [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@71d78cac')
+03-Mar-2026 16:43:43.435 INFOS [Catalina-utility-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+03-Mar-2026 16:43:48.615 INFOS [Catalina-utility-1] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+03-Mar-2026 16:46:44.658 INFOS [http-nio-8080-exec-11] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcherServlet'
+03-Mar-2026 17:15:46.090 INFOS [main] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcherServlet'
+03-Mar-2026 17:15:46.090 INFOS [main] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+03-Mar-2026 17:15:46.200 INFOS [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+03-Mar-2026 17:15:46.200 INFOS [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
