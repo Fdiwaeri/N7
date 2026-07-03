@@ -1,3 +1,6 @@
 [submodule "2A/S7/Programmation_Fonctionnelle/ProjetLong/newtonoid"]
 	path = 2A/S7/Programmation_Fonctionnelle/ProjetLong/newtonoid
 	url = git@github.com:Fdiwaeri/newtonoid.git
+[submodule "2A/S8/AppWeb/ProjetAppWeb/arcade-retro-multijoueur"]
+	path = 2A/S8/AppWeb/ProjetAppWeb/arcade-retro-multijoueur
+	url = https://github.com/Fdiwaeri/arcade-retro-multijoueur.git
