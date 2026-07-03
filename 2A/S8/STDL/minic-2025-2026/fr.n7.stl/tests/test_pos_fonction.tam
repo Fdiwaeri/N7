@@ -1,0 +1,18 @@
+JUMP Fin_Func_1
+;a
+;(a * b)
+funcmult
+LOAD (1) -2[LB]
+;b
+LOAD (1) -1[LB]
+SUBR IMul
+RETURN (1) 2
+Fin_Func_1
+LOADL 4
+LOADL 5
+CALL (LB) funcmult
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@59690aa4
+LOAD (1) 0[SB]
+SUBR IOut
+HALT
+

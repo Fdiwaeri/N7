@@ -1,0 +1,12 @@
+// TdS (Déclaration Type)
+typedef struct Point { 
+	int x; 
+	int y;
+} TypePoint;
+
+void main() {
+    TypePoint p = {10, 20}; // Initialisation
+    
+    p.x = 99; // code écriture (accès champ)
+    print p.x; // code lecture (accès champ) -> 99
+}

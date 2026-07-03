@@ -1,0 +1,5 @@
+typedef struct Point { int x; int y;} TypePoint; 
+void main() { 
+	TypePoint p = {1, 2}; 
+	p.z = 5; 
+}

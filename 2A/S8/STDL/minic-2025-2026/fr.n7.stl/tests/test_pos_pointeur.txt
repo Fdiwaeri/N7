@@ -1,0 +1,10 @@
+void main() {
+    int x = 10;
+    int *ptr1 = &x; // pointe sur x
+    int *ptr2 = new int(); // Allocation dynamique
+    
+    *ptr2 = 20; // Code écriture
+    *ptr1 = *ptr2 + 5; // Code lecture ptr2 et écriture ptr1
+    
+    print x; // doit afficher 25
+}

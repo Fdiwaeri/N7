@@ -1,0 +1,85 @@
+// Déclarations globles
+const int MAX = 5; // constante
+typedef int entier; // définition de type
+typedef enum Couleur {ROUGE, VERT, BLEU} TypeCouleur; // enumération
+typedef struct Point { int x; int y;} TypePoint; // struct
+
+// fonction avec paramètres et retour et récursivité
+int factorielle(int n) {
+    if (n <= 1) {
+        return 1;
+    } else {
+        return n * factorielle(n - 1);
+    }
+}
+
+
+void main() {
+    // Variables
+    entier i = 0;
+    int j = MAX;
+
+    // Conditionelle sans else
+    if (i<MAX) {
+        i=5;
+    }
+
+    i=0;
+
+    // Conditionelle avec else
+    if (i<j) {
+        i = (i==0)? 1:2;
+    } else {
+        i=0;
+    }
+
+    // Boucle while
+    while (i<3) {
+        print i;
+        i=i+1;
+    }
+
+    // Pointeurs
+    int *ptr1 = new int();
+    *ptr1 = 42;
+    int *ptr2 = &i; // ptr2 pointe vers i (=3)
+    print *ptr1; // 42
+    print *ptr2; // 3
+
+    // Enumerations
+    TypeCouleur c = ROUGE;
+    print c; // 0
+
+    // Enregistrements
+    TypePoint p = {10,20};
+    p.x = 15; // Affectation d'un champs (field)
+    print p.x; // 15
+    print p.y; // 20
+
+    // Appel de fonction
+    int fact5 = factorielle(5);
+    print fact5; // Doit afficher 120
+
+    // Tableaux
+    int tab[] = new int[3]; // Allocation
+    tab[0] = 10; // Affectation
+    tab[1] = 20;
+    tab[2] = 30;
+    print tab[1]; // 20 (Accès)
+
+    // Casting
+    float f = (float) i;
+    print f;
+
+    // Couples
+    <int, int> monCouple = <42, 14>;
+    print fst monCouple; // 42
+    print snd monCouple; // 14
+
+    // Types de base supplémentaires et opérateurs logiques
+    boolean flag = true;
+    boolean flag2 = !flag || (4 == 5);
+    char lettre = 'A';
+    print flag; // true (1)
+    print flag2; // false (0)
+} // 1242301520120203421410

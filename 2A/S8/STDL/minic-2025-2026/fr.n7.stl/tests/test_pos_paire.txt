@@ -1,0 +1,9 @@
+void main() {
+    <int, float> monCouple = <10, 14>; // Initialisation et ecriture
+    
+    int premier = fst monCouple;         // lecture First
+    float second = snd monCouple;        // lecture Second
+    
+    print premier; // 10
+    print second; // 14
+}

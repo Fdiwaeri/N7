@@ -1,0 +1,183 @@
+JUMP Fin_Func_1
+;n
+;(n <= 1)
+funcfactorielle
+LOAD (1) -1[LB]
+LOADL 1
+SUBR ILeq
+JUMPIF (0) Label_2
+LOADL 1
+RETURN (1) 1
+JUMP Label_3
+Label_2
+;n
+;(n * factorielle( (n - 1)))
+LOAD (1) -1[LB]
+;n
+;(n - 1)
+LOAD (1) -1[LB]
+LOADL 1
+SUBR ISub
+CALL (LB) funcfactorielle
+SUBR IMul
+RETURN (1) 1
+Label_3
+Fin_Func_1
+LOADL 0
+LOADL 5
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@1d251891
+;(i < MAX)
+LOAD (1) 0[SB]
+LOADL 5
+SUBR ILss
+JUMPIF (0) Label_5
+LOADL 5
+LOADA 0[SB]
+STOREI (1)
+Label_5
+LOADL 0
+LOADA 0[SB]
+STOREI (1)
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@48140564
+;(i < j)
+LOAD (1) 0[SB]
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@58ceff1
+LOAD (1) 1[SB]
+SUBR ILss
+JUMPIF (0) Label_6
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@7c30a502
+;(i == 0)
+LOAD (1) 0[SB]
+LOADL 0
+SUBR IEq
+JUMPIF (0) Label_8
+LOADL 1
+JUMP Label_9
+Label_8
+LOADL 2
+Label_9
+LOADA 0[SB]
+STOREI (1)
+JUMP Label_7
+Label_6
+LOADL 0
+LOADA 0[SB]
+STOREI (1)
+Label_7
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@49e4cb85
+;(i < 3)
+Label_10
+LOAD (1) 0[SB]
+LOADL 3
+SUBR ILss
+JUMPIF (0) Label_11
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@2133c8f8
+LOAD (1) 0[SB]
+SUBR IOut
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@43a25848
+;(i + 1)
+LOAD (1) 0[SB]
+LOADL 1
+SUBR IAdd
+LOADA 0[SB]
+STOREI (1)
+JUMP Label_10
+Label_11
+LOADL 1
+SUBR MAlloc
+LOADL 42
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@3ac3fd8b
+LOAD (1) 2[SB]
+STOREI (1)
+LOADA 0[SB]
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@5594a1b5
+LOAD (1) 2[SB]
+LOADI (1)
+SUBR IOut
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@6a5fc7f7
+LOAD (1) 3[SB]
+LOADI (1)
+SUBR IOut
+LOADL 0
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@3b6eb2ec
+LOAD (1) 4[SB]
+SUBR IOut
+LOADL 10
+LOADL 20
+LOADL 15
+LOADA 5[SB]
+STOREI (1)
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@1e643faf
+LOAD (2) 5[SB]
+POP (0) 1
+SUBR IOut
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@6e8dacdf
+LOAD (2) 5[SB]
+POP (1) 1
+SUBR IOut
+LOADL 5
+CALL (LB) funcfactorielle
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@7a79be86
+LOAD (1) 7[SB]
+SUBR IOut
+LOADL 3
+SUBR MAlloc
+LOADL 10
+LOADA 8[SB]
+LOADI (1)
+LOADL 0
+SUBR IAdd
+STOREI (1)
+LOADL 20
+LOADA 8[SB]
+LOADI (1)
+LOADL 1
+SUBR IAdd
+STOREI (1)
+LOADL 30
+LOADA 8[SB]
+LOADI (1)
+LOADL 2
+SUBR IAdd
+STOREI (1)
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@34ce8af7
+LOAD (1) 8[SB]
+LOADL 1
+SUBR IAdd
+LOADI (1)
+SUBR IOut
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@b684286
+LOAD (1) 0[SB]
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@880ec60
+LOAD (1) 9[SB]
+SUBR IOut
+LOADL 42
+LOADL 14
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@3f3afe78
+LOAD (2) 10[SB]
+POP (0) 1
+SUBR IOut
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@7f63425a
+LOAD (2) 10[SB]
+POP (1) 1
+SUBR IOut
+LOADL 1
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@36d64342
+;(! flag)
+;((! flag) || (4 == 5))
+LOAD (1) 12[SB]
+SUBR BNeg
+;(4 == 5)
+LOADL 4
+LOADL 5
+SUBR IEq
+SUBR BOr
+LOADL 65
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@39ba5a14
+LOAD (1) 12[SB]
+SUBR BOut
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@511baa65
+LOAD (1) 13[SB]
+SUBR BOut
+HALT
+

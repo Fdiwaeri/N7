@@ -1,0 +1,7 @@
+void main() {
+    int tab[] = new int[3]; // allocation memoire (Tas)
+    tab[0] = 42; // Code écriture
+    tab[1] = 84;
+    
+    print tab[0]; // Code lecture (42)
+}

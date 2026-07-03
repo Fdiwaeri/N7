@@ -1,0 +1,14 @@
+void main() {
+    int i = 0;
+    boolean flag = true;
+    
+    // Instruction TantQue
+    while (i < 4 && flag) {
+	    // If sans else
+        if (i == 2) { // Expr logique
+            flag = false;
+        }
+        i = i + 1; // Expr arithmétique
+    }
+    print i; // 3
+}

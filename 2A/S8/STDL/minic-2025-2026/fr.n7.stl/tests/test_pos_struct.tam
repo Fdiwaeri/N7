@@ -1,0 +1,11 @@
+LOADL 10
+LOADL 20
+LOADL 99
+LOADA 0[SB]
+STOREI (1)
+;fr.n7.stl.minic.ast.expression.accessible.VariableAccess@64b8f8f4
+LOAD (2) 0[SB]
+POP (0) 1
+SUBR IOut
+HALT
+
